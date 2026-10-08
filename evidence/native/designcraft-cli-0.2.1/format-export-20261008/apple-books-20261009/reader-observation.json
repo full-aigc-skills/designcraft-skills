@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "designcraft-epub-target-reader-observation/v1",
+  "runId": "33e983c5-fdfa-4e8a-867f-c7a658823cdb",
+  "observedAt": "2026-10-08T16:11:09.331065+00:00",
+  "status": "PARTIAL",
+  "completeAcceptance": false,
+  "task": "harden-designcraft-skill-workflows/2.6b",
+  "testedSourceCommit": "2907bb426acf48beea186e3b5ddf8a3460b53cfa",
+  "application": {
+    "name": "Apple Books",
+    "bundleIdentifier": "com.apple.iBooksX",
+    "version": "9.0",
+    "build": "6655",
+    "path": "/System/Applications/Books.app"
+  },
+  "environment": {
+    "os": "Darwin",
+    "machine": "arm64",
+    "screenCaptureAuthorized": true,
+    "accessibilityTrusted": true,
+    "privacySettingsChanged": false
+  },
+  "inputs": {
+    "reflow.epub": {
+      "sha256": "6f2ed93985f87e11051b30f160bcaccae3117da098d02e1e19a682b4b2872682",
+      "bytes": 826149
+    },
+    "fixed.epub": {
+      "sha256": "4ec7c0a9a951855ca5445a86040531d0d4dbb81bff319434b17a4ec81d1a217a",
+      "bytes": 2371719
+    }
+  },
+  "method": {
+    "open": "/usr/bin/open -a /System/Applications/Books.app <exact exported epub>",
+    "windowEnumeration": "CoreGraphics owner-filtered window list; only Books metadata",
+    "capture": "/usr/sbin/screencapture -x -l <Books reader window ID> <output>",
+    "navigation": "CGEvent right-arrow posted only to Books PID 92476 after AXIsProcessTrusted preflight",
+    "readerWindows": {
+      "reflow": 9854,
+      "fixed": 9863
+    },
+    "fallbackReason": "CUA getApp(Books) failed before initialization: failed to write kernel assets; native existing OS APIs used instead"
+  },
+  "observations": {
+    "reflow": {
+      "targetReaderOpen": "PASS",
+      "navigation": "PASS",
+      "reviewScope": "Observed reader pages 1 through 5 only; not the whole book",
+      "visibleContent": [
+        "sunset cover image",
+        "The Quiet Art of Layout title",
+        "Notes on the Grid heading and deck",
+        "second landscape image",
+        "readable flowing body paragraphs"
+      ],
+      "losses": [
+        "original four-page pagination not preserved",
+        "page grid and source cover text-over-image composition not preserved",
+        "Books dark theme renders text white, so source print colors are not reproduced"
+      ],
+      "fullVisualAcceptance": "NOT_RUN"
+    },
+    "fixed": {
+      "targetReaderOpen": "PASS",
+      "navigation": "PASS",
+      "reviewScope": "All four exported page images visible across cover, pages 2-3 and final page",
+      "visibleContent": [
+        "cover title over sunset image",
+        "Notes on the Grid page with illustration and two text columns",
+        "A Better Grid revised heading, three text columns and pull quote",
+        "Color, Ink & Paper page with swatches and table"
+      ],
+      "losses": [
+        "whole-page PNG content loses editable text/vector semantics; transparent XHTML text is not proof of editable page objects"
+      ],
+      "visualObservation": "No visible missing page or failed render in the three saved spreads; not a pixel comparison or human signoff"
+    }
+  },
+  "screenshots": {
+    "reflow-page1.png": {
+      "sha256": "104c7216b54b3590f4da935046dc43650c9a7b291bc9e4e988c35547ddd84b76",
+      "bytes": 709823
+    },
+    "reflow-pages2-3.png": {
+      "sha256": "869c7397736d71a6a57be67e4ba8e67e177f5a79a7a5cc9f2fb3f39d2738cac9",
+      "bytes": 644483
+    },
+    "reflow-pages4-5.png": {
+      "sha256": "f7ecc9935501cee19c406c68cacb2ad82c3f1c88ace2e916d5dac9c94f804dd3",
+      "bytes": 754816
+    },
+    "fixed-page1.png": {
+      "sha256": "626daf8e4c14a3f48ca90673439bd6d8798611685fbbbd74de8aeda476323fec",
+      "bytes": 895754
+    },
+    "fixed-pages2-3.png": {
+      "sha256": "18d2b43a5087c9bcc409a841c730a3f4babb83b18470369da0ad9c65c6622af1",
+      "bytes": 1521958
+    },
+    "fixed-page4.png": {
+      "sha256": "cdbcf71968e1b5fd44306956e51fd51b714298bb0668a4bc7ccdbf93178f8da7",
+      "bytes": 636624
+    }
+  },
+  "remaining": [
+    "IDML reopen/editability in target application",
+    "external PDF/X certification",
+    "full reflow book review",
+    "source/native/plugin creative signoff and release gates"
+  ],
+  "limitations": [
+    "Opening/rendering a generated EPUB does not certify original native batch success; earlier FAILED_OR_PARTIAL receipt remains authoritative.",
+    "No account/library screenshot is included.",
+    "No app install, privacy grant, content modification or rating action was performed."
+  ]
+}
