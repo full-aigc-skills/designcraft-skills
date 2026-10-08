@@ -448,86 +448,6 @@
       ]
     },
     {
-      "id": "native-checkpoint-recovery",
-      "layer": "native",
-      "status": "PASS",
-      "runId": "6e9c16f9-68af-44f9-81c9-ca1a2a8db336",
-      "observedAt": "2026-10-08T13:08:58.417248+00:00",
-      "environment": {
-        "os": "Darwin",
-        "machine": "arm64",
-        "python": "3.13.5"
-      },
-      "bindings": {
-        "packageVersion": "0.1.0-dev.1",
-        "nativeVersion": "0.2.1",
-        "packageTreeSha256": "e8ed0e46ab28c6c833452bc439c25f2f56684aa122765091fb41b3be9c400b01",
-        "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
-        "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
-        "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
-        "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
-        "expectedNativeBinarySha256": [
-          "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
-        ]
-      },
-      "inputs": [
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-plan.json",
-          "sha256": "8030f7f75efa1bbb6afb22cda3139a4a3bdd835526c9d21ebe9541010e8416ba"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-receipt.json",
-          "sha256": "86e23fbd8ed270261094acd3c8695378e52e4253355befcaabd3a2e74a001f41"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/recovery.json",
-          "sha256": "cb6e5d55196c91a22912c4999af06b1e009fc0d9d9fe74f7e9cd1e3a5c90321c"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-plan.json",
-          "sha256": "8fdc6ca59c3d17031673ec01cf872cc637fd098e15da811368668632f2b538d8"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-receipt.json",
-          "sha256": "332230ef490ba216696f71a60a28775148d746e02be5654b296a93d2c37361ea"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/saved.designcraft",
-          "sha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
-        }
-      ],
-      "artifacts": [
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-plan.json",
-          "sha256": "8030f7f75efa1bbb6afb22cda3139a4a3bdd835526c9d21ebe9541010e8416ba"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-receipt.json",
-          "sha256": "86e23fbd8ed270261094acd3c8695378e52e4253355befcaabd3a2e74a001f41"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/recovery.json",
-          "sha256": "cb6e5d55196c91a22912c4999af06b1e009fc0d9d9fe74f7e9cd1e3a5c90321c"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-plan.json",
-          "sha256": "8fdc6ca59c3d17031673ec01cf872cc637fd098e15da811368668632f2b538d8"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-receipt.json",
-          "sha256": "332230ef490ba216696f71a60a28775148d746e02be5654b296a93d2c37361ea"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/saved.designcraft",
-          "sha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/summary.json",
-          "sha256": "d1794e2d2c4eee5c654e92f3523f5e1b7ccd51013cf4da912d7a6115db706a71"
-        }
-      ]
-    },
-    {
       "id": "offline-tests",
       "layer": "offline-tests",
       "status": "PASS",
@@ -740,6 +660,86 @@
         {
           "path": "evidence/native/designcraft-cli-0.2.1/installation.json",
           "sha256": "764d66706a7fcfd1068e6306c4cb7e9c251c3589985cdabc13eb87af599927e6"
+        }
+      ]
+    },
+    {
+      "id": "native-checkpoint-recovery",
+      "layer": "native",
+      "status": "PASS",
+      "runId": "03d95ed0-54f1-41a0-8d58-53dd7c9afca4",
+      "observedAt": "2026-10-08T13:15:54.743230+00:00",
+      "environment": {
+        "os": "Darwin",
+        "machine": "arm64",
+        "python": "3.13.5"
+      },
+      "bindings": {
+        "packageVersion": "0.1.0-dev.1",
+        "nativeVersion": "0.2.1",
+        "packageTreeSha256": "1762543c448b1e0225eed1cdccfb6ea62579e054dbe4a720171bdeea4d57dc5a",
+        "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
+        "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
+        "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
+        "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
+        "expectedNativeBinarySha256": [
+          "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
+        ]
+      },
+      "inputs": [
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-plan.json",
+          "sha256": "8030f7f75efa1bbb6afb22cda3139a4a3bdd835526c9d21ebe9541010e8416ba"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-receipt.json",
+          "sha256": "86e23fbd8ed270261094acd3c8695378e52e4253355befcaabd3a2e74a001f41"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/recovery.json",
+          "sha256": "cb6e5d55196c91a22912c4999af06b1e009fc0d9d9fe74f7e9cd1e3a5c90321c"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-plan.json",
+          "sha256": "8fdc6ca59c3d17031673ec01cf872cc637fd098e15da811368668632f2b538d8"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-receipt.json",
+          "sha256": "332230ef490ba216696f71a60a28775148d746e02be5654b296a93d2c37361ea"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/saved.designcraft",
+          "sha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-plan.json",
+          "sha256": "8030f7f75efa1bbb6afb22cda3139a4a3bdd835526c9d21ebe9541010e8416ba"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-receipt.json",
+          "sha256": "86e23fbd8ed270261094acd3c8695378e52e4253355befcaabd3a2e74a001f41"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/recovery.json",
+          "sha256": "cb6e5d55196c91a22912c4999af06b1e009fc0d9d9fe74f7e9cd1e3a5c90321c"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-plan.json",
+          "sha256": "8fdc6ca59c3d17031673ec01cf872cc637fd098e15da811368668632f2b538d8"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-receipt.json",
+          "sha256": "332230ef490ba216696f71a60a28775148d746e02be5654b296a93d2c37361ea"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/saved.designcraft",
+          "sha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/summary.json",
+          "sha256": "d1794e2d2c4eee5c654e92f3523f5e1b7ccd51013cf4da912d7a6115db706a71"
         }
       ]
     }
