@@ -17,5 +17,5 @@
   "published": false,
   "specificationChange": "openspec/changes/harden-designcraft-skill-workflows",
   "nativeEvidence": "evidence/native/designcraft-cli-0.2.1/native-evidence-summary.json",
-  "nativeAcceptance": "PARTIAL: isolated fixed CLI runtime, four-page create/edit/save/reopen/PDF export, AV-02/03 records and AV-04 authorized title revision; Codex host/model routing and remaining native formats are NOT_RUN"
+  "nativeAcceptance": "PARTIAL: isolated fixed CLI runtime; four-page create/edit/save/reopen/PDF and AV-04 title revision plus partial PDF/IDML/EPUB/HTML/XML export observations; IDML/EPUB app reopen, complete format loss review, Codex host/model routing, and release remain NOT_RUN"
 }

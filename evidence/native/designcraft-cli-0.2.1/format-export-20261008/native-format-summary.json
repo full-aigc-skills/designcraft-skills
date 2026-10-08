@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "designcraft-native-format-observation/v1",
+  "observationStatus": "PARTIAL",
+  "completeAcceptance": false,
+  "observedAt": "2026-10-08T12:44:05.609872+00:00",
+  "runtime": {
+    "version": "0.2.1",
+    "platform": "darwin-arm64",
+    "binarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+    "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+    "installationEvidence": "../installation.json",
+    "sourceProjectPath": "../magazine.designcraft",
+    "sourceProjectSha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
+  },
+  "run": {
+    "runId": "04b95d23-f179-48cc-be17-fbf4b96c3681",
+    "planSha256": "adddc39952bddc30d99a24b4873a38a60233927fd31de5dc12becbcbcf3b4081",
+    "nativePlanSha256": "467a9c3b433466593f1b0adc3d1143a850d2678064f4fedea67bba2b5907d044",
+    "status": "FAILED_OR_PARTIAL",
+    "exitCode": 1,
+    "nativeResult": {
+      "schemaVersion": 1,
+      "status": "FAILED_OR_PARTIAL",
+      "reason": "native_nonzero_exit",
+      "exitCode": 1,
+      "started": true,
+      "startedAt": "2026-10-08T12:42:16.060425+00:00",
+      "finishedAt": "2026-10-08T12:42:16.303880+00:00",
+      "terminationVerified": true,
+      "descendantsTerminationVerified": false
+    },
+    "completedCommands": 6,
+    "resultCount": 6,
+    "stepResults": [
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:0",
+        "index": 0,
+        "command": "file.exportPdf",
+        "status": "UNKNOWN",
+        "granularity": "single-native-session"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:1",
+        "index": 1,
+        "command": "file.exportIdml",
+        "status": "UNKNOWN",
+        "granularity": "single-native-session"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:2",
+        "index": 2,
+        "command": "file.exportEpub",
+        "status": "UNKNOWN",
+        "granularity": "single-native-session"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:3",
+        "index": 3,
+        "command": "file.exportFixedEpub",
+        "status": "UNKNOWN",
+        "granularity": "single-native-session"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:4",
+        "index": 4,
+        "command": "file.exportHtml",
+        "status": "UNKNOWN",
+        "granularity": "single-native-session"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:5",
+        "index": 5,
+        "command": "file.exportXml",
+        "status": "UNKNOWN",
+        "granularity": "single-native-session"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:6",
+        "index": 6,
+        "command": "file.exportText",
+        "status": "UNKNOWN",
+        "granularity": "single-native-session"
+      }
+    ]
+  },
+  "exports": {
+    "file.exportPdf": {
+      "status": "PASS",
+      "result": {
+        "bytes": 552600,
+        "pages": 4,
+        "path": "/tmp/designcraft-format-probe-20261008/export.pdf",
+        "warnings": []
+      }
+    },
+    "file.exportIdml": {
+      "status": "PASS",
+      "result": {
+        "bytes": 555480,
+        "path": "/tmp/designcraft-format-probe-20261008/export.idml"
+      }
+    },
+    "file.exportEpub": {
+      "status": "PASS",
+      "result": {
+        "bytes": 826149,
+        "path": "/tmp/designcraft-format-probe-20261008/reflow.epub"
+      }
+    },
+    "file.exportFixedEpub": {
+      "status": "PASS",
+      "result": {
+        "bytes": 2371719,
+        "pages": 4,
+        "path": "/tmp/designcraft-format-probe-20261008/fixed.epub"
+      }
+    },
+    "file.exportHtml": {
+      "status": "PASS",
+      "result": {
+        "bytes": 1107304,
+        "path": "/tmp/designcraft-format-probe-20261008/export.html"
+      }
+    },
+    "file.exportXml": {
+      "status": "REJECTED_EMPTY_CONTENT",
+      "result": {
+        "bytes": 71,
+        "path": "/tmp/designcraft-format-probe-20261008/export.xml"
+      }
+    },
+    "file.exportText": {
+      "status": "FAILED_NOT_RUN",
+      "reason": "native batch returned nonzero after six completed commands; no result slot or output file for the seventh command"
+    }
+  },
+  "offlineStructuralProbes": {
+    "export.pdf": {
+      "exitCode": 0,
+      "result": {
+        "acceptanceNote": "结构探针仅检查可离线识别的文件特征；不证明视觉质量、内容正确、应用互操作、转换损失或完整验收。",
+        "byteCount": 552600,
+        "completeAcceptance": false,
+        "contractVersion": "designcraft-format-probe/v1",
+        "editability": "NOT_VERIFIED",
+        "fileName": "export.pdf",
+        "format": "pdf",
+        "lossAssessment": "NOT_VERIFIED",
+        "pageBoxes": [
+          {
+            "heightPoints": 792.0,
+            "widthPoints": 612.0
+          },
+          {
+            "heightPoints": 792.0,
+            "widthPoints": 612.0
+          },
+          {
+            "heightPoints": 792.0,
+            "widthPoints": 612.0
+          },
+          {
+            "heightPoints": 792.0,
+            "widthPoints": 612.0
+          }
+        ],
+        "pageCount": 4,
+        "pdfxExternalCertification": "NOT_RUN",
+        "sha256": "f4371de3930d3c5c718c75f045a93ca54eacce93f6c53576d55814267107ae56",
+        "status": "PASS",
+        "structure": "PASS",
+        "targetAppReopen": "NOT_RUN",
+        "targetReaderReview": "NOT_RUN",
+        "visualContent": "NOT_VERIFIED"
+      }
+    },
+    "export.idml": {
+      "exitCode": 0,
+      "result": {
+        "acceptanceNote": "结构探针仅检查可离线识别的文件特征；不证明视觉质量、内容正确、应用互操作、转换损失或完整验收。",
+        "byteCount": 555480,
+        "completeAcceptance": false,
+        "contractVersion": "designcraft-format-probe/v1",
+        "editability": "NOT_VERIFIED",
+        "fileName": "export.idml",
+        "format": "idml",
+        "lossAssessment": "NOT_VERIFIED",
+        "memberCount": 30,
+        "pdfxExternalCertification": "NOT_RUN",
+        "sha256": "e05d799038ad7c7d9e1624b2e2106e1054bd2ee78036f843e95c4cf1fe119623",
+        "status": "PASS",
+        "storyCount": 19,
+        "structure": "PASS",
+        "targetAppReopen": "NOT_RUN",
+        "targetReaderReview": "NOT_RUN",
+        "visualContent": "NOT_VERIFIED"
+      }
+    },
+    "reflow.epub": {
+      "exitCode": 0,
+      "result": {
+        "acceptanceNote": "结构探针仅检查可离线识别的文件特征；不证明视觉质量、内容正确、应用互操作、转换损失或完整验收。",
+        "byteCount": 826149,
+        "completeAcceptance": false,
+        "contractVersion": "designcraft-format-probe/v1",
+        "editability": "NOT_VERIFIED",
+        "fileName": "reflow.epub",
+        "format": "epub",
+        "lossAssessment": "NOT_VERIFIED",
+        "manifestItemCount": 5,
+        "memberCount": 8,
+        "pdfxExternalCertification": "NOT_RUN",
+        "sha256": "6f2ed93985f87e11051b30f160bcaccae3117da098d02e1e19a682b4b2872682",
+        "spineItemCount": 1,
+        "status": "PASS",
+        "structure": "PASS",
+        "targetAppReopen": "NOT_RUN",
+        "targetReaderReview": "NOT_RUN",
+        "visualContent": "NOT_VERIFIED"
+      }
+    },
+    "fixed.epub": {
+      "exitCode": 0,
+      "result": {
+        "acceptanceNote": "结构探针仅检查可离线识别的文件特征；不证明视觉质量、内容正确、应用互操作、转换损失或完整验收。",
+        "byteCount": 2371719,
+        "completeAcceptance": false,
+        "contractVersion": "designcraft-format-probe/v1",
+        "editability": "NOT_VERIFIED",
+        "fileName": "fixed.epub",
+        "format": "epub",
+        "lossAssessment": "NOT_VERIFIED",
+        "manifestItemCount": 9,
+        "memberCount": 12,
+        "pdfxExternalCertification": "NOT_RUN",
+        "sha256": "4ec7c0a9a951855ca5445a86040531d0d4dbb81bff319434b17a4ec81d1a217a",
+        "spineItemCount": 4,
+        "status": "PASS",
+        "structure": "PASS",
+        "targetAppReopen": "NOT_RUN",
+        "targetReaderReview": "NOT_RUN",
+        "visualContent": "NOT_VERIFIED"
+      }
+    }
+  },
+  "observations": {
+    "idml": "Native export succeeded; package has 30 members, 19 story XML files and 3 spreads. IDML application reopen/editability/visual fidelity were not verified.",
+    "reflowEpub": "Native export succeeded; package has a single spine item and one content XHTML document with 6014 normalized text characters and two embedded PNGs. Reflow changes pagination and layout; target reader reopen was not available.",
+    "fixedEpub": "Native export succeeded; package has four XHTML page entries backed by four page PNG images. This preserves rasterized appearance at the cost of editable text and vector object semantics in the page images. Target reader reopen was not available.",
+    "html": "Native export succeeded; Chrome headless rendered a local 1200x1600 screenshot. This is a browser-engine preview, not interactive desktop app acceptance.",
+    "xml": "Native export returned a structurally empty Root document (71 bytes); treat content as rejected/empty, not successful content delivery.",
+    "text": "The batch stopped before file.exportText; no text artifact was produced. A separate exportText trial remains needed.",
+    "pdf": "Native export succeeded with 4 pages, 552600 bytes and no export warnings. CLI standard was none; external PDF/X certification was not run.",
+    "raster": "Native command catalog has no PNG/JPEG/WebP/TIFF export command; mark unsupported by this fixed CLI rather than infer capability."
+  },
+  "unverified": [
+    "Adobe InDesign IDML reopen/editability and page visual comparison; InDesign not installed in the observed environment.",
+    "EPUB reopen in Apple Books or another desktop reader; Books/Calibre were not available in the observed environment.",
+    "External PDF/X certification.",
+    "PNG/JPEG/WebP/TIFF output."
+  ],
+  "artifacts": {
+    "export.html": {
+      "bytes": 1107304,
+      "sha256": "c84f0788a2b2752b770d2665374df2371063e8cab6d02448b69e1786291413d1"
+    },
+    "export.idml": {
+      "bytes": 555480,
+      "sha256": "e05d799038ad7c7d9e1624b2e2106e1054bd2ee78036f843e95c4cf1fe119623"
+    },
+    "export.pdf": {
+      "bytes": 552600,
+      "sha256": "f4371de3930d3c5c718c75f045a93ca54eacce93f6c53576d55814267107ae56"
+    },
+    "export.xml": {
+      "bytes": 71,
+      "sha256": "95fdd7a2214eeca043c7790d4b33015b65d0223d89ecbef6f362787e145b4026"
+    },
+    "fixed.epub": {
+      "bytes": 2371719,
+      "sha256": "4ec7c0a9a951855ca5445a86040531d0d4dbb81bff319434b17a4ec81d1a217a"
+    },
+    "html-preview.png": {
+      "bytes": 183477,
+      "sha256": "09483ca69276938bef24a32ba028b49483049d7eb9d1b0bccbd6a35ca1ca96db"
+    },
+    "native-native-plan.json": {
+      "bytes": 877,
+      "sha256": "467a9c3b433466593f1b0adc3d1143a850d2678064f4fedea67bba2b5907d044"
+    },
+    "native-native-result.json": {
+      "bytes": 306,
+      "sha256": "6fb7f02c4d7539be4229b1eeec526f70c39fc3733dc3e1d49dc94fefc7366f2f"
+    },
+    "native-receipt.json": {
+      "bytes": 9761,
+      "sha256": "6d1b7bc4c441de660d69d20acacfea5fe1343c5e11502d6f81c4da1f2a6e3dfd"
+    },
+    "plan.json": {
+      "bytes": 874,
+      "sha256": "387f63f71682bd11ab7a16006ca70fb1dabbba6fc5851a74930690d24e877895"
+    },
+    "reflow.epub": {
+      "bytes": 826149,
+      "sha256": "6f2ed93985f87e11051b30f160bcaccae3117da098d02e1e19a682b4b2872682"
+    }
+  }
+}

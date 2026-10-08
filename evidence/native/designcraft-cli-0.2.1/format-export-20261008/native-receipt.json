@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 2,
+  "runId": "04b95d23-f179-48cc-be17-fbf4b96c3681",
+  "domain": "designcraft",
+  "status": "FAILED_OR_PARTIAL",
+  "startedAt": "2026-10-08T12:42:16.034189+00:00",
+  "argv": [
+    "/opt/anaconda3/bin/python3",
+    "-I",
+    "-B",
+    "/Users/wandl/workspaces/workspace-agent-skills/full-aigc-skills-repositories/designcraft-skills/skills/designcraft-cli/scripts/cli.py",
+    "--runtime-home",
+    "/tmp/designcraft-plan-validation-20261008/runtime",
+    "--result-file",
+    "/tmp/designcraft-format-probe-20261008/run/native-result.json",
+    "--",
+    "script",
+    "/tmp/designcraft-format-probe-20261008/run/native-plan.json",
+    "--in",
+    "/tmp/designcraft-format-probe-20261008/run/working-copy/magazine.designcraft"
+  ],
+  "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+  "planSha256": "adddc39952bddc30d99a24b4873a38a60233927fd31de5dc12becbcbcf3b4081",
+  "nativePlanSha256": "467a9c3b433466593f1b0adc3d1143a850d2678064f4fedea67bba2b5907d044",
+  "automaticReplay": false,
+  "completeAcceptance": false,
+  "inputSha256": {
+    "/Users/wandl/workspaces/workspace-agent-skills/full-aigc-skills-repositories/designcraft-skills/evidence/native/designcraft-cli-0.2.1/magazine.designcraft": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
+  },
+  "runtimeLockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+  "runtimeIdentity": {
+    "verificationStatus": "LOCKED_EXPECTATION",
+    "name": "designcraft-cli",
+    "version": "0.2.1",
+    "platform": "darwin-arm64",
+    "runtimeHome": "/tmp/designcraft-plan-validation-20261008/runtime",
+    "expectedBinarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+    "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+    "lockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+  },
+  "skillResourceSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "41159cc8cf811078ee512c539a87858b7aa280efffbcdfd51d6cf9010f3ed43d",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  },
+  "directoryBaseline": {
+    "path": "/tmp/designcraft-format-probe-20261008/run",
+    "state": "ABSENT",
+    "sha256": null
+  },
+  "outputDirectoryBefore": "ABSENT",
+  "stepResultGranularity": "single-native-session",
+  "stepReferences": [
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:0",
+      "index": 0,
+      "command": "file.exportPdf",
+      "paramsSha256": "33002218da4cb766e373db188489b565d0ca50466a9e876a081bd2893a90a5ba"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:1",
+      "index": 1,
+      "command": "file.exportIdml",
+      "paramsSha256": "4adf68c4b70562fdf29b04948c762dbecd8ae17bd92b3bd84bca916d7d6b6be6"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:2",
+      "index": 2,
+      "command": "file.exportEpub",
+      "paramsSha256": "c467cb64b4a25037dd5448142d70acbdd91652dd66881b80f8095b33fa6d0f00"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:3",
+      "index": 3,
+      "command": "file.exportFixedEpub",
+      "paramsSha256": "17e38bcc107391c2e3991d0ef0f4706b3b06d5bac9255b1c6d9a835dee7e4ee4"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:4",
+      "index": 4,
+      "command": "file.exportHtml",
+      "paramsSha256": "fbb430b09ba484f53bce561266ef4f6423a6b46298bbedf13941762d0935b3fc"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:5",
+      "index": 5,
+      "command": "file.exportXml",
+      "paramsSha256": "5748058984b7c5be15834130fe92eb5512c6ee1bd050dbb51c6dec71c59ab92f"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:6",
+      "index": 6,
+      "command": "file.exportText",
+      "paramsSha256": "3a41613bb432d9b0b5a01890623dbbbbb73fca0746dc5d50d3e51c65efe4a5b4"
+    }
+  ],
+  "stepResults": [
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:0",
+      "index": 0,
+      "command": "file.exportPdf",
+      "status": "UNKNOWN",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:1",
+      "index": 1,
+      "command": "file.exportIdml",
+      "status": "UNKNOWN",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:2",
+      "index": 2,
+      "command": "file.exportEpub",
+      "status": "UNKNOWN",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:3",
+      "index": 3,
+      "command": "file.exportFixedEpub",
+      "status": "UNKNOWN",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:4",
+      "index": 4,
+      "command": "file.exportHtml",
+      "status": "UNKNOWN",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:5",
+      "index": 5,
+      "command": "file.exportXml",
+      "status": "UNKNOWN",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:6",
+      "index": 6,
+      "command": "file.exportText",
+      "status": "UNKNOWN",
+      "granularity": "single-native-session"
+    }
+  ],
+  "workingCopyPath": "/tmp/designcraft-format-probe-20261008/run/working-copy/magazine.designcraft",
+  "workingCopyBeforeSha256": {
+    "magazine.designcraft": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
+  },
+  "reason": "native_nonzero_exit",
+  "exitCode": 1,
+  "started": true,
+  "terminationVerified": true,
+  "descendantsTerminationVerified": false,
+  "nativeResultSchemaVersion": 1,
+  "finishedAt": "2026-10-08T12:42:16.303880+00:00",
+  "stdout": "{\n  \"completed\": 6,\n  \"error\": \"command `file.exportText` is not available right now: edit text or select a text frame\",\n  \"failedCommand\": \"file.exportText\",\n  \"failedIndex\": 6,\n  \"results\": [\n    {\n      \"bytes\": 552600,\n      \"pages\": 4,\n      \"path\": \"/tmp/designcraft-format-probe-20261008/export.pdf\",\n      \"warnings\": []\n    },\n    {\n      \"bytes\": 555480,\n      \"path\": \"/tmp/designcraft-format-probe-20261008/export.idml\"\n    },\n    {\n      \"bytes\": 826149,\n      \"path\": \"/tmp/designcraft-format-probe-20261008/reflow.epub\"\n    },\n    {\n      \"bytes\": 2371719,\n      \"pages\": 4,\n      \"path\": \"/tmp/designcraft-format-probe-20261008/fixed.epub\"\n    },\n    {\n      \"bytes\": 1107304,\n      \"path\": \"/tmp/designcraft-format-probe-20261008/export.html\"\n    },\n    {\n      \"bytes\": 71,\n      \"path\": \"/tmp/designcraft-format-probe-20261008/export.xml\"\n    }\n  ]\n}\n",
+  "stderr": "designcraft-cli: step 6 (file.exportText) failed: command `file.exportText` is not available right now: edit text or select a text frame\n",
+  "businessAssessment": {
+    "contractVersion": "designcraft-business-assessment/v1",
+    "status": "UNKNOWN",
+    "steps": [
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:0",
+        "index": 0,
+        "command": "file.exportPdf",
+        "status": "UNKNOWN",
+        "reason": "native_batch_result_unknown"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:1",
+        "index": 1,
+        "command": "file.exportIdml",
+        "status": "UNKNOWN",
+        "reason": "native_batch_result_unknown"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:2",
+        "index": 2,
+        "command": "file.exportEpub",
+        "status": "UNKNOWN",
+        "reason": "native_batch_result_unknown"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:3",
+        "index": 3,
+        "command": "file.exportFixedEpub",
+        "status": "UNKNOWN",
+        "reason": "native_batch_result_unknown"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:4",
+        "index": 4,
+        "command": "file.exportHtml",
+        "status": "UNKNOWN",
+        "reason": "native_batch_result_unknown"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:5",
+        "index": 5,
+        "command": "file.exportXml",
+        "status": "UNKNOWN",
+        "reason": "native_batch_result_unknown"
+      },
+      {
+        "stepRef": "04b95d23-f179-48cc-be17-fbf4b96c3681:step:6",
+        "index": 6,
+        "command": "file.exportText",
+        "status": "UNKNOWN",
+        "reason": "native_batch_result_unknown"
+      }
+    ]
+  },
+  "inputAfterSha256": {
+    "/Users/wandl/workspaces/workspace-agent-skills/full-aigc-skills-repositories/designcraft-skills/evidence/native/designcraft-cli-0.2.1/magazine.designcraft": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
+  },
+  "skillResourceAfterSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "41159cc8cf811078ee512c539a87858b7aa280efffbcdfd51d6cf9010f3ed43d",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  },
+  "workingCopyAfterSha256": {
+    "magazine.designcraft": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
+  }
+}
