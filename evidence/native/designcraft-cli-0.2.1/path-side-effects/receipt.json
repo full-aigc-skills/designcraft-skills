@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "runId": "c8306a20-889e-45fe-adef-7f951a30027c",
+  "domain": "designcraft",
+  "status": "INPUT_CHANGED_REVIEW_REQUIRED",
+  "startedAt": "2026-10-08T12:22:41.638048+00:00",
+  "argv": [
+    "/opt/anaconda3/bin/python3",
+    "-I",
+    "-B",
+    "/Users/wandl/workspaces/workspace-agent-skills/full-aigc-skills-repositories/designcraft-skills/skills/designcraft-cli/scripts/cli.py",
+    "--runtime-home",
+    "/tmp/designcraft-plan-validation-20261008/runtime",
+    "--result-file",
+    "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/task-output/native-result.json",
+    "--",
+    "script",
+    "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/task-output/native-plan.json",
+    "--in",
+    "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/task-output/working-copy/merged.designcraft"
+  ],
+  "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+  "planSha256": "9dca574a2b5094aa2a05a4e4d15e1df4d91cb1320410c1ad3a9d6267a943d0ec",
+  "nativePlanSha256": "5eda6f8969a352836d02f1a040f1bf0e1b38af546e92f80bf77bedd090ad7cf8",
+  "automaticReplay": false,
+  "completeAcceptance": false,
+  "inputSha256": {
+    "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/registered-input/sentinel.txt": "5c47b91bf08c2f297cfac1f69e8a2e5d6c947b1a22b33b7b952085638a6cc87c",
+    "/Users/wandl/workspaces/workspace-agent-skills/full-aigc-skills-repositories/designcraft-skills/evidence/native/designcraft-cli-0.2.1/business-assessment/merged.designcraft": "fed22e8c347dca8362d69326b1b627baf86f32f6160c568b3dfd23e6b0642ebf"
+  },
+  "runtimeLockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+  "runtimeIdentity": {
+    "verificationStatus": "LOCKED_EXPECTATION",
+    "name": "designcraft-cli",
+    "version": "0.2.1",
+    "platform": "darwin-arm64",
+    "runtimeHome": "/tmp/designcraft-plan-validation-20261008/runtime",
+    "expectedBinarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+    "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+    "lockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+  },
+  "skillResourceSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "41159cc8cf811078ee512c539a87858b7aa280efffbcdfd51d6cf9010f3ed43d",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  },
+  "directoryBaseline": {
+    "path": "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/task-output",
+    "state": "ABSENT",
+    "sha256": null
+  },
+  "outputDirectoryBefore": "ABSENT",
+  "stepResultGranularity": "single-native-session",
+  "stepReferences": [
+    {
+      "stepRef": "c8306a20-889e-45fe-adef-7f951a30027c:step:0",
+      "index": 0,
+      "command": "file.exportPdf",
+      "paramsSha256": "6e23b6cbe0f03b93ac6dd32cf56cc0d965c031a574b1349fa4e75f7fdf84fbd9"
+    },
+    {
+      "stepRef": "c8306a20-889e-45fe-adef-7f951a30027c:step:1",
+      "index": 1,
+      "command": "file.exportPdf",
+      "paramsSha256": "480f092311e354a4930440ac619ce80f2439b37d28cd7b6526388c58be230400"
+    }
+  ],
+  "stepResults": [
+    {
+      "stepRef": "c8306a20-889e-45fe-adef-7f951a30027c:step:0",
+      "index": 0,
+      "command": "file.exportPdf",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "c8306a20-889e-45fe-adef-7f951a30027c:step:1",
+      "index": 1,
+      "command": "file.exportPdf",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    }
+  ],
+  "workingCopyPath": "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/task-output/working-copy/merged.designcraft",
+  "workingCopyBeforeSha256": {
+    "merged.designcraft": "fed22e8c347dca8362d69326b1b627baf86f32f6160c568b3dfd23e6b0642ebf"
+  },
+  "reason": "native_exit",
+  "exitCode": 0,
+  "started": true,
+  "terminationVerified": true,
+  "descendantsTerminationVerified": false,
+  "nativeResultSchemaVersion": 1,
+  "finishedAt": "2026-10-08T12:22:41.905865+00:00",
+  "stdout": "{\n  \"completed\": 2,\n  \"results\": [\n    {\n      \"bytes\": 553467,\n      \"pages\": 5,\n      \"path\": \"/tmp/designcraft-plan-validation-20261008/parameter-path-scope/unregistered/external.pdf\",\n      \"warnings\": []\n    },\n    {\n      \"bytes\": 553467,\n      \"pages\": 5,\n      \"path\": \"/tmp/designcraft-plan-validation-20261008/parameter-path-scope/registered-input/registered.pdf\",\n      \"warnings\": []\n    }\n  ]\n}\n",
+  "stderr": "",
+  "businessAssessment": {
+    "contractVersion": "designcraft-business-assessment/v1",
+    "status": "PASS",
+    "steps": [
+      {
+        "stepRef": "c8306a20-889e-45fe-adef-7f951a30027c:step:0",
+        "index": 0,
+        "command": "file.exportPdf",
+        "status": "PASS",
+        "reason": "pdf_export_recorded"
+      },
+      {
+        "stepRef": "c8306a20-889e-45fe-adef-7f951a30027c:step:1",
+        "index": 1,
+        "command": "file.exportPdf",
+        "status": "PASS",
+        "reason": "pdf_export_recorded"
+      }
+    ]
+  },
+  "inputAfterSha256": {
+    "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/registered-input/registered.pdf": "c8100a4757afb3dcf650b3d367cfc06b1b896dc220f7706c33a06e1092a21a19",
+    "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/registered-input/sentinel.txt": "5c47b91bf08c2f297cfac1f69e8a2e5d6c947b1a22b33b7b952085638a6cc87c",
+    "/Users/wandl/workspaces/workspace-agent-skills/full-aigc-skills-repositories/designcraft-skills/evidence/native/designcraft-cli-0.2.1/business-assessment/merged.designcraft": "fed22e8c347dca8362d69326b1b627baf86f32f6160c568b3dfd23e6b0642ebf"
+  },
+  "skillResourceAfterSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "41159cc8cf811078ee512c539a87858b7aa280efffbcdfd51d6cf9010f3ed43d",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  },
+  "workingCopyAfterSha256": {
+    "merged.designcraft": "fed22e8c347dca8362d69326b1b627baf86f32f6160c568b3dfd23e6b0642ebf"
+  }
+}

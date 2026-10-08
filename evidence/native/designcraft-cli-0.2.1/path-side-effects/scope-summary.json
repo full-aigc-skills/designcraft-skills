@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "designcraft-native-path-side-effect-scope/v1",
+  "observedAt": "2026-10-08T12:22:41.905865+00:00",
+  "nativeVersion": "0.2.1",
+  "platform": "darwin-arm64",
+  "binarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+  "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+  "runId": "c8306a20-889e-45fe-adef-7f951a30027c",
+  "nativeExitCode": 0,
+  "receiptStatus": "INPUT_CHANGED_REVIEW_REQUIRED",
+  "businessAssessment": "PASS",
+  "workingCopyInput": {
+    "path": "../business-assessment/merged.designcraft",
+    "sha256": "fed22e8c347dca8362d69326b1b627baf86f32f6160c568b3dfd23e6b0642ebf",
+    "autoRegisteredBy": "--source"
+  },
+  "explicitlyRegisteredDirectory": {
+    "path": "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/registered-input",
+    "before": {
+      "sentinel.txt": "5c47b91bf08c2f297cfac1f69e8a2e5d6c947b1a22b33b7b952085638a6cc87c"
+    },
+    "after": {
+      "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/registered-input/registered.pdf": "c8100a4757afb3dcf650b3d367cfc06b1b896dc220f7706c33a06e1092a21a19",
+      "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/registered-input/sentinel.txt": "5c47b91bf08c2f297cfac1f69e8a2e5d6c947b1a22b33b7b952085638a6cc87c"
+    },
+    "observedEffect": "registered.pdf was created under the registered directory; its new path appeared in inputAfterSha256 and changed the run to INPUT_CHANGED_REVIEW_REQUIRED"
+  },
+  "unregisteredParameterPath": {
+    "path": "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/unregistered/external.pdf",
+    "sha256": "c8100a4757afb3dcf650b3d367cfc06b1b896dc220f7706c33a06e1092a21a19",
+    "bytes": 553467,
+    "observedEffect": "file.exportPdf created a PDF outside --output and outside every --input path; the path is absent from inputAfterSha256"
+  },
+  "registeredParameterOutput": {
+    "path": "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/registered-input/registered.pdf",
+    "sha256": "c8100a4757afb3dcf650b3d367cfc06b1b896dc220f7706c33a06e1092a21a19",
+    "bytes": 553467
+  },
+  "scopeConclusion": {
+    "protected": "The gateway rejects a pre-existing --output directory, copies --source, and hashes --source/--input files or directories before and after native execution. A change under an explicitly registered input is detected after execution and downgrades a zero-exit receipt; this is detection, not write prevention.",
+    "unprotected": "Paths embedded in native command params are not automatically constrained to --output, sandboxed, or hashed. New sibling output paths outside --source/--input remain untracked. Native commands can write anywhere allowed by the current OS account.",
+    "completeAcceptance": false
+  },
+  "autoRegisteredSourceAfterSha256": "fed22e8c347dca8362d69326b1b627baf86f32f6160c568b3dfd23e6b0642ebf"
+}

@@ -1,0 +1,19 @@
+{
+  "domain": "designcraft",
+  "steps": [
+    {
+      "command": "file.exportPdf",
+      "params": {
+        "path": "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/unregistered/external.pdf",
+        "standard": "none"
+      }
+    },
+    {
+      "command": "file.exportPdf",
+      "params": {
+        "path": "/tmp/designcraft-plan-validation-20261008/parameter-path-scope/registered-input/registered.pdf",
+        "standard": "none"
+      }
+    }
+  ]
+}
