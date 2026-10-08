@@ -86,6 +86,22 @@ class ReceiptContract(unittest.TestCase):
             native_plan=(output/'native-plan.json').read_text().splitlines()
             self.assertEqual([json.loads(line) for line in native_plan],steps)
 
+    def test_multistep_partial_failure_preserves_only_batch_level_step_results(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t);output=root/'output'
+            steps=[{'command':'file.new','params':{'title':'first'}},{'command':'file.new','params':{'storyRef':'step:0'}}]
+            discovery=subprocess.CompletedProcess([],0,json.dumps(self.catalog()),'')
+            partial=subprocess.CompletedProcess([],1,'partial stdout','partial stderr')
+            result,count=self.invoke(['run',str(self.plan(root,steps)),'--output',str(output)],[discovery,partial])
+            self.assertEqual((result,count),(1,2))
+            receipt=json.loads((output/'receipt.json').read_text())
+            self.assertEqual(receipt['status'],'FAILED_OR_PARTIAL')
+            self.assertEqual((receipt['stdout'],receipt['stderr']),('partial stdout','partial stderr'))
+            self.assertEqual([step['status'] for step in receipt['stepResults']],['UNKNOWN','UNKNOWN'])
+            self.assertTrue(all(step['granularity']=='single-native-session' for step in receipt['stepResults']))
+            self.assertFalse(receipt['automaticReplay'])
+            self.assertFalse(receipt['completeAcceptance'])
+
     def test_designcraft_source_is_copied_and_native_edits_leave_original_intact(self):
         with tempfile.TemporaryDirectory() as t:
             root=Path(t);source=root/'source-project';source.mkdir();original=source/'page.json';original.write_text('{"title":"before"}')
