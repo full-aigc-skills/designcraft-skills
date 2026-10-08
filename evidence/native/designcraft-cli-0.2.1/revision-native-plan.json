@@ -1,0 +1,8 @@
+{"command": "document.inspect", "params": {}}
+{"command": "style.paragraph.create", "params": {"name": "Revision Headline", "chars": {"size": 18}, "para": {}}}
+{"command": "frame.create", "params": {"spread": 1, "rect": [666, 8, 1182, 52], "shape": "rectangle", "content": "text", "text": "A Better Grid", "caret": true}}
+{"command": "style.paragraph.apply", "params": {"name": "Revision Headline", "clearOverrides": true}}
+{"command": "document.inspect", "params": {}}
+{"command": "preflight.run", "params": {"minPpi": 150}}
+{"command": "file.save", "params": {}}
+{"command": "file.exportPdf", "params": {"path": "/tmp/designcraft-plan-validation-20261008/edit-output-fixed/edited.pdf", "standard": "none"}}

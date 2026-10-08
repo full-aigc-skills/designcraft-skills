@@ -1,0 +1,4 @@
+{"command": "document.inspect", "params": {}}
+{"command": "links.list", "params": {}}
+{"command": "preflight.run", "params": {"minPpi": 150}}
+{"command": "file.exportPdf", "params": {"path": "/tmp/designcraft-plan-validation-20261008/final-reopen/final.pdf", "standard": "none"}}

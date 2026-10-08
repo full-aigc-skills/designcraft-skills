@@ -1,0 +1,31 @@
+{
+  "runtime": {
+    "name": "designcraft-cli",
+    "version": "0.2.1",
+    "platform": "darwin-arm64",
+    "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+    "binarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+    "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700"
+  },
+  "sampleRunId": "dd053b79-ebed-4a2f-b924-a5be37e63452",
+  "sourceProjectSha256": "8200372c805353a0fd382b1a3105b10d9764d0db0908ccc3690a493177d7d1c0",
+  "revisionRunId": "ace17c98-fa79-45a8-97e7-87395abcf34e",
+  "revisedProjectSha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6",
+  "freshReopenRunId": "db11cf5c-cff3-4516-80c4-9c8a0892a6e7",
+  "exportSha256": "bc1f80d28c5c60dd915d23a3460fc6956f8780dea3d970455260789a08c38a23",
+  "pdfPages": 4,
+  "preflight": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "negativeOversetRunId": "e0a84670-4816-43d8-af6b-8abf501397e0",
+  "nativeGatewayStatus": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+  "completeAcceptance": false,
+  "limits": [
+    "Gateway exit-zero is not task acceptance; inspect native output and preflight separately.",
+    "descendantsTerminationVerified is false in gateway receipts; a separate process check found no remaining CLI process at observation time.",
+    "External PDF/X certification, target application reopen, model dispatch, real Codex host discovery and production publication are not established by this report."
+  ],
+  "python": "3.13.5 at /opt/anaconda3/bin/python3",
+  "nativeGatewayStatusNote": "Each multi-command CLI invocation exits zero but remains NATIVE_EXIT_ZERO_REVIEW_REQUIRED; preflight JSON is separately inspected."
+}

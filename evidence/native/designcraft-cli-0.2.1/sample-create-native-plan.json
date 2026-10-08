@@ -1,0 +1,5 @@
+{"command": "file.newSample", "params": {}}
+{"command": "document.inspect", "params": {}}
+{"command": "preflight.run", "params": {"minPpi": 150}}
+{"command": "file.saveAs", "params": {"path": "/tmp/designcraft-plan-validation-20261008/sample-output/magazine.designcraft"}}
+{"command": "file.exportPdf", "params": {"path": "/tmp/designcraft-plan-validation-20261008/sample-output/magazine.pdf", "standard": "none"}}

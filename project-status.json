@@ -7,13 +7,15 @@
   "specification": "OPEN_SPEC_CHANGE_IMPLEMENTATION_IN_PROGRESS",
   "offlineTests": "PASS",
   "packageValidation": "PASS",
-  "testEnvironment": "macOS 27 arm64; Python 3.14.3 at /opt/homebrew/bin/python3",
+  "testEnvironment": "macOS 27 arm64; Python 3.13.5 at /opt/anaconda3/bin/python3",
   "ci": "NOT_RUN",
-  "nativeInstallation": "NOT_RUN",
+  "nativeInstallation": "PASS",
   "targetPlatformAcceptance": "NOT_RUN",
   "hostDiscovery": "NOT_RUN",
   "modelDispatch": "NOT_RUN",
   "creativeAcceptance": "NOT_RUN",
   "published": false,
-  "specificationChange": "openspec/changes/harden-designcraft-skill-workflows"
+  "specificationChange": "openspec/changes/harden-designcraft-skill-workflows",
+  "nativeEvidence": "evidence/native/designcraft-cli-0.2.1/native-evidence-summary.json",
+  "nativeAcceptance": "PARTIAL: isolated fixed CLI runtime, four-page create/edit/save/reopen/PDF export and AV-02/03 records; Codex host/model routing and remaining native formats are NOT_RUN"
 }
