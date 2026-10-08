@@ -9,7 +9,7 @@
   "packageValidation": "PASS",
   "testEnvironment": "macOS 27 arm64; Python 3.13.5 at /opt/anaconda3/bin/python3",
   "ci": "NOT_RUN",
-  "nativeInstallation": "PASS",
+  "nativeInstallation": "NOT_RUN",
   "targetPlatformAcceptance": "NOT_RUN",
   "hostDiscovery": "NOT_RUN",
   "modelDispatch": "NOT_RUN",
@@ -17,5 +17,5 @@
   "published": false,
   "specificationChange": "openspec/changes/harden-designcraft-skill-workflows",
   "nativeEvidence": "evidence/native/designcraft-cli-0.2.1/native-evidence-summary.json",
-  "nativeAcceptance": "PARTIAL: isolated fixed CLI runtime; four-page create/edit/save/reopen/PDF and AV-04 title revision plus partial PDF/IDML/EPUB/HTML/XML export observations; IDML/EPUB app reopen, complete format loss review, Codex host/model routing, and release remain NOT_RUN"
+  "nativeAcceptance": "HISTORICAL_PARTIAL: fixed CLI native observations are preserved under evidence/native/designcraft-cli-0.2.1; current package native/host/creative/release acceptance remains NOT_RUN after business-validator addition."
 }
