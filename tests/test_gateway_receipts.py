@@ -130,6 +130,92 @@ class ReceiptContract(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'receipt_step_result_evidence_invalid'):
                 self.g.inspect_receipt(output/'receipt.json',DOMAIN)
 
+    def test_recovery_requires_matching_reopened_checkpoint_and_excludes_completed_and_failed_steps(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t);project=root/'saved.designcraft';project.write_bytes(b'saved project')
+            project_path=str(project.resolve());project_sha=hashlib.sha256(project.read_bytes()).hexdigest()
+            save_result={'path':project_path,'bytes':len(project.read_bytes())};save_result_sha=hashlib.sha256(json.dumps(save_result,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
+            command='file.saveAs'
+            original={'schemaVersion':2,'runId':'11111111-1111-4111-8111-111111111111','domain':'designcraft','status':'FAILED_OR_PARTIAL','terminationVerified':True,'automaticReplay':False,'completeAcceptance':False,
+                'savedProjectCheckpoint':{'status':'SAVED_REOPEN_REQUIRED','stepRef':'11111111-1111-4111-8111-111111111111:step:0','path':project_path,'bytes':len(project.read_bytes()),'sha256':project_sha,'resultSha256':save_result_sha},
+                'stdout':json.dumps({'completed':1,'failedIndex':1,'failedCommand':'file.exportText','error':'step failed','results':[save_result]}),
+                'stepResults':[{'index':0,'stepRef':'11111111-1111-4111-8111-111111111111:step:0','command':'file.saveAs','status':'STEP_COMPLETED_REVIEW_REQUIRED'},{'index':1,'stepRef':'11111111-1111-4111-8111-111111111111:step:1','command':'file.exportText','status':'STEP_FAILED_OR_PARTIAL','failureReason':'step failed'},{'index':2,'stepRef':'11111111-1111-4111-8111-111111111111:step:2','command':'document.inspect','status':'NOT_STARTED'}]}
+            inspected={'path':project_path,'dirty':False,'pageCount':1,'spreads':[{'items':[{'id':91,'kind':'text frame','name':'title','story':92}]}],'stories':[{'id':92,'name':'main'}]}
+            checkpoint={'schemaVersion':2,'runId':'22222222-2222-4222-8222-222222222222','domain':'designcraft','status':'NATIVE_EXIT_ZERO_REVIEW_REQUIRED','exitCode':0,'terminationVerified':True,'automaticReplay':False,'completeAcceptance':False,
+                'inputSha256':{project_path:project_sha},'inputAfterSha256':{project_path:project_sha},'stepReferences':[{'index':0,'command':'file.open'},{'index':1,'command':'document.inspect'}],
+                'stdout':json.dumps({'completed':2,'results':[{'index':1},inspected]})}
+            checkpoint_steps=[{'command':'file.open','params':{'path':project_path}},{'command':'document.inspect','params':{}}]
+            steps=[{'command':'file.saveAs','params':{'path':project_path}},{'command':'file.exportText','params':{'path':'/tmp/a.txt'}},{'command':'document.inspect','params':{}}]
+            result=self.g.build_recovery_plan(original,checkpoint,steps,checkpoint_steps)
+            self.assertEqual(result['status'],'RECOVERY_READY')
+            self.assertTrue(result['resumeAllowed'])
+            self.assertEqual(result['remainingPlan']['steps'],[steps[2]])
+            self.assertEqual(result['discoveredObjects'],[{'id':91,'kind':'text frame','name':'title','story':92},{'id':92,'kind':'story','name':'main'}])
+            self.assertFalse(result['automaticExecution'])
+            self.assertFalse(result['completeAcceptance'])
+            wrong_path_steps=[{'command':'file.open','params':{'path':str(root/'other.designcraft')}},{'command':'document.inspect','params':{}}]
+            self.assertEqual(self.g.build_recovery_plan(original,checkpoint,steps,wrong_path_steps)['status'],'RECOVERY_REJECTED')
+            checkpoint['inputAfterSha256'][project_path]='0'*64
+            mismatch=self.g.build_recovery_plan(original,checkpoint,steps,checkpoint_steps)
+            self.assertEqual(mismatch['status'],'RECOVERY_REJECTED')
+            self.assertFalse(mismatch['resumeAllowed'])
+            checkpoint['inputAfterSha256'][project_path]=project_sha
+            project.write_bytes(b'changed saved project')
+            self.assertEqual(self.g.build_recovery_plan(original,checkpoint,steps,checkpoint_steps)['status'],'RECOVERY_REJECTED')
+
+    def test_recovery_blocks_cross_session_step_references_and_missing_checkpoint(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t);project=root/'saved.designcraft';project.write_bytes(b'saved project')
+            path=str(project.resolve());sha=hashlib.sha256(project.read_bytes()).hexdigest()
+            save_result={'path':path,'bytes':len(project.read_bytes())};save_result_sha=hashlib.sha256(json.dumps(save_result,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
+            original={'schemaVersion':2,'runId':'11111111-1111-4111-8111-111111111111','domain':'designcraft','status':'FAILED_OR_PARTIAL','terminationVerified':True,'automaticReplay':False,
+                'savedProjectCheckpoint':{'status':'SAVED_REOPEN_REQUIRED','stepRef':'11111111-1111-4111-8111-111111111111:step:0','path':path,'bytes':len(project.read_bytes()),'sha256':sha,'resultSha256':save_result_sha},
+                'stdout':json.dumps({'completed':1,'failedIndex':1,'failedCommand':'file.exportText','error':'step failed','results':[save_result]}),
+                'stepResults':[{'index':0,'stepRef':'11111111-1111-4111-8111-111111111111:step:0','command':'file.saveAs','status':'STEP_COMPLETED_REVIEW_REQUIRED'},{'index':1,'stepRef':'11111111-1111-4111-8111-111111111111:step:1','command':'file.exportText','status':'STEP_FAILED_OR_PARTIAL','failureReason':'step failed'},{'index':2,'stepRef':'11111111-1111-4111-8111-111111111111:step:2','command':'story.setText','status':'NOT_STARTED'}]}
+            inspection={'path':path,'dirty':False,'pageCount':1,'spreads':[{'items':[{'id':91,'kind':'text frame','story':92}]}],'stories':[{'id':92,'name':'main'}]}
+            checkpoint={'schemaVersion':2,'runId':'22222222-2222-4222-8222-222222222222','domain':'designcraft','status':'NATIVE_EXIT_ZERO_REVIEW_REQUIRED','exitCode':0,'terminationVerified':True,'automaticReplay':False,
+                'inputSha256':{path:sha},'inputAfterSha256':{path:sha},'stepReferences':[{'command':'file.open'},{'command':'document.inspect'}],
+                'stdout':json.dumps({'completed':2,'results':[{'index':1},inspection]})}
+            checkpoint_steps=[{'command':'file.open','params':{'path':path}},{'command':'document.inspect','params':{}}]
+            dependent=[{'command':'file.saveAs','params':{'path':path}},{'command':'file.exportText','params':{}},{'command':'story.setText','params':{'storyRef':'step:0','text':'updated'}}]
+            blocked=self.g.build_recovery_plan(original,checkpoint,dependent,checkpoint_steps)
+            self.assertEqual(blocked['status'],'MANUAL_OBJECT_REBINDING_REQUIRED')
+            self.assertFalse(blocked['resumeAllowed'])
+            original.pop('savedProjectCheckpoint')
+            missing=self.g.build_recovery_plan(original,checkpoint,dependent,checkpoint_steps)
+            self.assertEqual(missing['status'],'RECOVERY_REJECTED')
+            self.assertFalse(missing['resumeAllowed'])
+
+    def test_completed_save_as_persists_checkpoint_as_reopen_required(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t);output=root/'output';project=root/'saved.designcraft'
+            steps=[{'command':'file.saveAs','params':{'path':str(project)}},{'command':'file.exportText','params':{'path':str(root/'text.txt')}}]
+            plan=self.plan(root,steps)
+            catalog=subprocess.CompletedProcess([],0,json.dumps([{'id':'file.saveAs'},{'id':'file.exportText'}]),'')
+            result_value={'path':str(project),'bytes':len(b'checkpoint content')}
+            def native(argv,**kwargs):
+                if '--result-file' not in argv:return catalog
+                project.write_bytes(b'checkpoint content')
+                return subprocess.CompletedProcess([],1,json.dumps({'completed':1,'error':'export failed','failedCommand':'file.exportText','failedIndex':1,'results':[result_value]}),'export failed')
+            result,count=self.invoke(['run',str(plan),'--output',str(output)],native)
+            self.assertEqual((result,count),(1,2))
+            receipt=json.loads((output/'receipt.json').read_text())
+            checkpoint=receipt['savedProjectCheckpoint']
+            self.assertEqual(checkpoint['status'],'SAVED_REOPEN_REQUIRED')
+            self.assertEqual(checkpoint['path'],str(project))
+            self.assertEqual(checkpoint['sha256'],hashlib.sha256(project.read_bytes()).hexdigest())
+            self.assertEqual(checkpoint['resultSha256'],hashlib.sha256(json.dumps(result_value,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest())
+            self.assertEqual(receipt['nativePlanPath'],str(output/'native-plan.json'))
+            self.assertEqual(self.g.inspect_receipt(output/'receipt.json',DOMAIN)['savedProjectCheckpoint'],checkpoint)
+
+    def test_malformed_native_partial_result_cannot_create_saved_checkpoint(self):
+        with tempfile.TemporaryDirectory() as t:
+            project=Path(t)/'saved.designcraft';project.write_bytes(b'checkpoint')
+            steps=[{'command':'file.saveAs','params':{'path':str(project)}},{'command':'file.exportText','params':{}}]
+            references=self.g.step_references('11111111-1111-4111-8111-111111111111',steps)
+            raw=json.dumps({'completed':1,'failedIndex':1,'results':[{'path':str(project),'bytes':len(project.read_bytes())}]})
+            self.assertIsNone(self.g.saved_project_checkpoint(steps,references,'FAILED_OR_PARTIAL',True,raw))
+
     def test_designcraft_source_is_copied_and_native_edits_leave_original_intact(self):
         with tempfile.TemporaryDirectory() as t:
             root=Path(t);source=root/'source-project';source.mkdir();original=source/'page.json';original.write_text('{"title":"before"}')

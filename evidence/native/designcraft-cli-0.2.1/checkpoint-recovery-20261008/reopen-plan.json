@@ -1,0 +1,1 @@
+{"domain": "designcraft", "steps": [{"command": "file.open", "params": {"path": "/tmp/designcraft-recovery-probe-20261008/verified/saved.designcraft"}}, {"command": "document.inspect", "params": {}}]}
