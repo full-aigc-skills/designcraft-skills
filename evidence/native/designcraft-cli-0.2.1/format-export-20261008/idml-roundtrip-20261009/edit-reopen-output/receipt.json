@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 2,
+  "runId": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb",
+  "domain": "designcraft",
+  "status": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+  "startedAt": "2026-10-08T16:41:19.179140+00:00",
+  "argv": [
+    "/opt/anaconda3/bin/python3",
+    "-I",
+    "-B",
+    "/Users/wandl/workspaces/workspace-agent-skills/full-aigc-skills-repositories/designcraft-skills/skills/designcraft-cli/scripts/cli.py",
+    "--runtime-home",
+    "/Users/wandl/.local/share/craft-runtimes",
+    "--result-file",
+    "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/edit-reopen-output/native-result.json",
+    "--",
+    "script",
+    "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/edit-reopen-output/native-plan.json"
+  ],
+  "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+  "planSha256": "5bd1d9e3c09ab0832dbce1cc431f26bff56cf9fc8c4b17915a7fd0f4c6323804",
+  "nativePlanPath": "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/edit-reopen-output/native-plan.json",
+  "nativePlanSha256": "f6803033368b1591899c5c86e7d2a7774f9bb6310b41752d1b678388dd1c2d2f",
+  "savedProjectCheckpoint": null,
+  "automaticReplay": false,
+  "completeAcceptance": false,
+  "inputSha256": {
+    "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/artifacts/edited-roundtrip.designcraft": "d42298045791aaff03b4f1c6934e0459be9a0a572f04f95efea08bcb5e2b3717"
+  },
+  "runtimeLockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+  "runtimeIdentity": {
+    "verificationStatus": "LOCKED_EXPECTATION",
+    "name": "designcraft-cli",
+    "version": "0.2.1",
+    "platform": "darwin-arm64",
+    "runtimeHome": "/Users/wandl/.local/share/craft-runtimes",
+    "expectedBinarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+    "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+    "lockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+  },
+  "skillResourceSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "cc003905fcc082cae36f4ffb90b5e995fce2b210cb523763711a58dd0e2c1afa",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  },
+  "directoryBaseline": {
+    "path": "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/edit-reopen-output",
+    "state": "ABSENT",
+    "sha256": null
+  },
+  "outputDirectoryBefore": "ABSENT",
+  "stepResultGranularity": "single-native-session",
+  "stepReferences": [
+    {
+      "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:0",
+      "index": 0,
+      "command": "file.open",
+      "paramsSha256": "b4a7dad02d77cd5a9d30e7f15bea3d55c0b85fccf2e99983c02554cb51d8ec89"
+    },
+    {
+      "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:1",
+      "index": 1,
+      "command": "story.get",
+      "paramsSha256": "54530fdc7e2e274338b379116674eeff61820598ca462000961bfe05f76042b4"
+    },
+    {
+      "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:2",
+      "index": 2,
+      "command": "document.inspect",
+      "paramsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:3",
+      "index": 3,
+      "command": "preflight.run",
+      "paramsSha256": "cd47c7b1fac04b95922f3a6359f8f7cb1cc5208d89810bd1b77df37d3070a8ad"
+    }
+  ],
+  "stepResults": [
+    {
+      "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:0",
+      "index": 0,
+      "command": "file.open",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:1",
+      "index": 1,
+      "command": "story.get",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:2",
+      "index": 2,
+      "command": "document.inspect",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:3",
+      "index": 3,
+      "command": "preflight.run",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    }
+  ],
+  "workingCopyPath": null,
+  "workingCopyBeforeSha256": null,
+  "reason": "native_exit",
+  "exitCode": 0,
+  "started": true,
+  "terminationVerified": true,
+  "descendantsTerminationVerified": false,
+  "nativeResultSchemaVersion": 1,
+  "finishedAt": "2026-10-08T16:41:19.303507+00:00",
+  "stdout": "{\n  \"completed\": 4,\n  \"results\": [\n    {\n      \"index\": 1\n    },\n    {\n      \"frames\": [\n        49\n      ],\n      \"id\": 21,\n      \"length\": 14,\n      \"lines\": 1,\n      \"overset\": null,\n      \"paragraphs\": 1,\n      \"text\": \"A Clearer Grid\"\n    },\n    {\n      \"activeLayer\": 1,\n      \"canUndo\": false,\n      \"characterStyles\": [\n        \"[None]\",\n        \"Emphasis\",\n        \"Accent\"\n      ],\n      \"dirty\": false,\n      \"layers\": [\n        {\n          \"color\": [\n            43,\n            155,\n            255\n          ],\n          \"id\": 1,\n          \"locked\": false,\n          \"name\": \"Layer 1\",\n          \"printable\": true,\n          \"showGuides\": true,\n          \"suppressWrapWhenHidden\": false,\n          \"visible\": true\n        }\n      ],\n      \"pageCount\": 4,\n      \"paragraphStyles\": [\n        \"[No Paragraph Style]\",\n        \"[Basic Paragraph]\",\n        \"Body\",\n        \"Footnote\",\n        \"Body First\",\n        \"Headline\",\n        \"Deck\",\n        \"Kicker\",\n        \"Pull Quote\",\n        \"Caption\",\n        \"Table Head\",\n        \"Table Body\",\n        \"Folio\",\n        \"Cover Title\",\n        \"Cover Deck\",\n        \"Revision Headline\"\n      ],\n      \"parents\": [\n        {\n          \"id\": 22,\n          \"items\": 4,\n          \"label\": \"A-Parent\"\n        }\n      ],\n      \"path\": \"/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/artifacts/edited-roundtrip.designcraft\",\n      \"selection\": {\n        \"content\": false,\n        \"items\": []\n      },\n      \"settings\": {\n        \"facingPages\": true,\n        \"intent\": \"print\",\n        \"pageHeight\": 792.0,\n        \"pageWidth\": 612.0\n      },\n      \"spreads\": [\n        {\n          \"index\": 0,\n          \"items\": [\n            {\n              \"asset\": 32,\n              \"bounds\": [\n                -9.0,\n                -9.0,\n                621.0,\n                801.0\n              ],\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 31,\n              \"kind\": \"<image>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                60.0,\n                570.0,\n                120.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 33,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 4,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                420.0,\n                570.0,\n                698.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 34,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 5,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                700.0,\n                420.0,\n                760.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 35,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 6,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            }\n          ],\n          \"pages\": [\n            {\n              \"bounds\": [\n                0.0,\n                0.0,\n                612.0,\n                792.0\n              ],\n              \"columns\": 3,\n              \"index\": 0,\n              \"margins\": {\n                \"bottom\": 54.0,\n                \"inside\": 54.0,\n                \"outside\": 42.0,\n                \"top\": 54.0\n              },\n              \"name\": \"1\",\n              \"parent\": null,\n              \"side\": \"right\"\n            }\n          ]\n        },\n        {\n          \"index\": 1,\n          \"items\": [\n            {\n              \"bounds\": [\n                42.0,\n                54.0,\n                558.0,\n                70.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 39,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 7,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                80.0,\n                558.0,\n                190.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 40,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 8,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                182.0,\n                492.0,\n                240.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 41,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 9,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"asset\": 43,\n              \"bounds\": [\n                42.0,\n                252.0,\n                558.0,\n                552.0\n              ],\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 42,\n              \"kind\": \"<image>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                558.0,\n                558.0,\n                572.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 44,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 10,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                584.0,\n                558.0,\n                738.0\n              ],\n              \"columns\": 2,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 45,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 11,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                666.0,\n                54.0,\n                1182.0,\n                708.0\n              ],\n              \"columns\": 3,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 46,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 11,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                844.0,\n                300.0,\n                1182.0,\n                420.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"Paper Warm\",\n              \"hidden\": false,\n              \"id\": 47,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 12,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                666.0,\n                720.0,\n                1182.0,\n                726.0\n              ],\n              \"fill\": \"Dusk Gradient\",\n              \"hidden\": false,\n              \"id\": 48,\n              \"kind\": \"<rectangle>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                666.0,\n                8.0,\n                1182.0,\n                52.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 49,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 21,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            }\n          ],\n          \"pages\": [\n            {\n              \"bounds\": [\n                0.0,\n                0.0,\n                612.0,\n                792.0\n              ],\n              \"columns\": 3,\n              \"index\": 1,\n              \"margins\": {\n                \"bottom\": 54.0,\n                \"inside\": 54.0,\n                \"outside\": 42.0,\n                \"top\": 54.0\n              },\n              \"name\": \"2\",\n              \"parent\": \"A-Parent\",\n              \"side\": \"left\"\n            },\n            {\n              \"bounds\": [\n                612.0,\n                0.0,\n                1224.0,\n                792.0\n              ],\n              \"columns\": 3,\n              \"index\": 2,\n              \"margins\": {\n                \"bottom\": 54.0,\n                \"inside\": 54.0,\n                \"outside\": 42.0,\n                \"top\": 54.0\n              },\n              \"name\": \"3\",\n              \"parent\": \"A-Parent\",\n              \"side\": \"right\"\n            }\n          ]\n        },\n        {\n          \"index\": 2,\n          \"items\": [\n            {\n              \"bounds\": [\n                -9.0,\n                -9.0,\n                621.0,\n                396.0\n              ],\n              \"fill\": \"Ink Plum\",\n              \"hidden\": false,\n              \"id\": 52,\n              \"kind\": \"<rectangle>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                80.0,\n                400.0,\n                100.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 53,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 13,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                110.0,\n                560.0,\n                330.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 54,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 14,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                440.0,\n                158.0,\n                556.0\n              ],\n              \"fill\": \"Ink Plum\",\n              \"hidden\": false,\n              \"id\": 55,\n              \"kind\": \"<ellipse>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                566.0,\n                158.0,\n                580.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 56,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 15,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                173.99999999999997,\n                440.0,\n                290.0,\n                556.0\n              ],\n              \"fill\": \"Sunset\",\n              \"hidden\": false,\n              \"id\": 57,\n              \"kind\": \"<ellipse>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                174.0,\n                566.0,\n                290.0,\n                580.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 58,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 16,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                306.0,\n                440.0,\n                422.0,\n                556.0\n              ],\n              \"fill\": \"C=100 M=0 Y=0 K=0\",\n              \"hidden\": false,\n              \"id\": 59,\n              \"kind\": \"<ellipse>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                306.0,\n                566.0,\n                422.0,\n                580.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 60,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 17,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                438.0,\n                440.0,\n                554.0,\n                556.0\n              ],\n              \"fill\": \"Paper Warm\",\n              \"hidden\": false,\n              \"id\": 61,\n              \"kind\": \"<ellipse>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"stroke\": {\n                \"swatch\": \"[Black]\",\n                \"weight\": 0.5\n              }\n            },\n            {\n              \"bounds\": [\n                438.0,\n                566.0,\n                554.0,\n                580.0\n              ],\n              \"columns\": 1,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 62,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 18,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            },\n            {\n              \"bounds\": [\n                42.0,\n                610.0,\n                570.0,\n                730.0\n              ],\n              \"columns\": 2,\n              \"fill\": \"[None]\",\n              \"hidden\": false,\n              \"id\": 63,\n              \"kind\": \"<text frame>\",\n              \"layer\": 1,\n              \"locked\": false,\n              \"name\": \"\",\n              \"story\": 19,\n              \"stroke\": {\n                \"swatch\": \"[None]\",\n                \"weight\": 1.0\n              }\n            }\n          ],\n          \"pages\": [\n            {\n              \"bounds\": [\n                0.0,\n                0.0,\n                612.0,\n                792.0\n              ],\n              \"columns\": 3,\n              \"index\": 3,\n              \"margins\": {\n                \"bottom\": 54.0,\n                \"inside\": 54.0,\n                \"outside\": 42.0,\n                \"top\": 54.0\n              },\n              \"name\": \"4\",\n              \"parent\": \"A-Parent\",\n              \"side\": \"left\"\n            }\n          ]\n        }\n      ],\n      \"stories\": [\n        {\n          \"frames\": [\n            25\n          ],\n          \"id\": 2,\n          \"length\": 18,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"  ·  QUARTERLY\"\n        },\n        {\n          \"frames\": [\n            26\n          ],\n          \"id\": 3,\n          \"length\": 21,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"SPRING ISSUE  ·  \"\n        },\n        {\n          \"frames\": [\n            33\n          ],\n          \"id\": 4,\n          \"length\": 28,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"THE SPRING ISSUE  ·  NO. 01\"\n        },\n        {\n          \"frames\": [\n            34\n          ],\n          \"id\": 5,\n          \"length\": 23,\n          \"lines\": 2,\n          \"overset\": false,\n          \"paragraphs\": 2,\n          \"preview\": \"The Quiet\\nArt of Layout\"\n        },\n        {\n          \"frames\": [\n            35\n          ],\n          \"id\": 6,\n          \"length\": 81,\n          \"lines\": 2,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"Grids, type and color: how great pages are made — and the tools that make them.\"\n        },\n        {\n          \"frames\": [\n            39\n          ],\n          \"id\": 7,\n          \"length\": 19,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"Feature  ·  Design\"\n        },\n        {\n          \"frames\": [\n            40\n          ],\n          \"id\": 8,\n          \"length\": 17,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"Notes on the Grid\"\n        },\n        {\n          \"frames\": [\n            41\n          ],\n          \"id\": 9,\n          \"length\": 126,\n          \"lines\": 2,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"A good layout is invisible. Here is what is going on underneath the page — from \"\n        },\n        {\n          \"frames\": [\n            44\n          ],\n          \"id\": 10,\n          \"length\": 80,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"Evening light over layered hills — generated entirely in code for this sample.\"\n        },\n        {\n          \"frames\": [\n            45,\n            46\n          ],\n          \"id\": 11,\n          \"length\": 5144,\n          \"lines\": 138,\n          \"overset\": false,\n          \"paragraphs\": 18,\n          \"preview\": \"Every page begins as an empty field of possibility. The grid arrives first: marg\"\n        },\n        {\n          \"frames\": [\n            47\n          ],\n          \"id\": 12,\n          \"length\": 60,\n          \"lines\": 2,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"“The best layouts disappear. What remains is the story.”\"\n        },\n        {\n          \"frames\": [\n            53\n          ],\n          \"id\": 13,\n          \"length\": 11,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"Coming next\"\n        },\n        {\n          \"frames\": [\n            54\n          ],\n          \"id\": 14,\n          \"length\": 18,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"Color, Ink & Paper\"\n        },\n        {\n          \"frames\": [\n            56\n          ],\n          \"id\": 15,\n          \"length\": 8,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"Ink Plum\"\n        },\n        {\n          \"frames\": [\n            58\n          ],\n          \"id\": 16,\n          \"length\": 6,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"Sunset\"\n        },\n        {\n          \"frames\": [\n            60\n          ],\n          \"id\": 17,\n          \"length\": 17,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"C=100 M=0 Y=0 K=0\"\n        },\n        {\n          \"frames\": [\n            62\n          ],\n          \"id\": 18,\n          \"length\": 10,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"Paper Warm\"\n        },\n        {\n          \"frames\": [\n            63\n          ],\n          \"id\": 19,\n          \"length\": 337,\n          \"lines\": 8,\n          \"overset\": false,\n          \"paragraphs\": 3,\n          \"preview\": \"Every page begins as an empty field of possibility. The grid arrives first: marg\"\n        },\n        {\n          \"frames\": [\n            49\n          ],\n          \"id\": 21,\n          \"length\": 14,\n          \"lines\": 1,\n          \"overset\": false,\n          \"paragraphs\": 1,\n          \"preview\": \"A Clearer Grid\"\n        }\n      ],\n      \"swatches\": [\n        \"[None]\",\n        \"[Registration]\",\n        \"[Paper]\",\n        \"[Black]\",\n        \"C=100 M=0 Y=0 K=0\",\n        \"C=0 M=100 Y=0 K=0\",\n        \"C=0 M=0 Y=100 K=0\",\n        \"C=0 M=100 Y=100 K=0\",\n        \"C=100 M=0 Y=100 K=0\",\n        \"C=100 M=100 Y=0 K=0\",\n        \"C=15 M=100 Y=100 K=0\",\n        \"C=75 M=5 Y=100 K=0\",\n        \"C=100 M=90 Y=10 K=0\",\n        \"Ink Plum\",\n        \"Sunset\",\n        \"Paper Warm\",\n        \"Dusk Gradient\"\n      ],\n      \"title\": \"edited-roundtrip.designcraft\",\n      \"tool\": \"selection\"\n    },\n    {\n      \"errors\": 0,\n      \"issues\": [],\n      \"warnings\": 0\n    }\n  ]\n}\n",
+  "stderr": "",
+  "businessAssessment": {
+    "contractVersion": "designcraft-business-assessment/v1",
+    "status": "PASS",
+    "steps": [
+      {
+        "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:0",
+        "index": 0,
+        "command": "file.open",
+        "status": "NOT_CLASSIFIED",
+        "reason": "no_business_result_contract"
+      },
+      {
+        "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:1",
+        "index": 1,
+        "command": "story.get",
+        "status": "NOT_CLASSIFIED",
+        "reason": "no_business_result_contract"
+      },
+      {
+        "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:2",
+        "index": 2,
+        "command": "document.inspect",
+        "status": "NOT_CLASSIFIED",
+        "reason": "no_business_result_contract"
+      },
+      {
+        "stepRef": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb:step:3",
+        "index": 3,
+        "command": "preflight.run",
+        "status": "PASS",
+        "reason": "preflight_clean",
+        "issueCounts": {
+          "errors": 0,
+          "warnings": 0
+        },
+        "issues": []
+      }
+    ]
+  },
+  "inputAfterSha256": {
+    "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/artifacts/edited-roundtrip.designcraft": "d42298045791aaff03b4f1c6934e0459be9a0a572f04f95efea08bcb5e2b3717"
+  },
+  "skillResourceAfterSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "cc003905fcc082cae36f4ffb90b5e995fce2b210cb523763711a58dd0e2c1afa",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  }
+}

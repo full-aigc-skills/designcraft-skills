@@ -1,0 +1,41 @@
+{
+  "scope": "imported IDML editable story save and fresh native reopen",
+  "changedStoryIds": [
+    "21"
+  ],
+  "beforeText": "A Better Grid",
+  "afterText": "A Clearer Grid",
+  "reopenRunId": "ecd16dd7-be17-4ca0-8d0b-46fe8277a9eb",
+  "reopenNativeStatus": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+  "inputPreserved": true,
+  "pdfComparison": [
+    {
+      "page": 1,
+      "maximumChannelDifference": 0,
+      "changedChannels": 0
+    },
+    {
+      "page": 2,
+      "maximumChannelDifference": 0,
+      "changedChannels": 0
+    },
+    {
+      "page": 3,
+      "maximumChannelDifference": 224,
+      "changedChannels": 3805
+    },
+    {
+      "page": 4,
+      "maximumChannelDifference": 0,
+      "changedChannels": 0
+    }
+  ],
+  "renderer": {
+    "library": "PyMuPDF",
+    "version": "1.27.1",
+    "scale": 1.25,
+    "alpha": false,
+    "color": "RGB"
+  },
+  "completeAcceptance": false
+}

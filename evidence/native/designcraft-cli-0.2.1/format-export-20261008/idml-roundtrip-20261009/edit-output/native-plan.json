@@ -1,0 +1,6 @@
+{"command": "file.open", "params": {"path": "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/artifacts/roundtrip.designcraft"}}
+{"command": "story.setText", "params": {"story": 21, "text": "A Clearer Grid"}}
+{"command": "story.get", "params": {"story": 21}}
+{"command": "preflight.run", "params": {"minPpi": 150}}
+{"command": "file.saveAs", "params": {"path": "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/artifacts/edited-roundtrip.designcraft"}}
+{"command": "file.exportPdf", "params": {"path": "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/artifacts/edited-roundtrip.pdf", "standard": "none"}}

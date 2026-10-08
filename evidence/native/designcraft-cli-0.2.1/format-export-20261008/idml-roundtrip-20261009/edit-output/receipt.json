@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 2,
+  "runId": "517c7e53-7c60-4653-9f65-d636c7c61202",
+  "domain": "designcraft",
+  "status": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+  "startedAt": "2026-10-08T16:36:12.751314+00:00",
+  "argv": [
+    "/opt/anaconda3/bin/python3",
+    "-I",
+    "-B",
+    "/Users/wandl/workspaces/workspace-agent-skills/full-aigc-skills-repositories/designcraft-skills/skills/designcraft-cli/scripts/cli.py",
+    "--runtime-home",
+    "/Users/wandl/.local/share/craft-runtimes",
+    "--result-file",
+    "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/edit-output/native-result.json",
+    "--",
+    "script",
+    "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/edit-output/native-plan.json"
+  ],
+  "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+  "planSha256": "5aecf537c8c6d6ce3b94f5f3ae71a4ef7075775c0f30e330ae8539496195e81a",
+  "nativePlanPath": "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/edit-output/native-plan.json",
+  "nativePlanSha256": "96a6bfd7d5ddd9549de3bf244d3117255623b5ab9a1298ef83f21a97b6f3c6bb",
+  "savedProjectCheckpoint": {
+    "status": "SAVED_REOPEN_REQUIRED",
+    "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:4",
+    "path": "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/artifacts/edited-roundtrip.designcraft",
+    "bytes": 832476,
+    "sha256": "d42298045791aaff03b4f1c6934e0459be9a0a572f04f95efea08bcb5e2b3717",
+    "resultSha256": "a87213fda19e9960a6cde2cb5829122989d5388d445574dd1ba8c3568d6b2ea4"
+  },
+  "automaticReplay": false,
+  "completeAcceptance": false,
+  "inputSha256": {
+    "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/artifacts/roundtrip.designcraft": "3b677be3a31c6c2cae18892161b388d5afdc72bc26f5da4147225aba99f3e847"
+  },
+  "runtimeLockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+  "runtimeIdentity": {
+    "verificationStatus": "LOCKED_EXPECTATION",
+    "name": "designcraft-cli",
+    "version": "0.2.1",
+    "platform": "darwin-arm64",
+    "runtimeHome": "/Users/wandl/.local/share/craft-runtimes",
+    "expectedBinarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+    "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+    "lockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+  },
+  "skillResourceSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "cc003905fcc082cae36f4ffb90b5e995fce2b210cb523763711a58dd0e2c1afa",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  },
+  "directoryBaseline": {
+    "path": "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/edit-output",
+    "state": "ABSENT",
+    "sha256": null
+  },
+  "outputDirectoryBefore": "ABSENT",
+  "stepResultGranularity": "single-native-session",
+  "stepReferences": [
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:0",
+      "index": 0,
+      "command": "file.open",
+      "paramsSha256": "5aacef83652d944ef8634907ac1e59bfd9e3701e8fd75355b0452e71e0422b72"
+    },
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:1",
+      "index": 1,
+      "command": "story.setText",
+      "paramsSha256": "9f614be50d2024f29e64372f6a1d9fbf0ed2a3e2856602557db99556f242e3fb"
+    },
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:2",
+      "index": 2,
+      "command": "story.get",
+      "paramsSha256": "54530fdc7e2e274338b379116674eeff61820598ca462000961bfe05f76042b4"
+    },
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:3",
+      "index": 3,
+      "command": "preflight.run",
+      "paramsSha256": "cd47c7b1fac04b95922f3a6359f8f7cb1cc5208d89810bd1b77df37d3070a8ad"
+    },
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:4",
+      "index": 4,
+      "command": "file.saveAs",
+      "paramsSha256": "b4a7dad02d77cd5a9d30e7f15bea3d55c0b85fccf2e99983c02554cb51d8ec89"
+    },
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:5",
+      "index": 5,
+      "command": "file.exportPdf",
+      "paramsSha256": "94a2f07ce935ef57b27e490828134c3629ca71e077c310d27255a0f1a8086a6c"
+    }
+  ],
+  "stepResults": [
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:0",
+      "index": 0,
+      "command": "file.open",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:1",
+      "index": 1,
+      "command": "story.setText",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:2",
+      "index": 2,
+      "command": "story.get",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:3",
+      "index": 3,
+      "command": "preflight.run",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:4",
+      "index": 4,
+      "command": "file.saveAs",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:5",
+      "index": 5,
+      "command": "file.exportPdf",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    }
+  ],
+  "workingCopyPath": null,
+  "workingCopyBeforeSha256": null,
+  "reason": "native_exit",
+  "exitCode": 0,
+  "started": true,
+  "terminationVerified": true,
+  "descendantsTerminationVerified": false,
+  "nativeResultSchemaVersion": 1,
+  "finishedAt": "2026-10-08T16:36:12.969068+00:00",
+  "stdout": "{\n  \"completed\": 6,\n  \"results\": [\n    {\n      \"index\": 1\n    },\n    null,\n    {\n      \"frames\": [\n        49\n      ],\n      \"id\": 21,\n      \"length\": 14,\n      \"lines\": 1,\n      \"overset\": null,\n      \"paragraphs\": 1,\n      \"text\": \"A Clearer Grid\"\n    },\n    {\n      \"errors\": 0,\n      \"issues\": [],\n      \"warnings\": 0\n    },\n    {\n      \"bytes\": 832476,\n      \"path\": \"/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/artifacts/edited-roundtrip.designcraft\"\n    },\n    {\n      \"bytes\": 552489,\n      \"pages\": 4,\n      \"path\": \"/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/artifacts/edited-roundtrip.pdf\",\n      \"warnings\": []\n    }\n  ]\n}\n",
+  "stderr": "",
+  "businessAssessment": {
+    "contractVersion": "designcraft-business-assessment/v1",
+    "status": "PASS",
+    "steps": [
+      {
+        "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:0",
+        "index": 0,
+        "command": "file.open",
+        "status": "NOT_CLASSIFIED",
+        "reason": "no_business_result_contract"
+      },
+      {
+        "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:1",
+        "index": 1,
+        "command": "story.setText",
+        "status": "NOT_CLASSIFIED",
+        "reason": "no_business_result_contract"
+      },
+      {
+        "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:2",
+        "index": 2,
+        "command": "story.get",
+        "status": "NOT_CLASSIFIED",
+        "reason": "no_business_result_contract"
+      },
+      {
+        "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:3",
+        "index": 3,
+        "command": "preflight.run",
+        "status": "PASS",
+        "reason": "preflight_clean",
+        "issueCounts": {
+          "errors": 0,
+          "warnings": 0
+        },
+        "issues": []
+      },
+      {
+        "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:4",
+        "index": 4,
+        "command": "file.saveAs",
+        "status": "NOT_CLASSIFIED",
+        "reason": "no_business_result_contract"
+      },
+      {
+        "stepRef": "517c7e53-7c60-4653-9f65-d636c7c61202:step:5",
+        "index": 5,
+        "command": "file.exportPdf",
+        "status": "PASS",
+        "reason": "pdf_export_recorded"
+      }
+    ]
+  },
+  "inputAfterSha256": {
+    "/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/designcraft-idml-roundtrip-20261009-yrz0ue25/artifacts/roundtrip.designcraft": "3b677be3a31c6c2cae18892161b388d5afdc72bc26f5da4147225aba99f3e847"
+  },
+  "skillResourceAfterSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "cc003905fcc082cae36f4ffb90b5e995fce2b210cb523763711a58dd0e2c1afa",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  }
+}

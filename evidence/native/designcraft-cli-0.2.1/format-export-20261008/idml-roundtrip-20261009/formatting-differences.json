@@ -1,0 +1,663 @@
+{
+  "plainStoryTextMultisetEqual": true,
+  "storyFormattingDifferences": [
+    {
+      "originalStoryId": 62,
+      "roundtripStoryId": 19,
+      "textPreview": "Every page begins as an empty field of possibility. The grid",
+      "changes": [
+        {
+          "path": "$.paras[1].table",
+          "before": 63,
+          "after": 20
+        }
+      ]
+    }
+  ],
+  "styleDifferences": [
+    {
+      "path": "$.object[2].stroke.weight",
+      "before": 1.0,
+      "after": 0.0
+    },
+    {
+      "path": "$.paragraph[0].chars.baselineShift",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.capitalization",
+      "before": null,
+      "after": "normal",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.digits",
+      "before": null,
+      "after": "default",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.fill",
+      "before": null,
+      "after": "[Black]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.fillTint",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.fontFamily",
+      "before": null,
+      "after": "Source Serif 4",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.fontStyle",
+      "before": null,
+      "after": "Regular",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.hScale",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.kenten",
+      "before": null,
+      "after": false,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.kerning",
+      "before": null,
+      "after": {
+        "kind": "metrics"
+      },
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.language",
+      "before": null,
+      "after": "English: USA",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.leading",
+      "before": null,
+      "after": {
+        "kind": "auto"
+      },
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.ligatures",
+      "before": null,
+      "after": true,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.noBreak",
+      "before": null,
+      "after": false,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.otfFeatures",
+      "before": null,
+      "after": [],
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.position",
+      "before": null,
+      "after": "normal",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.size",
+      "before": null,
+      "after": 12.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.skew",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.strikethrough",
+      "before": null,
+      "after": false,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.strikethroughTint",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.stroke",
+      "before": null,
+      "after": "[None]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.strokeTint",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.strokeWeight",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.tateChuYoko",
+      "before": null,
+      "after": false,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.tracking",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.underline",
+      "before": null,
+      "after": false,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.underlineTint",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].chars.vScale",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.align",
+      "before": null,
+      "after": "left",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.autoLeading",
+      "before": null,
+      "after": 1.2,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.balanceRagged",
+      "before": null,
+      "after": false,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.borderColor",
+      "before": null,
+      "after": "[Black]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.borderOffsets",
+      "before": null,
+      "after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.borderOn",
+      "before": null,
+      "after": false,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.borderTint",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.borderWeights",
+      "before": null,
+      "after": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.composer",
+      "before": null,
+      "after": "paragraph",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.direction",
+      "before": null,
+      "after": "leftToRight",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.dropCapChars",
+      "before": null,
+      "after": 0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.dropCapLines",
+      "before": null,
+      "after": 0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.firstLineIndent",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.glyphScaleDesired",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.glyphScaleMax",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.glyphScaleMin",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.grepStyles",
+      "before": null,
+      "after": [],
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.gridAlign",
+      "before": null,
+      "after": "none",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.hyphAcrossColumn",
+      "before": null,
+      "after": true,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.hyphAfterFirst",
+      "before": null,
+      "after": 2,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.hyphBeforeLast",
+      "before": null,
+      "after": 2,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.hyphCapitalized",
+      "before": null,
+      "after": true,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.hyphLastWord",
+      "before": null,
+      "after": true,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.hyphLimit",
+      "before": null,
+      "after": 3,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.hyphMinWord",
+      "before": null,
+      "after": 5,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.hyphWeight",
+      "before": null,
+      "after": 0.5,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.hyphZone",
+      "before": null,
+      "after": 36.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.hyphenate",
+      "before": null,
+      "after": true,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.keepAllLines",
+      "before": null,
+      "after": true,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.keepFirst",
+      "before": null,
+      "after": 2,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.keepLast",
+      "before": null,
+      "after": 2,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.keepLinesTogether",
+      "before": null,
+      "after": false,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.keepWithNext",
+      "before": null,
+      "after": 0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.lastLineIndent",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.leftIndent",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.letterSpaceDesired",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.letterSpaceMax",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.letterSpaceMin",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.listName",
+      "before": null,
+      "after": "",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.listType",
+      "before": null,
+      "after": "none",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.nestedLineStyles",
+      "before": null,
+      "after": [],
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.nestedStyles",
+      "before": null,
+      "after": [],
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.rightIndent",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.ruleAbove",
+      "before": null,
+      "after": {
+        "on": false,
+        "weight": 1.0,
+        "color": "[Black]",
+        "tint": 1.0,
+        "columnWidth": true,
+        "offset": 0.0,
+        "leftIndent": 0.0,
+        "rightIndent": 0.0
+      },
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.ruleBelow",
+      "before": null,
+      "after": {
+        "on": false,
+        "weight": 1.0,
+        "color": "[Black]",
+        "tint": 1.0,
+        "columnWidth": true,
+        "offset": 0.0,
+        "leftIndent": 0.0,
+        "rightIndent": 0.0
+      },
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.shadingColor",
+      "before": null,
+      "after": "[Black]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.shadingOffsets",
+      "before": null,
+      "after": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.shadingOn",
+      "before": null,
+      "after": false,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.shadingTint",
+      "before": null,
+      "after": 0.2,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.singleWordJustify",
+      "before": null,
+      "after": "fullyJustified",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.spaceAfter",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.spaceBefore",
+      "before": null,
+      "after": 0.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.spanColumns",
+      "before": null,
+      "after": {
+        "kind": "single"
+      },
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.startAt",
+      "before": null,
+      "after": null,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.startParagraph",
+      "before": null,
+      "after": "anywhere",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.tabs",
+      "before": null,
+      "after": [],
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.wordSpaceDesired",
+      "before": null,
+      "after": 1.0,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.wordSpaceMax",
+      "before": null,
+      "after": 1.33,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[0].para.wordSpaceMin",
+      "before": null,
+      "after": 0.8,
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[1].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[1].nextStyle",
+      "before": "[Basic Paragraph]",
+      "after": null,
+      "missingIn": "after"
+    },
+    {
+      "path": "$.paragraph[5].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[6].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[7].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[8].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[9].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[10].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[11].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[12].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[13].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[14].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    },
+    {
+      "path": "$.paragraph[15].basedOn",
+      "before": null,
+      "after": "[No Paragraph Style]",
+      "missingIn": "before"
+    }
+  ]
+}

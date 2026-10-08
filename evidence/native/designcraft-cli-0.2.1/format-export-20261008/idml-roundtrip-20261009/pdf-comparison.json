@@ -1,0 +1,42 @@
+[
+  {
+    "page": 1,
+    "pixelWidth": 765,
+    "pixelHeight": 990,
+    "maximumChannelDifference": 0,
+    "meanChannelDifference": 0.0,
+    "pixelsWithChannelDifferenceAbove3": 0,
+    "totalPixels": 757350,
+    "normalizedTextEqual": true
+  },
+  {
+    "page": 2,
+    "pixelWidth": 765,
+    "pixelHeight": 990,
+    "maximumChannelDifference": 0,
+    "meanChannelDifference": 0.0,
+    "pixelsWithChannelDifferenceAbove3": 0,
+    "totalPixels": 757350,
+    "normalizedTextEqual": true
+  },
+  {
+    "page": 3,
+    "pixelWidth": 765,
+    "pixelHeight": 990,
+    "maximumChannelDifference": 0,
+    "meanChannelDifference": 0.0,
+    "pixelsWithChannelDifferenceAbove3": 0,
+    "totalPixels": 757350,
+    "normalizedTextEqual": true
+  },
+  {
+    "page": 4,
+    "pixelWidth": 765,
+    "pixelHeight": 990,
+    "maximumChannelDifference": 0,
+    "meanChannelDifference": 0.0,
+    "pixelsWithChannelDifferenceAbove3": 0,
+    "totalPixels": 757350,
+    "normalizedTextEqual": true
+  }
+]
