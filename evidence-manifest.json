@@ -40,8 +40,8 @@
       "id": "offline-tests",
       "layer": "offline-tests",
       "status": "PASS",
-      "runId": "47dcb48f-1e04-42f7-a103-04e448fb6dc8",
-      "observedAt": "2026-10-08T11:11:04.115430+00:00",
+      "runId": "bda405bf-488c-45ab-8a2b-5d805ec26bec",
+      "observedAt": "2026-10-08T11:22:21.867942+00:00",
       "environment": {
         "os": "Darwin",
         "machine": "arm64",
@@ -50,7 +50,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "e1d255787c6fbc08782593e268f54dc05a6086ade7db41439652a5503a603c3a",
+        "packageTreeSha256": "f4c4d9cbed454004dce50c22c1baf4d45b4fc086fa2197714437eae7e9bc303a",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d983d3ad2df27452501139d14d99e7aec8fc7cc54e3e1d8cae7961874c8eb2a0",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -93,6 +93,10 @@
           "sha256": "d0f2fc2bd9604594816fda92cc3e074c5a8b5c1e5105ba483e36a181857cbafb"
         },
         {
+          "path": "tests/test_revision_evidence.py",
+          "sha256": "20a90166c1dbfdc28dfbd21a3392deaf200af3f21bd2a228145e7ea8fb143163"
+        },
+        {
           "path": "tests/test_runtime_release_identity.py",
           "sha256": "0a874924a0b07a26ab7d805544dfeb89c936694db7d332d66fe90bd04f18a123"
         },
@@ -104,7 +108,7 @@
       "artifacts": [
         {
           "path": "evidence/current-offline-validation.json",
-          "sha256": "148f4c14663ded89c9528acf313baab3ea39c87fed641b4c3777f99d28bf5519"
+          "sha256": "4727eb33734aab9e0d21f3c3d748ef646fbdfdee7e0a1213d205c3e5df7b57b5"
         }
       ]
     },
@@ -112,8 +116,8 @@
       "id": "package-validation",
       "layer": "package-validation",
       "status": "PASS",
-      "runId": "47dcb48f-1e04-42f7-a103-04e448fb6dc8",
-      "observedAt": "2026-10-08T11:11:04.115430+00:00",
+      "runId": "bda405bf-488c-45ab-8a2b-5d805ec26bec",
+      "observedAt": "2026-10-08T11:22:21.867942+00:00",
       "environment": {
         "os": "Darwin",
         "machine": "arm64",
@@ -122,7 +126,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "e1d255787c6fbc08782593e268f54dc05a6086ade7db41439652a5503a603c3a",
+        "packageTreeSha256": "f4c4d9cbed454004dce50c22c1baf4d45b4fc086fa2197714437eae7e9bc303a",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d983d3ad2df27452501139d14d99e7aec8fc7cc54e3e1d8cae7961874c8eb2a0",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -152,7 +156,7 @@
       "artifacts": [
         {
           "path": "evidence/current-offline-validation.json",
-          "sha256": "148f4c14663ded89c9528acf313baab3ea39c87fed641b4c3777f99d28bf5519"
+          "sha256": "4727eb33734aab9e0d21f3c3d748ef646fbdfdee7e0a1213d205c3e5df7b57b5"
         }
       ]
     },
@@ -160,8 +164,8 @@
       "id": "research-source-inventory",
       "layer": "research-source-inventory",
       "status": "PASS",
-      "runId": "47dcb48f-1e04-42f7-a103-04e448fb6dc8",
-      "observedAt": "2026-10-08T11:11:04.115430+00:00",
+      "runId": "bda405bf-488c-45ab-8a2b-5d805ec26bec",
+      "observedAt": "2026-10-08T11:22:21.867942+00:00",
       "environment": {
         "os": "Darwin",
         "machine": "arm64",
@@ -170,7 +174,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "e1d255787c6fbc08782593e268f54dc05a6086ade7db41439652a5503a603c3a",
+        "packageTreeSha256": "f4c4d9cbed454004dce50c22c1baf4d45b4fc086fa2197714437eae7e9bc303a",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d983d3ad2df27452501139d14d99e7aec8fc7cc54e3e1d8cae7961874c8eb2a0",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -192,7 +196,7 @@
       "artifacts": [
         {
           "path": "evidence/current-offline-validation.json",
-          "sha256": "148f4c14663ded89c9528acf313baab3ea39c87fed641b4c3777f99d28bf5519"
+          "sha256": "4727eb33734aab9e0d21f3c3d748ef646fbdfdee7e0a1213d205c3e5df7b57b5"
         }
       ]
     }
