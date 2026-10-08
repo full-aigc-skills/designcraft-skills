@@ -20,9 +20,10 @@ class PackageContract(unittest.TestCase):
         document_description=re.search(r'^description:\s*(.+)$',document,re.M).group(1)
         self.assertIn('缺失大纲',use_description)
         self.assertIn('完成版式',use_description)
-        self.assertIn('已存在',document_description)
-        self.assertIn('新建空白文档',document_description)
+        self.assertIn('已保存',document_description)
         self.assertIn('不创建空白工程或新文档',document)
+        for default_trigger in ('大纲','素材制作','可编辑文档','新建空白文档'):
+            self.assertNotIn(default_trigger,document_description)
 
     def _validate_fixture(self, fixture):
         spec=importlib.util.spec_from_file_location('validator_fixture',fixture/'scripts/validate_package.py')

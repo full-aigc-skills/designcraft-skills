@@ -6,7 +6,7 @@
 
 ### Requirement: SK-01 六项技能职责与路由
 
-技能库 SHALL 保留现有六个技能名，以 designcraft-use 路由未指定操作的排版任务；CLI 维护公共契约，setup/document/layout/export 分别维护安装、工程、排版和导出流程。显式指定技能时直接交接；不得复制另一入口的参数事实源。
+技能库 SHALL 保留现有六个技能名，以 designcraft-use 路由未指定操作的排版任务；CLI 维护公共契约，setup/document/layout/export 分别维护安装、工程、排版和导出流程。技能描述只陈述本入口的正向触发范围，不把默认入口的触发词放在原子技能描述中作为反例；显式指定技能时直接交接；不得复制另一入口的参数事实源。
 
 #### Scenario: 显式导出请求
 - **WHEN** 用户指定从已有工程导出 PDF
