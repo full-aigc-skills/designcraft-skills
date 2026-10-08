@@ -237,8 +237,8 @@
       "id": "shared-contract-handoff",
       "layer": "compatibility",
       "status": "PASS",
-      "runId": "9dc9d7cc-83c4-469a-81c4-76245c3f5b82",
-      "observedAt": "2026-10-08T15:43:11.817721+00:00",
+      "runId": "678fbfaa-9116-414a-bf1c-3a41b500fb99",
+      "observedAt": "2026-10-08T15:44:57.846398+00:00",
       "environment": {
         "os": "Darwin",
         "machine": "arm64",
@@ -260,7 +260,7 @@
       "artifacts": [
         {
           "path": "evidence/plugin-handoff-20261008.json",
-          "sha256": "476858cd4e2b3068042567c6028291e8ed490d69db10334dc0c229ca56b1bc52"
+          "sha256": "485b08cd0ed34a94a3840c238036829542758c83cc31be7080195e0c7b7930a9"
         }
       ]
     }
