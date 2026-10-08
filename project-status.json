@@ -11,11 +11,13 @@
   "ci": "NOT_RUN",
   "nativeInstallation": "NOT_RUN",
   "targetPlatformAcceptance": "NOT_RUN",
-  "hostDiscovery": "NOT_RUN",
-  "modelDispatch": "NOT_RUN",
+  "hostDiscovery": "PASS",
+  "modelDispatch": "PASS",
   "creativeAcceptance": "NOT_RUN",
   "published": false,
   "specificationChange": "openspec/changes/harden-designcraft-skill-workflows",
   "nativeEvidence": "evidence/native/designcraft-cli-0.2.1/native-evidence-summary.json",
-  "nativeAcceptance": "HISTORICAL_PARTIAL: fixed CLI native observations are preserved under evidence/native/designcraft-cli-0.2.1; current package native/host/creative/release acceptance remains NOT_RUN after business-validator addition."
+  "nativeAcceptance": "HISTORICAL_PARTIAL: fixed CLI native observations remain under evidence/native/designcraft-cli-0.2.1; current host discovery and read-only model routing pass only for bundled Codex CLI 0.162.0-alpha.2 / gpt-6-astra on macOS arm64. Current native/creative/release acceptance remains NOT_RUN.",
+  "hostEvidence": "evidence/host/bundled-codex-discovery-20261008.json",
+  "modelDispatchEvidence": "evidence/host/bundled-codex-model-routing-20261008.json"
 }
