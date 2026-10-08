@@ -1,0 +1,15 @@
+{
+  "domain": "designcraft",
+  "steps": [
+    {
+      "command": "file.open",
+      "params": {
+        "path": "/private/tmp/designcraft-checkpoint-v1-20261008/saved.designcraft"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {}
+    }
+  ]
+}

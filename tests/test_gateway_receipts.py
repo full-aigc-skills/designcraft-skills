@@ -148,6 +148,9 @@ class ReceiptContract(unittest.TestCase):
             steps=[{'command':'file.saveAs','params':{'path':project_path}},{'command':'file.exportText','params':{'path':'/tmp/a.txt'}},{'command':'document.inspect','params':{}}]
             result=self.g.build_recovery_plan(original,checkpoint,steps,checkpoint_steps)
             self.assertEqual(result['status'],'RECOVERY_READY')
+            self.assertEqual(result['contractVersion'],'designcraft-checkpoint-recovery/v1')
+            self.assertEqual(result['originalRunId'],original['runId'])
+            self.assertEqual(result['reopenRunId'],checkpoint['runId'])
             self.assertTrue(result['resumeAllowed'])
             self.assertEqual(result['remainingPlan']['steps'],[steps[2]])
             self.assertEqual(result['discoveredObjects'],[{'id':91,'kind':'text frame','name':'title','story':92},{'id':92,'kind':'story','name':'main'}])

@@ -1,0 +1,27 @@
+{
+  "domain": "designcraft",
+  "steps": [
+    {
+      "command": "file.open",
+      "params": {
+        "path": "/Users/wandl/workspaces/workspace-agent-skills/full-aigc-skills-repositories/designcraft-skills/evidence/native/designcraft-cli-0.2.1/magazine.designcraft"
+      }
+    },
+    {
+      "command": "file.saveAs",
+      "params": {
+        "path": "/private/tmp/designcraft-checkpoint-v1-20261008/saved.designcraft"
+      }
+    },
+    {
+      "command": "file.exportText",
+      "params": {
+        "path": "/private/tmp/designcraft-checkpoint-v1-20261008/export.txt"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {}
+    }
+  ]
+}

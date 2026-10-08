@@ -451,8 +451,8 @@
       "id": "offline-tests",
       "layer": "offline-tests",
       "status": "PASS",
-      "runId": "138f4e5c-ad4d-4054-bbb7-f27eb7a52789",
-      "observedAt": "2026-10-08T13:11:14.245508+00:00",
+      "runId": "af660f73-6e6c-4995-9def-03b04efb0d9b",
+      "observedAt": "2026-10-08T13:21:53.427176+00:00",
       "environment": {
         "os": "Darwin",
         "machine": "arm64",
@@ -461,7 +461,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "1762543c448b1e0225eed1cdccfb6ea62579e054dbe4a720171bdeea4d57dc5a",
+        "packageTreeSha256": "9c65e771b84cb02bbc8636742f3b5e811a227506927aa96b7a468b54d7d9a0a1",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -485,7 +485,7 @@
         },
         {
           "path": "tests/test_gateway_receipts.py",
-          "sha256": "cf95c1036f5ceedf20f528e43f3d84854fbaf2015e6703879643e6a5026baad5"
+          "sha256": "a09fa4f24119e3c0d2e97a077e6fa00ea03d4a1da3280289448c020f5e3860ce"
         },
         {
           "path": "tests/test_native_result.py",
@@ -523,7 +523,7 @@
       "artifacts": [
         {
           "path": "evidence/current-offline-validation.json",
-          "sha256": "b6f6f07cdedd648807d811f1d44912c826b2168249d82dfe7011281a27416ccb"
+          "sha256": "3b3efe4d3008b57f73a07e71fc98aa1f26e7f4f12989c695d2b3385c812b8aae"
         }
       ]
     },
@@ -531,8 +531,8 @@
       "id": "package-validation",
       "layer": "package-validation",
       "status": "PASS",
-      "runId": "138f4e5c-ad4d-4054-bbb7-f27eb7a52789",
-      "observedAt": "2026-10-08T13:11:14.245508+00:00",
+      "runId": "af660f73-6e6c-4995-9def-03b04efb0d9b",
+      "observedAt": "2026-10-08T13:21:53.427176+00:00",
       "environment": {
         "os": "Darwin",
         "machine": "arm64",
@@ -541,7 +541,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "1762543c448b1e0225eed1cdccfb6ea62579e054dbe4a720171bdeea4d57dc5a",
+        "packageTreeSha256": "9c65e771b84cb02bbc8636742f3b5e811a227506927aa96b7a468b54d7d9a0a1",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -571,7 +571,7 @@
       "artifacts": [
         {
           "path": "evidence/current-offline-validation.json",
-          "sha256": "b6f6f07cdedd648807d811f1d44912c826b2168249d82dfe7011281a27416ccb"
+          "sha256": "3b3efe4d3008b57f73a07e71fc98aa1f26e7f4f12989c695d2b3385c812b8aae"
         }
       ]
     },
@@ -579,8 +579,8 @@
       "id": "research-source-inventory",
       "layer": "research-source-inventory",
       "status": "PASS",
-      "runId": "138f4e5c-ad4d-4054-bbb7-f27eb7a52789",
-      "observedAt": "2026-10-08T13:11:14.245508+00:00",
+      "runId": "af660f73-6e6c-4995-9def-03b04efb0d9b",
+      "observedAt": "2026-10-08T13:21:53.427176+00:00",
       "environment": {
         "os": "Darwin",
         "machine": "arm64",
@@ -589,7 +589,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "1762543c448b1e0225eed1cdccfb6ea62579e054dbe4a720171bdeea4d57dc5a",
+        "packageTreeSha256": "9c65e771b84cb02bbc8636742f3b5e811a227506927aa96b7a468b54d7d9a0a1",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -611,16 +611,16 @@
       "artifacts": [
         {
           "path": "evidence/current-offline-validation.json",
-          "sha256": "b6f6f07cdedd648807d811f1d44912c826b2168249d82dfe7011281a27416ccb"
+          "sha256": "3b3efe4d3008b57f73a07e71fc98aa1f26e7f4f12989c695d2b3385c812b8aae"
         }
       ]
     },
     {
-      "id": "native-runtime",
+      "id": "native-checkpoint-recovery",
       "layer": "native",
       "status": "PASS",
-      "runId": "4720cac8-8924-4a30-934c-b51a6bde2d04",
-      "observedAt": "2026-10-08T13:11:31.145133+00:00",
+      "runId": "6456fab6-f962-4deb-8c34-421b0568c3bb",
+      "observedAt": "2026-10-08T13:22:07.370734+00:00",
       "environment": {
         "os": "Darwin",
         "machine": "arm64",
@@ -629,7 +629,87 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "1762543c448b1e0225eed1cdccfb6ea62579e054dbe4a720171bdeea4d57dc5a",
+        "packageTreeSha256": "9c65e771b84cb02bbc8636742f3b5e811a227506927aa96b7a468b54d7d9a0a1",
+        "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
+        "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
+        "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
+        "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
+        "expectedNativeBinarySha256": [
+          "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
+        ]
+      },
+      "inputs": [
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/original-plan.json",
+          "sha256": "4180b7fad74fdd034ba505c58b1da12a2234fa979e6bff4eebdbea07a82e1384"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/original-receipt.json",
+          "sha256": "5f80932b9bcc662c4d48073223d50ad5f50f52a3f7c7c6f84f8f76e81bb3f137"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/recovery.json",
+          "sha256": "5302886c23e5bf0f01de61ab25311b736d3cf5a21f08f447212ec11927d3bb50"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/reopen-plan.json",
+          "sha256": "da7740fea6c21a27b7a5009bf6b2d9a84c2d11cf67b275b3df619821a7dc3b2e"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/reopen-receipt.json",
+          "sha256": "e1bd2aa33b4f2ff20f01656f360d82457dacd6449d2a078b7f6c7e4fd22f056e"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/saved.designcraft",
+          "sha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/original-plan.json",
+          "sha256": "4180b7fad74fdd034ba505c58b1da12a2234fa979e6bff4eebdbea07a82e1384"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/original-receipt.json",
+          "sha256": "5f80932b9bcc662c4d48073223d50ad5f50f52a3f7c7c6f84f8f76e81bb3f137"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/recovery.json",
+          "sha256": "5302886c23e5bf0f01de61ab25311b736d3cf5a21f08f447212ec11927d3bb50"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/reopen-plan.json",
+          "sha256": "da7740fea6c21a27b7a5009bf6b2d9a84c2d11cf67b275b3df619821a7dc3b2e"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/reopen-receipt.json",
+          "sha256": "e1bd2aa33b4f2ff20f01656f360d82457dacd6449d2a078b7f6c7e4fd22f056e"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/saved.designcraft",
+          "sha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-v1-20261008/summary.json",
+          "sha256": "f00156298aaaa7c8ad2ef738de0f36ea118df0b28e4aa1df761af722b47fd6b9"
+        }
+      ]
+    },
+    {
+      "id": "native-runtime",
+      "layer": "native",
+      "status": "PASS",
+      "runId": "05a6bf12-16e4-4403-aec9-8cbfac21dd7c",
+      "observedAt": "2026-10-08T13:22:07.370734+00:00",
+      "environment": {
+        "os": "Darwin",
+        "machine": "arm64",
+        "python": "3.13.5"
+      },
+      "bindings": {
+        "packageVersion": "0.1.0-dev.1",
+        "nativeVersion": "0.2.1",
+        "packageTreeSha256": "9c65e771b84cb02bbc8636742f3b5e811a227506927aa96b7a468b54d7d9a0a1",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -660,86 +740,6 @@
         {
           "path": "evidence/native/designcraft-cli-0.2.1/installation.json",
           "sha256": "764d66706a7fcfd1068e6306c4cb7e9c251c3589985cdabc13eb87af599927e6"
-        }
-      ]
-    },
-    {
-      "id": "native-checkpoint-recovery",
-      "layer": "native",
-      "status": "PASS",
-      "runId": "03d95ed0-54f1-41a0-8d58-53dd7c9afca4",
-      "observedAt": "2026-10-08T13:15:54.743230+00:00",
-      "environment": {
-        "os": "Darwin",
-        "machine": "arm64",
-        "python": "3.13.5"
-      },
-      "bindings": {
-        "packageVersion": "0.1.0-dev.1",
-        "nativeVersion": "0.2.1",
-        "packageTreeSha256": "1762543c448b1e0225eed1cdccfb6ea62579e054dbe4a720171bdeea4d57dc5a",
-        "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
-        "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
-        "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
-        "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
-        "expectedNativeBinarySha256": [
-          "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
-        ]
-      },
-      "inputs": [
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-plan.json",
-          "sha256": "8030f7f75efa1bbb6afb22cda3139a4a3bdd835526c9d21ebe9541010e8416ba"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-receipt.json",
-          "sha256": "86e23fbd8ed270261094acd3c8695378e52e4253355befcaabd3a2e74a001f41"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/recovery.json",
-          "sha256": "cb6e5d55196c91a22912c4999af06b1e009fc0d9d9fe74f7e9cd1e3a5c90321c"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-plan.json",
-          "sha256": "8fdc6ca59c3d17031673ec01cf872cc637fd098e15da811368668632f2b538d8"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-receipt.json",
-          "sha256": "332230ef490ba216696f71a60a28775148d746e02be5654b296a93d2c37361ea"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/saved.designcraft",
-          "sha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
-        }
-      ],
-      "artifacts": [
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-plan.json",
-          "sha256": "8030f7f75efa1bbb6afb22cda3139a4a3bdd835526c9d21ebe9541010e8416ba"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/original-receipt.json",
-          "sha256": "86e23fbd8ed270261094acd3c8695378e52e4253355befcaabd3a2e74a001f41"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/recovery.json",
-          "sha256": "cb6e5d55196c91a22912c4999af06b1e009fc0d9d9fe74f7e9cd1e3a5c90321c"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-plan.json",
-          "sha256": "8fdc6ca59c3d17031673ec01cf872cc637fd098e15da811368668632f2b538d8"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/reopen-receipt.json",
-          "sha256": "332230ef490ba216696f71a60a28775148d746e02be5654b296a93d2c37361ea"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/saved.designcraft",
-          "sha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/checkpoint-recovery-20261008/summary.json",
-          "sha256": "d1794e2d2c4eee5c654e92f3523f5e1b7ccd51013cf4da912d7a6115db706a71"
         }
       ]
     }

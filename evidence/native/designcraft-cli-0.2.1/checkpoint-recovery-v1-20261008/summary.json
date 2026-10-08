@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "designcraft-checkpoint-recovery/v1",
+  "status": "PASS",
+  "completeAcceptance": false,
+  "cliVersion": "0.2.1",
+  "binarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+  "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+  "originalRunId": "868918b0-5a9c-4e48-986d-af9af243a303",
+  "reopenRunId": "4662648e-305a-440f-8d37-a6f362ea28dc",
+  "originalStatus": "FAILED_OR_PARTIAL",
+  "originalStepStatuses": [
+    "STEP_COMPLETED_REVIEW_REQUIRED",
+    "STEP_COMPLETED_REVIEW_REQUIRED",
+    "STEP_FAILED_OR_PARTIAL",
+    "NOT_STARTED"
+  ],
+  "failedCommand": "file.exportText",
+  "failureReason": "command `file.exportText` is not available right now: edit text or select a text frame",
+  "savedProject": {
+    "path": "saved.designcraft",
+    "bytes": 831867,
+    "sha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6"
+  },
+  "reopenStatus": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+  "reopenedObjectCount": 45,
+  "recoveryStatus": "RECOVERY_READY",
+  "resumeAllowed": true,
+  "remainingPlan": {
+    "domain": "designcraft",
+    "steps": [
+      {
+        "command": "document.inspect",
+        "params": {}
+      }
+    ]
+  },
+  "automaticExecution": false,
+  "automaticReplay": false,
+  "originalRunTerminationVerified": true,
+  "reopenRunTerminationVerified": true,
+  "reopenedProjectDirty": false,
+  "reopenedProjectPageCount": 4,
+  "sourceOriginalProject": "evidence/native/designcraft-cli-0.2.1/magazine.designcraft",
+  "sourceOriginalSha256": "b7e34dab77d3f1fd21c22dc478bf295ae4ea49ac947a1783aade9e827a5197a6",
+  "result": "Only the originally NOT_STARTED document.inspect step was returned. Completed file.open/file.saveAs and failed file.exportText were excluded; no recovery command was executed."
+}
