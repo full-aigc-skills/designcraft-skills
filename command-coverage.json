@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "domain": "designcraft",
+  "nativeCatalogStatus": "NOT_RUN",
+  "researchSourceInventory": "research-command-inventory.json",
+  "gatewayActions": [
+    {"action": "list", "ownerSkill": "designcraft-cli", "validationStatus": "OFFLINE_TESTED"},
+    {"action": "describe", "ownerSkill": "designcraft-cli", "validationStatus": "OFFLINE_TESTED"},
+    {"action": "check", "ownerSkill": "designcraft-cli", "validationStatus": "OFFLINE_TESTED"},
+    {"action": "run", "ownerSkill": "designcraft-cli", "validationStatus": "OFFLINE_TESTED"},
+    {"action": "receipt", "ownerSkill": "designcraft-cli", "validationStatus": "OFFLINE_TESTED"}
+  ],
+  "nativeCommands": []
+}

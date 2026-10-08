@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "defaultSkill": "designcraft-use",
+  "priority": "an explicit single-purpose request selects its atomic skill; otherwise route output-oriented DesignCraft work to the default skill",
+  "routes": [
+    {
+      "skill": "designcraft-use",
+      "intent": "Create or coordinate a complete multi-page layout deliverable",
+      "examples": [
+        "Create a six-page product handout and save an editable project",
+        "Revise this publication and prepare a reviewable PDF"
+      ],
+      "sideEffects": "May install the pinned runtime and write only within the user-authorized work and output paths"
+    },
+    {
+      "skill": "designcraft-cli",
+      "intent": "Explicitly inspect or execute the native command interface",
+      "examples": [
+        "List the available DesignCraft commands",
+        "Describe the parameters of command file.new"
+      ],
+      "sideEffects": "list, describe, and check are queries; run may install the runtime and edit files"
+    },
+    {
+      "skill": "designcraft-cli-setup",
+      "intent": "Install or diagnose the pinned native runtime",
+      "examples": [
+        "Check why the DesignCraft runtime failed to install",
+        "Install the pinned DesignCraft CLI"
+      ],
+      "sideEffects": "Installation writes to the selected user runtime directory and requires authorization"
+    },
+    {
+      "skill": "designcraft-cli-document",
+      "intent": "Perform an explicit native project lifecycle operation",
+      "examples": [
+        "Open this DesignCraft project and save a copy",
+        "Reopen the saved project and verify its page count"
+      ],
+      "sideEffects": "Opening is read-oriented; saving or creating a project writes to the authorized destination"
+    },
+    {
+      "skill": "designcraft-cli-layout",
+      "intent": "Inspect or modify frames, text flow, or image placement",
+      "examples": [
+        "Adjust the text frame and link it to the next page",
+        "Place this image into the selected frame"
+      ],
+      "sideEffects": "Native layout commands may modify the project; preserve an authorized working copy"
+    },
+    {
+      "skill": "designcraft-cli-export",
+      "intent": "Export an existing project to a requested publication format",
+      "examples": [
+        "Export the saved project as a PDF",
+        "Create PNG previews from this existing project"
+      ],
+      "sideEffects": "Writes export files to the authorized destination; format fidelity needs separate inspection"
+    }
+  ],
+  "unrelatedExamples": [
+    "Explain the history of Swiss typography",
+    "Build a web dashboard unrelated to DesignCraft"
+  ]
+}

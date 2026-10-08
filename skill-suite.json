@@ -1,0 +1,14 @@
+{
+  "domain": "designcraft",
+  "version": "0.1.0-dev.1",
+  "nativeVersion": "0.2.1",
+  "skills": [
+    "designcraft-cli",
+    "designcraft-cli-document",
+    "designcraft-cli-export",
+    "designcraft-cli-layout",
+    "designcraft-cli-setup",
+    "designcraft-use"
+  ],
+  "sourceStatus": "local-unpublished-candidate"
+}

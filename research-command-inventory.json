@@ -1,0 +1,2487 @@
+{
+  "schemaVersion": 1,
+  "classification": "RESEARCH_SOURCE_ONLY",
+  "sourceProject": "research/designcraft",
+  "sourceRevision": "f4a4c9709b7c552800f15ba3d1f0f68dd75fa165",
+  "sourceEvidenceType": "STATIC_SOURCE_SCAN",
+  "sourceFiles": [
+    {
+      "path": "apps/designcraft-cli/src/main.rs",
+      "sha256": "db0fbcf6d8dbc208e8692a714bf61acf6c264b32ef141a087e06b408fbf4116e"
+    },
+    {
+      "path": "crates/engine/src/cmd/anchored.rs",
+      "sha256": "24ec3a42866ee35d50c70a25b0571cd5d17e282912ab783e71475d270e775654"
+    },
+    {
+      "path": "crates/engine/src/cmd/anchors.rs",
+      "sha256": "4c2708ec17feeacb7db5e65587675143508ab67083e72741b46ec77c00e9c6a1"
+    },
+    {
+      "path": "crates/engine/src/cmd/articles.rs",
+      "sha256": "e4a9b5e7ba19a33d1c127f7e038e9c95d6b9ea0201f79409f1f1848f532f564a"
+    },
+    {
+      "path": "crates/engine/src/cmd/book.rs",
+      "sha256": "72484f496aa45fd0685a58fa5790da465feb8cd9ca4b2f9e1f49e5238f268d4d"
+    },
+    {
+      "path": "crates/engine/src/cmd/buttons.rs",
+      "sha256": "750b0f7074f527970e4cd814a1295c61aa00b67a747a350a0c606c9132f2eaa6"
+    },
+    {
+      "path": "crates/engine/src/cmd/captions.rs",
+      "sha256": "3c22057b6f69cfb0fc42e6cbd32adaa9a57c7da519cffd342af469130c6c80d8"
+    },
+    {
+      "path": "crates/engine/src/cmd/changes.rs",
+      "sha256": "6ab9b37efaf53a266ddbe4a463c21c2628e8d9b4675b17190d7558a1f498a5be"
+    },
+    {
+      "path": "crates/engine/src/cmd/colorsettings.rs",
+      "sha256": "3026b9b63dc0cc23d91973cdb70998fb7029beaa3bbbdf4cadbddf68673061cf"
+    },
+    {
+      "path": "crates/engine/src/cmd/conditions.rs",
+      "sha256": "beacc7f093b9c6bea11ccfe9cca328edeb84e9df6506e7c14b76d6a863a7931e"
+    },
+    {
+      "path": "crates/engine/src/cmd/datamerge/fill.rs",
+      "sha256": "ebffded2935ebbe43709e0b40c24c0e4b825f70ad40031f61c5c00e61af75622"
+    },
+    {
+      "path": "crates/engine/src/cmd/datamerge/mod.rs",
+      "sha256": "85da42ba6c28f5f86334a733fdbb560660bec7fb47df4d300fc9ac126cce51bf"
+    },
+    {
+      "path": "crates/engine/src/cmd/datamerge/parse.rs",
+      "sha256": "b237d3e1755dc7ee510e636403fe760e73758faee73a60a6685ce918b9700d28"
+    },
+    {
+      "path": "crates/engine/src/cmd/datamerge/tests.rs",
+      "sha256": "3dcb3a33167146e0cad1a92faf28abb56e02512ee465be9eca1d84665339d806"
+    },
+    {
+      "path": "crates/engine/src/cmd/edit.rs",
+      "sha256": "ad2865df2a31fb6ddd8ff2ce372818422704389cbc96f4fa59b87f7fc66d67e2"
+    },
+    {
+      "path": "crates/engine/src/cmd/editorial.rs",
+      "sha256": "700cb9a6e9c49c97093253d684d2f67a9d30e75b3aa128bd6b5c38e1d948bf1c"
+    },
+    {
+      "path": "crates/engine/src/cmd/endnotes.rs",
+      "sha256": "6370f9aa7bcb6e45d023d99bf5cf728e1e1a434e2ebd176912dc15f1522d7209"
+    },
+    {
+      "path": "crates/engine/src/cmd/export.rs",
+      "sha256": "347268ef21a46a0a7d3d69852589289f732c67a0734e991b357c4fd3309b63d8"
+    },
+    {
+      "path": "crates/engine/src/cmd/file.rs",
+      "sha256": "da3861901ce5286823622704636dd8d81cc8bd51d0f47d872a214ecf975200df"
+    },
+    {
+      "path": "crates/engine/src/cmd/find.rs",
+      "sha256": "07a23ea5ffd4a9579e981b54b43fbab1c65e703e6126a67d08ff02253415a9d7"
+    },
+    {
+      "path": "crates/engine/src/cmd/fonts.rs",
+      "sha256": "2fb2f4bba1325a0c0e01d23e681402cf0ca41bce358d26d54bd56030e9b3240a"
+    },
+    {
+      "path": "crates/engine/src/cmd/guides.rs",
+      "sha256": "a7099fa0f8251959c706db7d8be0c7a1c38f588bf9770a5d0dcd3768a6b28f0d"
+    },
+    {
+      "path": "crates/engine/src/cmd/index.rs",
+      "sha256": "d15d72408e518b84a98accf687349a317ed7508632c57d73706ef98a6c0771f9"
+    },
+    {
+      "path": "crates/engine/src/cmd/inspect.rs",
+      "sha256": "32147dfacf6c756e93bdb185b7a57b71cba821fdcbd9a57269ffeca261ac5ba4"
+    },
+    {
+      "path": "crates/engine/src/cmd/interactive.rs",
+      "sha256": "905d83491afe81495260f0f05dcd59900e0e41be41491ffbde5f6f7b675d72ea"
+    },
+    {
+      "path": "crates/engine/src/cmd/interchange.rs",
+      "sha256": "6c3eb67e3aca8d2300a14c726029039f4e50f830acdb87069418d05774acc76e"
+    },
+    {
+      "path": "crates/engine/src/cmd/layout.rs",
+      "sha256": "6b1fa14e9be9db6a3809613c51f2d88f3e19961538686c0f30b3a4e4341f7f99"
+    },
+    {
+      "path": "crates/engine/src/cmd/library.rs",
+      "sha256": "8d48c0756fcfe12e0068ffd9907b858081af8b7c2bef943a58209b754ed42457"
+    },
+    {
+      "path": "crates/engine/src/cmd/linked.rs",
+      "sha256": "e1596d39dd04fdd9008065de1065a21e19ef79275603f7a9012b2617def2b682"
+    },
+    {
+      "path": "crates/engine/src/cmd/links.rs",
+      "sha256": "381de1079f10bc891fe88f76c7f9a4351b2a0b5451eedcf79c1444637d53e3c6"
+    },
+    {
+      "path": "crates/engine/src/cmd/liquid.rs",
+      "sha256": "c1cd53e7a493f0e54063635e637eba5b4c34a4146d26818084c95fbc2f930a6e"
+    },
+    {
+      "path": "crates/engine/src/cmd/lists.rs",
+      "sha256": "3ffac926ffb20baf8f603eb63673a2506eba7c51061257aca9d75e76db47530c"
+    },
+    {
+      "path": "crates/engine/src/cmd/mathexpr.rs",
+      "sha256": "8f995af1d4538ceb18d77cf16684a2480860c6fba116f817e4574507c3d5646f"
+    },
+    {
+      "path": "crates/engine/src/cmd/media.rs",
+      "sha256": "73ccf75f2780e40e47d1d9cce1a9f235825eb69d55b8dd5c9443baa1125d0e9a"
+    },
+    {
+      "path": "crates/engine/src/cmd/mod.rs",
+      "sha256": "e6e16b04a812f9dab3cc9964cef6e7e541fe091cc5b7220caff0e065ae48dd01"
+    },
+    {
+      "path": "crates/engine/src/cmd/notes.rs",
+      "sha256": "f001d8f091ad5fb69bff4c2e54fbf76c291e7d1fd785b44043bad25f641430e0"
+    },
+    {
+      "path": "crates/engine/src/cmd/object.rs",
+      "sha256": "954b3af8a37a7ec2646360fa8dc529cedda12c26fcb339f3f110c78e438f37a0"
+    },
+    {
+      "path": "crates/engine/src/cmd/overrides.rs",
+      "sha256": "8c7579a3d8ff1046f4a3b6ca25d1b0f771cce9b574ee3cf42ce488efaf917d06"
+    },
+    {
+      "path": "crates/engine/src/cmd/package.rs",
+      "sha256": "d14a123b44a22ae4830bf443536378e042c7aa07262654a6da269c28bb618418"
+    },
+    {
+      "path": "crates/engine/src/cmd/path_type.rs",
+      "sha256": "2db24c822a44c9866a126f9b9dd96b08969c68629dc7de8092c36d0aeac48c5d"
+    },
+    {
+      "path": "crates/engine/src/cmd/paths.rs",
+      "sha256": "bc2e22787fd13019be384d184dba6d7291553c80afe936da9d1d1742c5a5c481"
+    },
+    {
+      "path": "crates/engine/src/cmd/pdflayers.rs",
+      "sha256": "7848324b000b5d0b885db6015b2487dcc09a8e793713217d9e5ecf0cfbf252d1"
+    },
+    {
+      "path": "crates/engine/src/cmd/place_text.rs",
+      "sha256": "9f843a04de24464c0a2062df0070e69992d9307a3ecec9e356b05f4e73d56eef"
+    },
+    {
+      "path": "crates/engine/src/cmd/preflight.rs",
+      "sha256": "037f8c64dd25b5c3efc32e0eef80fd954a57cfd391e589fa7cd7a74d1aa68d10"
+    },
+    {
+      "path": "crates/engine/src/cmd/prefs.rs",
+      "sha256": "2a1833161c9fd33931eb042518d97a8df151f2e63ddc16adefa854054b3ffd26"
+    },
+    {
+      "path": "crates/engine/src/cmd/print.rs",
+      "sha256": "a6ba20025525a1821a8a9a284a1345118393b558c80cb73212b52457ebf03cd1"
+    },
+    {
+      "path": "crates/engine/src/cmd/qr.rs",
+      "sha256": "25202b6e5dfdb4de8a5f5ffdb0c4d82720f029431468537e5660b257583a579b"
+    },
+    {
+      "path": "crates/engine/src/cmd/scripts.rs",
+      "sha256": "135d2b8e262be6c09338b7408a5fd6fb20affca76e7663ff45bba32316685e12"
+    },
+    {
+      "path": "crates/engine/src/cmd/select.rs",
+      "sha256": "687a6ef5b5d7d8d0327a9d4097884fd1afb67806e634c6cff0000aa67f148529"
+    },
+    {
+      "path": "crates/engine/src/cmd/spelling.rs",
+      "sha256": "642e66ab32f9f7cfff5cf52874e403b19ef067250925ce798d55f499c691da89"
+    },
+    {
+      "path": "crates/engine/src/cmd/states.rs",
+      "sha256": "84611d8ebc575ea7f42edd3ca8c10698d1547839efe8ab9e9a55ca3d287259d9"
+    },
+    {
+      "path": "crates/engine/src/cmd/strokes.rs",
+      "sha256": "95f52f13b4dd114c7a95d9a9dd5cf4e65fb37ed56c958cb8c6f1d644fa39b3f6"
+    },
+    {
+      "path": "crates/engine/src/cmd/style.rs",
+      "sha256": "a22bf15cb1c2175466ccc8a8de7327549c1651bb445424b36e7ddca01d745b97"
+    },
+    {
+      "path": "crates/engine/src/cmd/table.rs",
+      "sha256": "a6f9c297374c5f2a64dcb3cd888d94c7c7c6f8f10c75d6ccbbcd74cc60bdae8e"
+    },
+    {
+      "path": "crates/engine/src/cmd/text.rs",
+      "sha256": "63d49533b7520ed52e9194eeb32a0391f2499b4ee411d30d31e3a9efee0a0acc"
+    },
+    {
+      "path": "crates/engine/src/cmd/toc.rs",
+      "sha256": "63dd8d9c9bc2262e50bb09f1d0307312d7051eab88c215e95c1515b67aaa6d6d"
+    },
+    {
+      "path": "crates/engine/src/cmd/transitions.rs",
+      "sha256": "5de565f41f65080f06d10627d778bbe4eb3e61b361310b00ce7d11e1e38c10da"
+    },
+    {
+      "path": "crates/engine/src/cmd/variables.rs",
+      "sha256": "e9ae39871473adbd0783c736875118aefac8aeed8fe7126ab15ebfd37567231f"
+    },
+    {
+      "path": "crates/engine/src/cmd/xml.rs",
+      "sha256": "43a52128c1f1ba6f3865354549e42b9be4241a77518fb6d349f7e02e81203718"
+    },
+    {
+      "path": "crates/engine/src/cmd/xref.rs",
+      "sha256": "d6f91ec638bbf198892ea485c2af202aff4f24d32ccd59c7566f4345b992dc95"
+    }
+  ],
+  "cliSubcommands": [
+    "--version",
+    "-V",
+    "version",
+    "run",
+    "commands",
+    "describe",
+    "script",
+    "app",
+    "mcp",
+    "perf",
+    "bench",
+    "links"
+  ],
+  "commandCount": 444,
+  "commands": [
+    {
+      "id": "anchored.insert",
+      "module": "anchored",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "anchored.options",
+      "module": "anchored",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "anchored.release",
+      "module": "anchored",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "anchored.list",
+      "module": "anchored",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "path.addAnchor",
+      "module": "anchors",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "path.deleteAnchor",
+      "module": "anchors",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "path.convertAnchor",
+      "module": "anchors",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "path.erase",
+      "module": "anchors",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "path.smooth",
+      "module": "anchors",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "article.list",
+      "module": "articles",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "article.new",
+      "module": "articles",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "article.add",
+      "module": "articles",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "article.remove",
+      "module": "articles",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "article.options",
+      "module": "articles",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "article.delete",
+      "module": "articles",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "book.new",
+      "module": "book",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "book.open",
+      "module": "book",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "book.close",
+      "module": "book",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "book.add",
+      "module": "book",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "book.remove",
+      "module": "book",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "book.styleSource",
+      "module": "book",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "book.list",
+      "module": "book",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "book.paginate",
+      "module": "book",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "book.syncStyles",
+      "module": "book",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "book.exportPdf",
+      "module": "book",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "button.set",
+      "module": "buttons",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "button.clear",
+      "module": "buttons",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "form.set",
+      "module": "buttons",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "form.clear",
+      "module": "buttons",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "form.list",
+      "module": "buttons",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "button.list",
+      "module": "buttons",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.caption",
+      "module": "captions",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "changes.track",
+      "module": "changes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "changes.list",
+      "module": "changes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "changes.accept",
+      "module": "changes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "changes.reject",
+      "module": "changes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "changes.acceptAll",
+      "module": "changes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "changes.rejectAll",
+      "module": "changes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "color.settings",
+      "module": "colorsettings",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "color.loadProfile",
+      "module": "colorsettings",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "color.convert",
+      "module": "colorsettings",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "condition.list",
+      "module": "conditions",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "condition.new",
+      "module": "conditions",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "condition.options",
+      "module": "conditions",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "condition.delete",
+      "module": "conditions",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "condition.apply",
+      "module": "conditions",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "data.source.select",
+      "module": "datamerge",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "data.source.update",
+      "module": "datamerge",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "data.source.remove",
+      "module": "datamerge",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "data.fields",
+      "module": "datamerge",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "data.placeholder.add",
+      "module": "datamerge",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "data.placeholder.remove",
+      "module": "datamerge",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "data.options",
+      "module": "datamerge",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "data.preview",
+      "module": "datamerge",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "data.preview.stop",
+      "module": "datamerge",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "data.merge",
+      "module": "datamerge",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.undo",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.redo",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "selection.set",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "selection.toggle",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.selectAll",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.deselectAll",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.clear",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.copy",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.cut",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.pasteWithoutFormatting",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.paste",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.pasteInto",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.pasteInPlace",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.duplicate",
+      "module": "edit",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "note.new",
+      "module": "editorial",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "note.edit",
+      "module": "editorial",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "note.delete",
+      "module": "editorial",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "note.convertToText",
+      "module": "editorial",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "note.list",
+      "module": "editorial",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "endnote.insert",
+      "module": "endnotes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "endnote.edit",
+      "module": "endnotes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "endnote.delete",
+      "module": "endnotes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "endnote.list",
+      "module": "endnotes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "endnote.options",
+      "module": "endnotes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.exportPdf",
+      "module": "export",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.exportEpub",
+      "module": "export",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.exportFixedEpub",
+      "module": "export",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.printBooklet",
+      "module": "export",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.exportHtml",
+      "module": "export",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.exportText",
+      "module": "export",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.new",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.newSample",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.presets",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.open",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.openBytes",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.save",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.saveAs",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.saveACopy",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.revert",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.recovery.list",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.recovery.save",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.recovery.open",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.serialize",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.close",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.activate",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "snippet.export",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "place.styles",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "snippet.place",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "place.load",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "place.drop",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.place",
+      "module": "file",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "find.objects",
+      "module": "find",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "find.changeObjects",
+      "module": "find",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "find.find",
+      "module": "find",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "find.change",
+      "module": "find",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "find.next",
+      "module": "find",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "font.list",
+      "module": "fonts",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "font.replace",
+      "module": "fonts",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "guide.add",
+      "module": "guides",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "guide.move",
+      "module": "guides",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "guide.delete",
+      "module": "guides",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "guide.deleteAll",
+      "module": "guides",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "guide.list",
+      "module": "guides",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.createGuides",
+      "module": "guides",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "index.addReference",
+      "module": "index",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "index.list",
+      "module": "index",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "index.generate",
+      "module": "index",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "index.update",
+      "module": "index",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "document.inspect",
+      "module": "inspect",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "app.links",
+      "module": "inspect",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "document.list",
+      "module": "inspect",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "tool.select",
+      "module": "inspect",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "tool.list",
+      "module": "inspect",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "document.history",
+      "module": "inspect",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "hyperlink.create",
+      "module": "interactive",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "hyperlink.delete",
+      "module": "interactive",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "hyperlink.list",
+      "module": "interactive",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "hyperlink.edit",
+      "module": "interactive",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "hyperlink.goToSource",
+      "module": "interactive",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "bookmark.rename",
+      "module": "interactive",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "bookmark.add",
+      "module": "interactive",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "bookmark.delete",
+      "module": "interactive",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "bookmark.list",
+      "module": "interactive",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.exportIdml",
+      "module": "interchange",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.openIdml",
+      "module": "interchange",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.pages.insert",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.rotateSpreadView",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.pages.delete",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.pages.move",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.pages.duplicateSpread",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.pages.applyParent",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.parents.new",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.parents.edit",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.marginsAndColumns",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.documentSetup",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.pages.toSpread",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.spreadShuffle",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.pageSize",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.section",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layer.move",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layer.selectItems",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layer.new",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layer.set",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layer.delete",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layer.merge",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layer.deleteUnused",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layer.others",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layer.activate",
+      "module": "layout",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "library.new",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "library.open",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "library.list",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "library.json",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "library.add",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "library.place",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "library.remove",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "conveyor.collect",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "conveyor.place",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "conveyor.list",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "conveyor.clear",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "library.close",
+      "module": "library",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "story.placeAndLink",
+      "module": "linked",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "story.links",
+      "module": "linked",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "story.updateLink",
+      "module": "linked",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "story.unlink",
+      "module": "linked",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "links.list",
+      "module": "links",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "links.relink",
+      "module": "links",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "links.relinkFolder",
+      "module": "links",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "links.update",
+      "module": "links",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "links.embed",
+      "module": "links",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "links.goTo",
+      "module": "links",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "liquid.pageRule",
+      "module": "liquid",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "liquid.object",
+      "module": "liquid",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "guide.liquid",
+      "module": "liquid",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.createAlternate",
+      "module": "liquid",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "list.define",
+      "module": "lists",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "list.delete",
+      "module": "lists",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "math.insert",
+      "module": "mathexpr",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "math.svg",
+      "module": "mathexpr",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "media.options",
+      "module": "media",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "media.get",
+      "module": "media",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "footnote.insert",
+      "module": "notes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "footnote.options",
+      "module": "notes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "footnote.list",
+      "module": "notes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "footnote.setText",
+      "module": "notes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "footnote.delete",
+      "module": "notes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "footnote.goToReference",
+      "module": "notes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "frame.create",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "line.create",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "transform.move",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "transform.resize",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "transform.rotate",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "transform.scale",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "transform.again",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "transform.clear",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "transform.shear",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.matchAttributes",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "transform.flip",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "transform.set",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "transform.info",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.arrange",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.bringToFront",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.bringForward",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.sendBackward",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.sendToBack",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.group",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.ungroup",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.lock",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.unlockAll",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.hide",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.showAll",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.setFlags",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.fill",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.stroke",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.opacity",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.dropShadow",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.innerShadow",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.outerGlow",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.exportOptions",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.innerGlow",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.bevel",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.satin",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.directionalFeather",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.feather",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.content",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.textFrameOptions",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.cornerOptions",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.textWrap",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.fit",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.fittingOptions",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.rename",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.stepAndRepeat",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "path.create",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "path.appendAnchor",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "path.close",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "path.moveAnchors",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.align",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.distribute",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "tool.polygonSettings",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "gap.move",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "frame.grid",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.clippingPath",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.primaryTextFrame",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.attributes",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.globalLight",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.label",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.altText",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.transparencyGroup",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.findByLabel",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.setLayer",
+      "module": "object",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.overrideParentItems",
+      "module": "overrides",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.removeOverrides",
+      "module": "overrides",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "layout.detachAll",
+      "module": "overrides",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.package",
+      "module": "package",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "links.copyTo",
+      "module": "package",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.onPath",
+      "module": "path_type",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.pathOptions",
+      "module": "path_type",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.makeCompoundPath",
+      "module": "paths",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.releaseCompoundPath",
+      "module": "paths",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.createOutlines",
+      "module": "paths",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.pathfinder",
+      "module": "paths",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.gradientFeather",
+      "module": "paths",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "path.split",
+      "module": "paths",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.pdfLayers",
+      "module": "pdflayers",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.layerOptions",
+      "module": "pdflayers",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "preflight.run",
+      "module": "preflight",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "edit.transparencyBlendSpace",
+      "module": "prefs",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "prefs.set",
+      "module": "prefs",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "document.preferences",
+      "module": "prefs",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.printers",
+      "module": "print",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.print",
+      "module": "print",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.qrCode",
+      "module": "qr",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "script.run",
+      "module": "scripts",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "select.firstAbove",
+      "module": "select",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "select.nextAbove",
+      "module": "select",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "select.nextBelow",
+      "module": "select",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "select.lastBelow",
+      "module": "select",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "select.container",
+      "module": "select",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "select.content",
+      "module": "select",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "select.nextInGroup",
+      "module": "select",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "select.previousInGroup",
+      "module": "select",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.convertShape",
+      "module": "select",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "spelling.check",
+      "module": "spelling",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "hyphenation.addException",
+      "module": "spelling",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "hyphenation.removeException",
+      "module": "spelling",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "hyphenation.list",
+      "module": "spelling",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "spelling.setWords",
+      "module": "spelling",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "spelling.words",
+      "module": "spelling",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "spelling.addWord",
+      "module": "spelling",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "spelling.change",
+      "module": "spelling",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "states.create",
+      "module": "states",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "states.list",
+      "module": "states",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "states.show",
+      "module": "states",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "states.rename",
+      "module": "states",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "states.release",
+      "module": "states",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "strokeStyle.list",
+      "module": "strokes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "strokeStyle.new",
+      "module": "strokes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "strokeStyle.delete",
+      "module": "strokes",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.compositeFont.list",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.compositeFont.set",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.exportTag",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.paragraph.apply",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.character.apply",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.paragraph.create",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.paragraph.edit",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.paragraph.delete",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.character.create",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.character.edit",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.list",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.object.apply",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.object.create",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "swatch.create",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.gradient",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.group",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "swatch.load",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "swatch.save",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "object.color",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "swatch.addToSwatches",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "swatch.addUnnamed",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "swatch.delete",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "ink.list",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "ink.options",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "swatch.newColorGroup",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "swatch.moveToGroup",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "swatch.ungroupColorGroup",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "swatch.renameColorGroup",
+      "module": "style",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.cell.create",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.cell.apply",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.cell.edit",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.table.create",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.table.apply",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.table.edit",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.insert",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.convertFromText",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.convertToText",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.insertRow",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.insertRowAbove",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.insertRowBelow",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.insertColumn",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.insertColumnLeft",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.insertColumnRight",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.deleteRow",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.deleteColumn",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.delete",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.merge",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.dropCells",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.placeGraphic",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.textCell",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.moveRow",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.moveColumn",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.sortRows",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.unmerge",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.splitHorizontally",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.splitVertically",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.setCell",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.setRowHeight",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.setColumnWidth",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.distributeColumns",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.options",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.select",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.selectTable",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.selectRow",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.selectColumn",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.nextCell",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.prevCell",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "table.get",
+      "module": "table",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "text.placeCaret",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "text.release",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "text.extendTo",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "text.selectWord",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "text.select",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "text.insert",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "text.delete",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "text.move",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "text.exitToFrame",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "story.setDirection",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "story.setText",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "story.replaceRange",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "story.get",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.fillWithPlaceholder",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.char",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.para",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.align",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.alignLeft",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.alignCenter",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.alignRight",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.justify",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.bold",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.italic",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.underline",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.allCaps",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.tateChuYoko",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.ruby",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.kenten",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.storyDirection",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.sizeUp",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.sizeDown",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.changeCase",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.openType",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "style.breakLink",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "type.selectionAttrs",
+      "module": "text",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "toc.generate",
+      "module": "toc",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "toc.update",
+      "module": "toc",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "toc.entries",
+      "module": "toc",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "page.transition",
+      "module": "transitions",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "page.transitions",
+      "module": "transitions",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "variables.list",
+      "module": "variables",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "variables.define",
+      "module": "variables",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "variables.delete",
+      "module": "variables",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "variables.insert",
+      "module": "variables",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xml.tags",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xml.newTag",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xml.deleteTag",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xml.tagText",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xml.tag",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xml.mapStyle",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xml.structure",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.exportXml",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xml.loadDtd",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xml.deleteDtd",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xml.validate",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "file.importXml",
+      "module": "xml",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xref.insert",
+      "module": "xref",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "anchor.create",
+      "module": "xref",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xref.list",
+      "module": "xref",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "anchor.list",
+      "module": "xref",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xref.formats",
+      "module": "xref",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xref.defineFormat",
+      "module": "xref",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    },
+    {
+      "id": "xref.setFormat",
+      "module": "xref",
+      "validationStatus": "RESEARCH_SOURCE_ONLY"
+    }
+  ],
+  "nativeCatalogStatus": "NOT_RUN"
+}
