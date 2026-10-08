@@ -18,10 +18,11 @@ class PackageContract(unittest.TestCase):
         document=(ROOT/'skills/designcraft-cli-document/SKILL.md').read_text()
         use_description=re.search(r'^description:\s*(.+)$',use,re.M).group(1)
         document_description=re.search(r'^description:\s*(.+)$',document,re.M).group(1)
-        self.assertIn('未提供大纲',use_description)
-        self.assertIn('完整排版',use_description)
-        self.assertIn('只要求单独',document_description)
-        self.assertIn('已确定内容和版式',document_description)
+        self.assertIn('缺失大纲',use_description)
+        self.assertIn('完成版式',use_description)
+        self.assertIn('已存在',document_description)
+        self.assertIn('新建空白文档',document_description)
+        self.assertIn('不创建空白工程或新文档',document)
 
     def _validate_fixture(self, fixture):
         spec=importlib.util.spec_from_file_location('validator_fixture',fixture/'scripts/validate_package.py')
