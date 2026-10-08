@@ -4,7 +4,7 @@
 
 PrintCraft使用原生JSON Schema；LightCraft、DesignCraft保留参数说明文本。计划在一个原生进程中执行；超时保留未知状态，不自动重放。零退出仍需检查工程、输出、保存重开和创作质量。安装、宿主发现、模型选用及最终交付分别验收。
 
-`command-coverage.json` 的 `nativeCommands` 只记录固定原生 CLI 实际发现的目录；`nativeCatalogStatus` 当前为 `NOT_RUN`。`research-command-inventory.json` 是单独的静态研究源码清单，绑定研究仓库 commit、CLI 分发源码、命令注册源码及各文件 SHA-256。清单内命令标记为 `RESEARCH_SOURCE_ONLY`，不提供 `ownerSkill`，不能据此声称安装制品支持。研究源码仍可用时运行 `python3 -I -B scripts/check_research_inventory.py --source-root ../../research/designcraft` 检查提交和文件摘要是否过期。
+`command-coverage.json` 的 432 项 `nativeCommands` 来自固定 CLI 0.2.1 实际目录，逐项记录唯一 `ownerSkill`；覆盖构建脚本依 `nativeCatalogEvidence`、CLI 二进制摘要及目录摘要生成，包校验会拒绝重复、遗漏、研究独有和非 `DISCOVERED` 项。路由将导出归入 export，工程生命周期及结构化内容归入 document，其余版面操作归入 layout。此状态只证明目录发现和路由归属，不表示 432 项均已执行或逐项验收。`research-command-inventory.json` 是单独的静态研究源码清单，绑定研究仓库 commit、CLI 分发源码、命令注册源码及各文件 SHA-256。清单内命令标记为 `RESEARCH_SOURCE_ONLY`，不提供 `ownerSkill`，不能据此声称安装制品支持。研究源码仍可用时运行 `python3 -I -B scripts/check_research_inventory.py --source-root ../../research/designcraft` 检查提交和文件摘要是否过期。
 
 `evidence-manifest.json` 分层记录离线测试、包校验和研究清单检查，并将每项结果绑定当前包、技能/命令/运行时锁、输入、报告产物、环境和 runId。使用 `scripts/record_offline_evidence.py` 重跑离线验收并刷新记录，使用 `scripts/evidence_freshness.py evidence-manifest.json` 检查时效；摘要不符会标记 `STALE`。原生、CI、宿主、平台、模型和创作层保持独立状态。
 

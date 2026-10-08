@@ -1,0 +1,68 @@
+{
+  "domain": "designcraft",
+  "steps": [
+    {
+      "command": "file.newSample",
+      "params": {}
+    },
+    {
+      "command": "frame.create",
+      "params": {
+        "spread": 0,
+        "rect": [
+          48,
+          150,
+          570,
+          205
+        ],
+        "shape": "rectangle",
+        "content": "text",
+        "text": "{{Name}} — {{Role}}"
+      }
+    },
+    {
+      "command": "data.fields",
+      "params": {
+        "csv": "Name,Role\nAda,Editor\nLin,Designer\n"
+      }
+    },
+    {
+      "command": "data.merge",
+      "params": {
+        "rows": [
+          {
+            "Name": "Ada",
+            "Role": "Editor"
+          },
+          {
+            "Name": "Lin",
+            "Role": "Designer"
+          }
+        ]
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {}
+    },
+    {
+      "command": "preflight.run",
+      "params": {
+        "minPpi": 150
+      }
+    },
+    {
+      "command": "file.saveAs",
+      "params": {
+        "path": "/tmp/designcraft-plan-validation-20261008/merge-placeholder-v2/merged.designcraft"
+      }
+    },
+    {
+      "command": "file.exportPdf",
+      "params": {
+        "path": "/tmp/designcraft-plan-validation-20261008/merge-placeholder-v2/merged.pdf",
+        "standard": "none"
+      }
+    }
+  ]
+}

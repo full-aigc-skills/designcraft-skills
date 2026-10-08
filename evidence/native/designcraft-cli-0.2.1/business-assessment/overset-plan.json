@@ -1,0 +1,4 @@
+{"command": "style.paragraph.create", "params": {"name": "Classifier Probe", "chars": {"size": 28}, "para": {}}}
+{"command": "frame.create", "params": {"spread": 1, "rect": [666, 12, 1182, 48], "shape": "rectangle", "content": "text", "text": "Overflow sample heading", "caret": true}}
+{"command": "style.paragraph.apply", "params": {"name": "Classifier Probe", "clearOverrides": true}}
+{"command": "preflight.run", "params": {"minPpi": 150}}

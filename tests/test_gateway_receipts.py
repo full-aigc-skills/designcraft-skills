@@ -260,4 +260,41 @@ class ReceiptContract(unittest.TestCase):
             receipt=json.loads((output/'receipt.json').read_text())
             self.assertEqual(receipt['status'],'SKILL_CHANGED_REVIEW_REQUIRED')
 
+    def test_designcraft_preflight_business_assessment_rejects_overset(self):
+        references=[{'stepRef':'run:step:0','index':0,'command':'preflight.run','paramsSha256':'a'*64}]
+        stdout=json.dumps({'completed':1,'results':[{'errors':1,'issues':[{'item':64,'kind':'overset','message':'Overset text: 13 characters','page':2,'severity':'error'}],'warnings':0}]})
+        result=self.g.assess_business_results(stdout,references,DOMAIN)
+        self.assertEqual(result['status'],'REJECTED')
+        self.assertEqual(result['steps'][0]['reason'],'preflight_errors')
+        self.assertEqual(result['steps'][0]['issues'][0]['kind'],'overset')
+
+    def test_designcraft_preflight_business_assessment_rejects_missing_image(self):
+        references=[{'stepRef':'run:step:0','index':0,'command':'preflight.run','paramsSha256':'a'*64}]
+        stdout=json.dumps({'completed':1,'results':[{'errors':0,'issues':[{'kind':'missing-image','message':'Image file is missing','severity':'warning'}],'warnings':1}]})
+        result=self.g.assess_business_results(stdout,references,DOMAIN)
+        self.assertEqual(result['status'],'REJECTED')
+        self.assertEqual(result['steps'][0]['reason'],'missing_image')
+
+    def test_designcraft_link_list_business_assessment_rejects_missing_asset(self):
+        references=[{'stepRef':'run:step:0','index':0,'command':'links.list','paramsSha256':'a'*64}]
+        stdout=json.dumps({'completed':1,'results':[[{'asset':64,'name':'probe-image.png','path':'/tmp/probe-image.png','pixels':[24,24],'status':'missing','uses':[{'id':65,'page':'3','ppi':10.0}]}]]})
+        result=self.g.assess_business_results(stdout,references,DOMAIN)
+        self.assertEqual(result['status'],'REJECTED')
+        self.assertEqual(result['steps'][0]['reason'],'missing_image')
+        self.assertEqual(result['steps'][0]['unhealthyLinks'][0],{'name':'probe-image.png','status':'missing'})
+
+    def test_designcraft_preflight_warnings_require_review_and_no_issues_pass(self):
+        references=[{'stepRef':'run:step:0','index':0,'command':'preflight.run','paramsSha256':'a'*64}]
+        warning=json.dumps({'completed':1,'results':[{'errors':0,'issues':[{'kind':'low-resolution','message':'Image below target PPI','severity':'warning'}],'warnings':1}]})
+        clean=json.dumps({'completed':1,'results':[{'errors':0,'issues':[],'warnings':0}]})
+        self.assertEqual(self.g.assess_business_results(warning,references,DOMAIN)['status'],'REVIEW_REQUIRED')
+        self.assertEqual(self.g.assess_business_results(clean,references,DOMAIN)['status'],'PASS')
+
+    def test_designcraft_business_assessment_rejects_unknown_result_fields(self):
+        references=[{'stepRef':'run:step:0','index':0,'command':'preflight.run','paramsSha256':'a'*64}]
+        stdout=json.dumps({'completed':1,'results':[{'errors':0,'issues':[],'warnings':0,'futureField':True}]})
+        result=self.g.assess_business_results(stdout,references,DOMAIN)
+        self.assertEqual(result['status'],'UNKNOWN')
+        self.assertEqual(result['steps'][0]['reason'],'preflight_result_schema_unknown')
+
 if __name__=='__main__':unittest.main()

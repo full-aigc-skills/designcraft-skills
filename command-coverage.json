@@ -1,14 +1,2201 @@
 {
   "schemaVersion": 1,
   "domain": "designcraft",
-  "nativeCatalogStatus": "NOT_RUN",
+  "nativeCatalogStatus": "DISCOVERED",
+  "nativeCatalogEvidence": "evidence/native/designcraft-cli-0.2.1/command-catalog.json",
   "researchSourceInventory": "research-command-inventory.json",
+  "nativeCatalogIdentity": {
+    "cliVersion": "0.2.1",
+    "binarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+    "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700"
+  },
   "gatewayActions": [
-    {"action": "list", "ownerSkill": "designcraft-cli", "validationStatus": "OFFLINE_TESTED"},
-    {"action": "describe", "ownerSkill": "designcraft-cli", "validationStatus": "OFFLINE_TESTED"},
-    {"action": "check", "ownerSkill": "designcraft-cli", "validationStatus": "OFFLINE_TESTED"},
-    {"action": "run", "ownerSkill": "designcraft-cli", "validationStatus": "OFFLINE_TESTED"},
-    {"action": "receipt", "ownerSkill": "designcraft-cli", "validationStatus": "OFFLINE_TESTED"}
+    {
+      "action": "list",
+      "ownerSkill": "designcraft-cli",
+      "validationStatus": "OFFLINE_TESTED"
+    },
+    {
+      "action": "describe",
+      "ownerSkill": "designcraft-cli",
+      "validationStatus": "OFFLINE_TESTED"
+    },
+    {
+      "action": "check",
+      "ownerSkill": "designcraft-cli",
+      "validationStatus": "OFFLINE_TESTED"
+    },
+    {
+      "action": "run",
+      "ownerSkill": "designcraft-cli",
+      "validationStatus": "OFFLINE_TESTED"
+    },
+    {
+      "action": "receipt",
+      "ownerSkill": "designcraft-cli",
+      "validationStatus": "OFFLINE_TESTED"
+    }
   ],
-  "nativeCommands": []
+  "nativeCommands": [
+    {
+      "id": "file.new",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.newSample",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.presets",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.open",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.openBytes",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.save",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.saveAs",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.saveACopy",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.revert",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.recovery.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.recovery.save",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.recovery.open",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.serialize",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.close",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.activate",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "snippet.export",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "place.styles",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "snippet.place",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "place.load",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "place.drop",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.place",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.exportIdml",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.openIdml",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.exportPdf",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.exportEpub",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.exportFixedEpub",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.printBooklet",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.exportHtml",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.exportText",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.undo",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.redo",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "selection.set",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "selection.toggle",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.selectAll",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.deselectAll",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.clear",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.copy",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.cut",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.pasteWithoutFormatting",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.paste",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.pasteInto",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.pasteInPlace",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.duplicate",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "endnote.insert",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "endnote.edit",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "endnote.delete",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "endnote.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "endnote.options",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "note.new",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "note.edit",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "note.delete",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "note.convertToText",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "note.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "frame.create",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "line.create",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "transform.move",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "transform.resize",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "transform.rotate",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "transform.scale",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "transform.again",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "transform.clear",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "transform.shear",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.matchAttributes",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "transform.flip",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "transform.set",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "transform.info",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.arrange",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.bringToFront",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.bringForward",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.sendBackward",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.sendToBack",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.group",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.ungroup",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.lock",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.unlockAll",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.hide",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.showAll",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.setFlags",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.fill",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.stroke",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.opacity",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.dropShadow",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.innerShadow",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.outerGlow",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.exportOptions",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.innerGlow",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.bevel",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.satin",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.directionalFeather",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.feather",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.content",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.textFrameOptions",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.cornerOptions",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.textWrap",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.fit",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.fittingOptions",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.rename",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.stepAndRepeat",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "path.create",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "path.appendAnchor",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "path.close",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "path.moveAnchors",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.align",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.distribute",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "tool.polygonSettings",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "gap.move",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "frame.grid",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.clippingPath",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.primaryTextFrame",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.attributes",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.globalLight",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.label",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.altText",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.transparencyGroup",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.findByLabel",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.setLayer",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "path.addAnchor",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "path.deleteAnchor",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "path.convertAnchor",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "path.erase",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "path.smooth",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "article.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "article.new",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "article.add",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "article.remove",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "article.options",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "article.delete",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.makeCompoundPath",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.releaseCompoundPath",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.createOutlines",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.pathfinder",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.gradientFeather",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "path.split",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "book.new",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "book.open",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "book.close",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "book.add",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "book.remove",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "book.styleSource",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "book.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "book.paginate",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "book.syncStyles",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "book.exportPdf",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "button.set",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "button.clear",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "form.set",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "form.clear",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "form.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "button.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.caption",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "color.settings",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "color.loadProfile",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "color.convert",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "changes.track",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "changes.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "changes.accept",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "changes.reject",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "changes.acceptAll",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "changes.rejectAll",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "condition.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "condition.new",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "condition.options",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "condition.delete",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "condition.apply",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "library.new",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "library.open",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "library.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "library.json",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "library.add",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "library.place",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "library.remove",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "conveyor.collect",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "conveyor.place",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "conveyor.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "conveyor.clear",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "library.close",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "list.define",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "list.delete",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "story.placeAndLink",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "story.links",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "story.updateLink",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "story.unlink",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "math.insert",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "math.svg",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "media.options",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "media.get",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.pdfLayers",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.layerOptions",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "liquid.pageRule",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "liquid.object",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "guide.liquid",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.createAlternate",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xml.tags",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xml.newTag",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xml.deleteTag",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xml.tagText",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xml.tag",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xml.mapStyle",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xml.structure",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.exportXml",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xml.loadDtd",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xml.deleteDtd",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xml.validate",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.importXml",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "strokeStyle.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "strokeStyle.new",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "strokeStyle.delete",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "script.run",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "states.create",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "states.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "states.show",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "states.rename",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "states.release",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "page.transition",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "page.transitions",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.onPath",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.pathOptions",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.qrCode",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "select.firstAbove",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "select.nextAbove",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "select.nextBelow",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "select.lastBelow",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "select.container",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "select.content",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "select.nextInGroup",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "select.previousInGroup",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.convertShape",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.package",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "links.copyTo",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.printers",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "file.print",
+      "ownerSkill": "designcraft-cli-export",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "text.placeCaret",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "text.release",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "text.extendTo",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "text.selectWord",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "text.select",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "text.insert",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "text.delete",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "text.move",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "text.exitToFrame",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "story.setText",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "story.replaceRange",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "story.get",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.fillWithPlaceholder",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.char",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.para",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.align",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.alignLeft",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.alignCenter",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.alignRight",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.justify",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.bold",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.italic",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.underline",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.allCaps",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.tateChuYoko",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.ruby",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.kenten",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.sizeUp",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.sizeDown",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.changeCase",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.openType",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.breakLink",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "type.selectionAttrs",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.exportTag",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.paragraph.apply",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.character.apply",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.paragraph.create",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.paragraph.edit",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.paragraph.delete",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.character.create",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.character.edit",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.object.apply",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.object.create",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "swatch.create",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.gradient",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.group",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "swatch.load",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "swatch.save",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "object.color",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "swatch.addToSwatches",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "swatch.addUnnamed",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "swatch.delete",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "ink.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "ink.options",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "swatch.newColorGroup",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "swatch.moveToGroup",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "swatch.ungroupColorGroup",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "swatch.renameColorGroup",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.cell.create",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.cell.apply",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.cell.edit",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.table.create",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.table.apply",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "style.table.edit",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.insert",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.convertFromText",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.convertToText",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.insertRow",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.insertRowAbove",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.insertRowBelow",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.insertColumn",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.insertColumnLeft",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.insertColumnRight",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.deleteRow",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.deleteColumn",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.delete",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.merge",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.dropCells",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.placeGraphic",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.textCell",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.moveRow",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.moveColumn",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.sortRows",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.unmerge",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.splitHorizontally",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.splitVertically",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.setCell",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.setRowHeight",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.setColumnWidth",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.distributeColumns",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.options",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.select",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.selectTable",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.selectRow",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.selectColumn",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.nextCell",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.prevCell",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "table.get",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.pages.insert",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.rotateSpreadView",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.pages.delete",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.pages.move",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.pages.duplicateSpread",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.pages.applyParent",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.parents.new",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.parents.edit",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.marginsAndColumns",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.documentSetup",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.pages.toSpread",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.spreadShuffle",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.pageSize",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.section",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layer.move",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layer.selectItems",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layer.new",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layer.set",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layer.delete",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layer.merge",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layer.deleteUnused",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layer.others",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layer.activate",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.overrideParentItems",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.removeOverrides",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.detachAll",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "edit.transparencyBlendSpace",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "prefs.set",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "document.preferences",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "document.inspect",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "app.links",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "document.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "tool.select",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "tool.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "document.history",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "find.objects",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "find.changeObjects",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "find.find",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "find.change",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "find.next",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "variables.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "variables.define",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "variables.delete",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "variables.insert",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "toc.generate",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "toc.update",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "toc.entries",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "footnote.insert",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "footnote.options",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "footnote.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "footnote.setText",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "footnote.delete",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "footnote.goToReference",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xref.insert",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "anchor.create",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xref.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "anchor.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xref.formats",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xref.defineFormat",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "xref.setFormat",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "index.addReference",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "index.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "index.generate",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "index.update",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "anchored.insert",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "anchored.options",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "anchored.release",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "anchored.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "guide.add",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "guide.move",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "guide.delete",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "guide.deleteAll",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "guide.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "layout.createGuides",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "links.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "links.relink",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "links.relinkFolder",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "links.update",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "links.embed",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "links.goTo",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "font.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "font.replace",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "spelling.check",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "hyphenation.addException",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "hyphenation.removeException",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "hyphenation.list",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "spelling.setWords",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "spelling.words",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "spelling.addWord",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "spelling.change",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "data.merge",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "data.fields",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "hyperlink.create",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "hyperlink.delete",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "hyperlink.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "hyperlink.edit",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "hyperlink.goToSource",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "bookmark.rename",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "bookmark.add",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "bookmark.delete",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "bookmark.list",
+      "ownerSkill": "designcraft-cli-document",
+      "validationStatus": "DISCOVERED"
+    },
+    {
+      "id": "preflight.run",
+      "ownerSkill": "designcraft-cli-layout",
+      "validationStatus": "DISCOVERED"
+    }
+  ]
 }

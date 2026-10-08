@@ -46,6 +46,26 @@ def validate():
         if native_identity is not None or native_commands:raise ValueError('native_catalog_identity_invalid')
     elif not isinstance(native_identity,dict) or not isinstance(native_identity.get('cliVersion'),str) or not native_identity['cliVersion'] or any(not isinstance(native_identity.get(key),str) or not re.fullmatch(r'[0-9a-f]{64}',native_identity[key]) for key in ('binarySha256','catalogSha256')):
         raise ValueError('native_catalog_identity_invalid')
+    if native_status in ('DISCOVERED','VERIFIED'):
+        evidence_path=coverage.get('nativeCatalogEvidence')
+        if not isinstance(evidence_path,str) or not evidence_path or Path(evidence_path).is_absolute() or '..' in Path(evidence_path).parts:
+            raise ValueError('native_catalog_evidence_invalid')
+        catalog_path=ROOT/evidence_path
+        if catalog_path.is_symlink() or not catalog_path.is_file():
+            raise ValueError('native_catalog_evidence_invalid')
+        catalog=json.loads(catalog_path.read_text(encoding='utf-8'))
+        if not isinstance(catalog,list) or any(not isinstance(item,dict) or not isinstance(item.get('id'),str) or not item['id'] for item in catalog):
+            raise ValueError('native_catalog_evidence_invalid')
+        if hashlib.sha256(json.dumps(catalog,sort_keys=True,ensure_ascii=False).encode('utf-8')).hexdigest()!=native_identity['catalogSha256']:
+            raise ValueError('native_catalog_evidence_invalid')
+        catalog_ids=[item['id'] for item in catalog]
+        if len(set(catalog_ids))!=len(catalog_ids) or set(native_ids)!=set(catalog_ids):
+            raise ValueError('native_catalog_coverage_mismatch')
+        if any(item.get('validationStatus')!='DISCOVERED' for item in native_commands):
+            raise ValueError('native_catalog_unverified_command')
+        lock=json.loads((ROOT/'skills'/f'{domain}-cli'/'scripts/runtime.lock.json').read_text(encoding='utf-8'))
+        if native_identity['cliVersion']!=lock.get('resolvedVersion') or native_identity['binarySha256']!=lock.get('artifacts',{}).get('darwin-arm64',{}).get('binarySha256'):
+            raise ValueError('native_catalog_identity_invalid')
     for item in actions:
         if item.get('ownerSkill') not in expected or item.get('validationStatus') not in ('STATIC','OFFLINE_TESTED','NATIVE_TESTED','HOST_TESTED'):raise ValueError('command_owner_invalid')
     for item in native_commands:

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "runId": "defe7f43-ba9d-48fe-a9fb-503e8cd84845",
+  "domain": "designcraft",
+  "status": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+  "startedAt": "2026-10-08T12:05:01.019716+00:00",
+  "argv": [
+    "/opt/anaconda3/bin/python3",
+    "-I",
+    "-B",
+    "/Users/wandl/workspaces/workspace-agent-skills/full-aigc-skills-repositories/designcraft-skills/skills/designcraft-cli/scripts/cli.py",
+    "--runtime-home",
+    "/tmp/designcraft-plan-validation-20261008/runtime",
+    "--result-file",
+    "/tmp/designcraft-plan-validation-20261008/business-overset/native-result.json",
+    "--",
+    "script",
+    "/tmp/designcraft-plan-validation-20261008/business-overset/native-plan.json",
+    "--in",
+    "/tmp/designcraft-plan-validation-20261008/business-overset/working-copy/magazine.designcraft"
+  ],
+  "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+  "planSha256": "3913ef8589f3b375e5aacc8caab6ec7519f78fae2c6d22be874a07e05af957ef",
+  "nativePlanSha256": "00a92ab983070f1172906ee80ab7b3dcb7080816b1cbd057ee865d27a4ea4b9a",
+  "automaticReplay": false,
+  "completeAcceptance": false,
+  "inputSha256": {
+    "/tmp/designcraft-plan-validation-20261008/sample-output/magazine.designcraft": "8200372c805353a0fd382b1a3105b10d9764d0db0908ccc3690a493177d7d1c0"
+  },
+  "runtimeLockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+  "runtimeIdentity": {
+    "verificationStatus": "LOCKED_EXPECTATION",
+    "name": "designcraft-cli",
+    "version": "0.2.1",
+    "platform": "darwin-arm64",
+    "runtimeHome": "/tmp/designcraft-plan-validation-20261008/runtime",
+    "expectedBinarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+    "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+    "lockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+  },
+  "skillResourceSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "b8c958daa0e8babacc7e25821aaa47dde755866e418154263f84a823cf520898",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  },
+  "directoryBaseline": {
+    "path": "/tmp/designcraft-plan-validation-20261008/business-overset",
+    "state": "ABSENT",
+    "sha256": null
+  },
+  "outputDirectoryBefore": "ABSENT",
+  "stepResultGranularity": "single-native-session",
+  "stepReferences": [
+    {
+      "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:0",
+      "index": 0,
+      "command": "style.paragraph.create",
+      "paramsSha256": "193f1722aa734d6ff353a5fcc7b59d35bcdadf30842101c6a093547447aad22d"
+    },
+    {
+      "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:1",
+      "index": 1,
+      "command": "frame.create",
+      "paramsSha256": "0a2cb75c8b12e5342da3e62ccf82f3ae3bfe6bce7235136e084e8423fde5fbe3"
+    },
+    {
+      "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:2",
+      "index": 2,
+      "command": "style.paragraph.apply",
+      "paramsSha256": "2fad49523d7e125cc31f56f3cb513cdeb2d05cf594ab5ffe09832b89f1278bdd"
+    },
+    {
+      "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:3",
+      "index": 3,
+      "command": "preflight.run",
+      "paramsSha256": "cd47c7b1fac04b95922f3a6359f8f7cb1cc5208d89810bd1b77df37d3070a8ad"
+    }
+  ],
+  "stepResults": [
+    {
+      "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:0",
+      "index": 0,
+      "command": "style.paragraph.create",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:1",
+      "index": 1,
+      "command": "frame.create",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:2",
+      "index": 2,
+      "command": "style.paragraph.apply",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    },
+    {
+      "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:3",
+      "index": 3,
+      "command": "preflight.run",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    }
+  ],
+  "workingCopyPath": "/tmp/designcraft-plan-validation-20261008/business-overset/working-copy/magazine.designcraft",
+  "workingCopyBeforeSha256": {
+    "magazine.designcraft": "8200372c805353a0fd382b1a3105b10d9764d0db0908ccc3690a493177d7d1c0"
+  },
+  "reason": "native_exit",
+  "exitCode": 0,
+  "started": true,
+  "terminationVerified": true,
+  "descendantsTerminationVerified": false,
+  "nativeResultSchemaVersion": 1,
+  "finishedAt": "2026-10-08T12:05:01.142868+00:00",
+  "stdout": "{\n  \"completed\": 4,\n  \"results\": [\n    {\n      \"name\": \"Classifier Probe\"\n    },\n    {\n      \"id\": 64,\n      \"story\": 65\n    },\n    null,\n    {\n      \"errors\": 1,\n      \"issues\": [\n        {\n          \"item\": 64,\n          \"kind\": \"overset\",\n          \"message\": \"Overset text: 23 characters\",\n          \"page\": 2,\n          \"severity\": \"error\"\n        }\n      ],\n      \"warnings\": 0\n    }\n  ]\n}\n",
+  "stderr": "",
+  "businessAssessment": {
+    "contractVersion": "designcraft-business-assessment/v1",
+    "status": "REJECTED",
+    "steps": [
+      {
+        "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:0",
+        "index": 0,
+        "command": "style.paragraph.create",
+        "status": "NOT_CLASSIFIED",
+        "reason": "no_business_result_contract"
+      },
+      {
+        "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:1",
+        "index": 1,
+        "command": "frame.create",
+        "status": "NOT_CLASSIFIED",
+        "reason": "no_business_result_contract"
+      },
+      {
+        "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:2",
+        "index": 2,
+        "command": "style.paragraph.apply",
+        "status": "NOT_CLASSIFIED",
+        "reason": "no_business_result_contract"
+      },
+      {
+        "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:3",
+        "index": 3,
+        "command": "preflight.run",
+        "status": "REJECTED",
+        "reason": "preflight_errors",
+        "issueCounts": {
+          "errors": 1,
+          "warnings": 0
+        },
+        "issues": [
+          {
+            "severity": "error",
+            "kind": "overset",
+            "message": "Overset text: 23 characters",
+            "item": 64,
+            "page": 2
+          }
+        ]
+      }
+    ]
+  },
+  "inputAfterSha256": {
+    "/tmp/designcraft-plan-validation-20261008/sample-output/magazine.designcraft": "8200372c805353a0fd382b1a3105b10d9764d0db0908ccc3690a493177d7d1c0"
+  },
+  "skillResourceAfterSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "b8c958daa0e8babacc7e25821aaa47dde755866e418154263f84a823cf520898",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  },
+  "workingCopyAfterSha256": {
+    "magazine.designcraft": "8200372c805353a0fd382b1a3105b10d9764d0db0908ccc3690a493177d7d1c0"
+  }
+}

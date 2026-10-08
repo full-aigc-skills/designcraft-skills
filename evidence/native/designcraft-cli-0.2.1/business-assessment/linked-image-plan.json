@@ -1,0 +1,4 @@
+{"command": "file.place", "params": {"path": "/tmp/designcraft-plan-validation-20261008/probe-image.png", "spread": 1, "x": 700, "y": 120, "width": 180}}
+{"command": "links.list", "params": {}}
+{"command": "preflight.run", "params": {"minPpi": 150}}
+{"command": "file.saveAs", "params": {"path": "/tmp/designcraft-plan-validation-20261008/missing-image-source/with-linked-image.designcraft"}}

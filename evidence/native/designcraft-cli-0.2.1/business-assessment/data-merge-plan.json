@@ -1,0 +1,6 @@
+{"command": "data.fields", "params": {"csv": "Name,Role\nAda,Editor\nLin,Designer\n"}}
+{"command": "data.merge", "params": {"rows": [{"Name": "Ada", "Role": "Editor"}, {"Name": "Lin", "Role": "Designer"}]}}
+{"command": "document.inspect", "params": {}}
+{"command": "preflight.run", "params": {"minPpi": 150}}
+{"command": "file.saveAs", "params": {"path": "/tmp/designcraft-plan-validation-20261008/merge-run-2/merged.designcraft"}}
+{"command": "file.exportPdf", "params": {"path": "/tmp/designcraft-plan-validation-20261008/merge-run-2/merged.pdf", "standard": "none"}}

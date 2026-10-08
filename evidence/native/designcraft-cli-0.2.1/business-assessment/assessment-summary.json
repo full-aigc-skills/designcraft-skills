@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "designcraft-business-assessment-evidence/v1",
+  "observedAt": "2026-10-08T12:08:47+00:00",
+  "nativeVersion": "0.2.1",
+  "platform": "darwin-arm64",
+  "python": "3.13.5",
+  "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+  "binarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+  "runs": {
+    "overset-receipt.json": {
+      "runId": "defe7f43-ba9d-48fe-a9fb-503e8cd84845",
+      "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+      "runtime": {
+        "verificationStatus": "LOCKED_EXPECTATION",
+        "name": "designcraft-cli",
+        "version": "0.2.1",
+        "platform": "darwin-arm64",
+        "runtimeHome": "/tmp/designcraft-plan-validation-20261008/runtime",
+        "expectedBinarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+        "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+        "lockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+      },
+      "status": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+      "businessAssessment": {
+        "contractVersion": "designcraft-business-assessment/v1",
+        "status": "REJECTED",
+        "steps": [
+          {
+            "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:0",
+            "index": 0,
+            "command": "style.paragraph.create",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          },
+          {
+            "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:1",
+            "index": 1,
+            "command": "frame.create",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          },
+          {
+            "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:2",
+            "index": 2,
+            "command": "style.paragraph.apply",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          },
+          {
+            "stepRef": "defe7f43-ba9d-48fe-a9fb-503e8cd84845:step:3",
+            "index": 3,
+            "command": "preflight.run",
+            "status": "REJECTED",
+            "reason": "preflight_errors",
+            "issueCounts": {
+              "errors": 1,
+              "warnings": 0
+            },
+            "issues": [
+              {
+                "severity": "error",
+                "kind": "overset",
+                "message": "Overset text: 23 characters",
+                "item": 64,
+                "page": 2
+              }
+            ]
+          }
+        ]
+      },
+      "workingCopyBeforeSha256": {
+        "magazine.designcraft": "8200372c805353a0fd382b1a3105b10d9764d0db0908ccc3690a493177d7d1c0"
+      },
+      "workingCopyAfterSha256": {
+        "magazine.designcraft": "8200372c805353a0fd382b1a3105b10d9764d0db0908ccc3690a493177d7d1c0"
+      }
+    },
+    "linked-image-receipt.json": {
+      "runId": "dc5ae3c2-7e38-4b8b-93df-1b36217a48a1",
+      "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+      "runtime": {
+        "verificationStatus": "LOCKED_EXPECTATION",
+        "name": "designcraft-cli",
+        "version": "0.2.1",
+        "platform": "darwin-arm64",
+        "runtimeHome": "/tmp/designcraft-plan-validation-20261008/runtime",
+        "expectedBinarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+        "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+        "lockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+      },
+      "status": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+      "businessAssessment": {
+        "contractVersion": "designcraft-business-assessment/v1",
+        "status": "REVIEW_REQUIRED",
+        "steps": [
+          {
+            "stepRef": "dc5ae3c2-7e38-4b8b-93df-1b36217a48a1:step:0",
+            "index": 0,
+            "command": "file.place",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          },
+          {
+            "stepRef": "dc5ae3c2-7e38-4b8b-93df-1b36217a48a1:step:1",
+            "index": 1,
+            "command": "links.list",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          },
+          {
+            "stepRef": "dc5ae3c2-7e38-4b8b-93df-1b36217a48a1:step:2",
+            "index": 2,
+            "command": "preflight.run",
+            "status": "REVIEW_REQUIRED",
+            "reason": "preflight_warnings",
+            "issueCounts": {
+              "errors": 0,
+              "warnings": 1
+            },
+            "issues": [
+              {
+                "severity": "warning",
+                "kind": "lowResolution",
+                "message": "probe-image.png: effective 10 ppi (< 150)",
+                "item": 65,
+                "page": 2
+              }
+            ]
+          },
+          {
+            "stepRef": "dc5ae3c2-7e38-4b8b-93df-1b36217a48a1:step:3",
+            "index": 3,
+            "command": "file.saveAs",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          }
+        ]
+      },
+      "workingCopyBeforeSha256": {
+        "magazine.designcraft": "8200372c805353a0fd382b1a3105b10d9764d0db0908ccc3690a493177d7d1c0"
+      },
+      "workingCopyAfterSha256": {
+        "magazine.designcraft": "8200372c805353a0fd382b1a3105b10d9764d0db0908ccc3690a493177d7d1c0"
+      }
+    },
+    "missing-image-reopen-receipt.json": {
+      "runId": "eb745338-585d-4c91-8a4b-4ca3ae0085fd",
+      "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+      "runtime": {
+        "verificationStatus": "LOCKED_EXPECTATION",
+        "name": "designcraft-cli",
+        "version": "0.2.1",
+        "platform": "darwin-arm64",
+        "runtimeHome": "/tmp/designcraft-plan-validation-20261008/runtime",
+        "expectedBinarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+        "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+        "lockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+      },
+      "status": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+      "businessAssessment": {
+        "contractVersion": "designcraft-business-assessment/v1",
+        "status": "REJECTED",
+        "steps": [
+          {
+            "stepRef": "eb745338-585d-4c91-8a4b-4ca3ae0085fd:step:0",
+            "index": 0,
+            "command": "links.list",
+            "status": "REJECTED",
+            "reason": "missing_image",
+            "unhealthyLinks": [
+              {
+                "name": "probe-image.png",
+                "status": "missing"
+              }
+            ]
+          },
+          {
+            "stepRef": "eb745338-585d-4c91-8a4b-4ca3ae0085fd:step:1",
+            "index": 1,
+            "command": "preflight.run",
+            "status": "REVIEW_REQUIRED",
+            "reason": "preflight_warnings",
+            "issueCounts": {
+              "errors": 0,
+              "warnings": 1
+            },
+            "issues": [
+              {
+                "severity": "warning",
+                "kind": "lowResolution",
+                "message": "probe-image.png: effective 10 ppi (< 150)",
+                "item": 65,
+                "page": 2
+              }
+            ]
+          }
+        ]
+      },
+      "workingCopyBeforeSha256": {
+        "with-linked-image.designcraft": "2d48ce90b53688521b182cfc1702630c658b86a5e9655a194c9102e328774f22"
+      },
+      "workingCopyAfterSha256": {
+        "with-linked-image.designcraft": "2d48ce90b53688521b182cfc1702630c658b86a5e9655a194c9102e328774f22"
+      }
+    },
+    "data-merge-receipt.json": {
+      "runId": "90ce05c1-92cd-40ff-b0ce-ee22543b9c71",
+      "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+      "runtime": {
+        "verificationStatus": "LOCKED_EXPECTATION",
+        "name": "designcraft-cli",
+        "version": "0.2.1",
+        "platform": "darwin-arm64",
+        "runtimeHome": "/tmp/designcraft-plan-validation-20261008/runtime",
+        "expectedBinarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+        "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+        "lockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+      },
+      "status": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+      "businessAssessment": {
+        "contractVersion": "designcraft-business-assessment/v1",
+        "status": "REVIEW_REQUIRED",
+        "steps": [
+          {
+            "stepRef": "90ce05c1-92cd-40ff-b0ce-ee22543b9c71:step:0",
+            "index": 0,
+            "command": "data.fields",
+            "status": "PASS",
+            "reason": "field_list_read"
+          },
+          {
+            "stepRef": "90ce05c1-92cd-40ff-b0ce-ee22543b9c71:step:1",
+            "index": 1,
+            "command": "data.merge",
+            "status": "REVIEW_REQUIRED",
+            "reason": "merge_counts_need_content_verification"
+          },
+          {
+            "stepRef": "90ce05c1-92cd-40ff-b0ce-ee22543b9c71:step:2",
+            "index": 2,
+            "command": "document.inspect",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          },
+          {
+            "stepRef": "90ce05c1-92cd-40ff-b0ce-ee22543b9c71:step:3",
+            "index": 3,
+            "command": "preflight.run",
+            "status": "PASS",
+            "reason": "preflight_clean",
+            "issueCounts": {
+              "errors": 0,
+              "warnings": 0
+            },
+            "issues": []
+          },
+          {
+            "stepRef": "90ce05c1-92cd-40ff-b0ce-ee22543b9c71:step:4",
+            "index": 4,
+            "command": "file.saveAs",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          },
+          {
+            "stepRef": "90ce05c1-92cd-40ff-b0ce-ee22543b9c71:step:5",
+            "index": 5,
+            "command": "file.exportPdf",
+            "status": "PASS",
+            "reason": "pdf_export_recorded"
+          }
+        ]
+      },
+      "workingCopyBeforeSha256": {
+        "magazine.designcraft": "8200372c805353a0fd382b1a3105b10d9764d0db0908ccc3690a493177d7d1c0"
+      },
+      "workingCopyAfterSha256": {
+        "magazine.designcraft": "8200372c805353a0fd382b1a3105b10d9764d0db0908ccc3690a493177d7d1c0"
+      }
+    },
+    "literal-placeholder-receipt.json": {
+      "runId": "c2b5f121-db14-4b05-931e-89a93ac5ef20",
+      "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+      "runtime": {
+        "verificationStatus": "LOCKED_EXPECTATION",
+        "name": "designcraft-cli",
+        "version": "0.2.1",
+        "platform": "darwin-arm64",
+        "runtimeHome": "/tmp/designcraft-plan-validation-20261008/runtime",
+        "expectedBinarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+        "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+        "lockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+      },
+      "status": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+      "businessAssessment": {
+        "contractVersion": "designcraft-business-assessment/v1",
+        "status": "REVIEW_REQUIRED",
+        "steps": [
+          {
+            "stepRef": "c2b5f121-db14-4b05-931e-89a93ac5ef20:step:0",
+            "index": 0,
+            "command": "file.newSample",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          },
+          {
+            "stepRef": "c2b5f121-db14-4b05-931e-89a93ac5ef20:step:1",
+            "index": 1,
+            "command": "frame.create",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          },
+          {
+            "stepRef": "c2b5f121-db14-4b05-931e-89a93ac5ef20:step:2",
+            "index": 2,
+            "command": "data.fields",
+            "status": "PASS",
+            "reason": "field_list_read"
+          },
+          {
+            "stepRef": "c2b5f121-db14-4b05-931e-89a93ac5ef20:step:3",
+            "index": 3,
+            "command": "data.merge",
+            "status": "REVIEW_REQUIRED",
+            "reason": "merge_counts_need_content_verification"
+          },
+          {
+            "stepRef": "c2b5f121-db14-4b05-931e-89a93ac5ef20:step:4",
+            "index": 4,
+            "command": "document.inspect",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          },
+          {
+            "stepRef": "c2b5f121-db14-4b05-931e-89a93ac5ef20:step:5",
+            "index": 5,
+            "command": "preflight.run",
+            "status": "PASS",
+            "reason": "preflight_clean",
+            "issueCounts": {
+              "errors": 0,
+              "warnings": 0
+            },
+            "issues": []
+          },
+          {
+            "stepRef": "c2b5f121-db14-4b05-931e-89a93ac5ef20:step:6",
+            "index": 6,
+            "command": "file.saveAs",
+            "status": "NOT_CLASSIFIED",
+            "reason": "no_business_result_contract"
+          },
+          {
+            "stepRef": "c2b5f121-db14-4b05-931e-89a93ac5ef20:step:7",
+            "index": 7,
+            "command": "file.exportPdf",
+            "status": "PASS",
+            "reason": "pdf_export_recorded"
+          }
+        ]
+      },
+      "workingCopyBeforeSha256": null,
+      "workingCopyAfterSha256": null
+    },
+    "linked-image-reopen-receipt.json": {
+      "runId": "eb745338-585d-4c91-8a4b-4ca3ae0085fd",
+      "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+      "assessment": {
+        "contractVersion": "designcraft-business-assessment/v1",
+        "status": "REJECTED",
+        "steps": [
+          {
+            "stepRef": "eb745338-585d-4c91-8a4b-4ca3ae0085fd:step:0",
+            "index": 0,
+            "command": "links.list",
+            "status": "REJECTED",
+            "reason": "missing_image",
+            "unhealthyLinks": [
+              {
+                "name": "probe-image.png",
+                "status": "missing"
+              }
+            ]
+          },
+          {
+            "stepRef": "eb745338-585d-4c91-8a4b-4ca3ae0085fd:step:1",
+            "index": 1,
+            "command": "preflight.run",
+            "status": "REVIEW_REQUIRED",
+            "reason": "preflight_warnings",
+            "issueCounts": {
+              "errors": 0,
+              "warnings": 1
+            },
+            "issues": [
+              {
+                "severity": "warning",
+                "kind": "lowResolution",
+                "message": "probe-image.png: effective 10 ppi (< 150)",
+                "item": 65,
+                "page": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "conclusions": {
+    "zeroExitOverset": "REJECTED from native preflight issue kind=overset, page=2, item=64",
+    "missingImage": "REJECTED from fresh-session links.list status=missing; native preflight only reported the separate lowResolution warning",
+    "nativeWarnings": "REVIEW_REQUIRED from lowResolution warning (10 ppi < 150); clean preflight stays PASS",
+    "dataMerge": "REVIEW_REQUIRED: data.fields returned Name/Role; data.merge returned records=2/pages=5; preflight clean; PDF export 5 pages with no export warnings, but template did not contain merge placeholders",
+    "literalPlaceholder": "REVIEW_REQUIRED: fixed CLI 0.2.1 preserved {{Name}} and {{Role}} literally after data.merge; actual field substitution is not supported by this test evidence",
+    "unknownFields": "UNKNOWN and rejected by offline regression if a recognized preflight result adds an unrecognized field",
+    "completeAcceptance": false
+  },
+  "latestGatewayReceipt": {
+    "path": "current-gateway/receipt.json",
+    "runId": "50c29854-41bd-4430-b1b5-0bdbb17d673d",
+    "skillResourceSha256": "41159cc8cf811078ee512c539a87858b7aa280efffbcdfd51d6cf9010f3ed43d",
+    "status": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+    "businessAssessment": "PASS",
+    "scope": "fresh live-catalog preflight against a copied project; validates the current gateway source identity, not creative acceptance"
+  }
+}

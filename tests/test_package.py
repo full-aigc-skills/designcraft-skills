@@ -67,16 +67,18 @@ class PackageContract(unittest.TestCase):
     def test_native_catalog_requires_cli_binary_and_catalog_identity(self):
         with tempfile.TemporaryDirectory() as t:
             fixture=Path(t)/'package';shutil.copytree(ROOT,fixture,ignore=shutil.ignore_patterns('openspec','__pycache__','.DS_Store'))
-            path=fixture/'command-coverage.json';coverage=json.loads(path.read_text());coverage['nativeCatalogStatus']='DISCOVERED';coverage['nativeCommands']=[{'id':'file.new','ownerSkill':'designcraft-cli','validationStatus':'DISCOVERED'}];path.write_text(json.dumps(coverage))
+            path=fixture/'command-coverage.json';coverage=json.loads(path.read_text());coverage['nativeCatalogStatus']='DISCOVERED';coverage.pop('nativeCatalogIdentity',None);coverage['nativeCommands']=[{'id':'file.new','ownerSkill':'designcraft-cli','validationStatus':'DISCOVERED'}];path.write_text(json.dumps(coverage))
             with self.assertRaisesRegex(ValueError,'native_catalog_identity_invalid'):
                 self._validate_fixture(fixture)
 
     def test_native_catalog_identity_accepts_versioned_hash_bound_inventory(self):
         with tempfile.TemporaryDirectory() as t:
             fixture=Path(t)/'package';shutil.copytree(ROOT,fixture,ignore=shutil.ignore_patterns('openspec','__pycache__','.DS_Store'))
-            path=fixture/'command-coverage.json';coverage=json.loads(path.read_text());coverage['nativeCatalogStatus']='DISCOVERED';coverage['nativeCatalogIdentity']={'cliVersion':'0.2.1','binarySha256':'a'*64,'catalogSha256':'b'*64};coverage['nativeCommands']=[{'id':'file.new','ownerSkill':'designcraft-cli','validationStatus':'DISCOVERED'}];path.write_text(json.dumps(coverage))
             result=self._validate_fixture(fixture)
             self.assertEqual(result['nativeInstallation'],'NOT_RUN')
+            coverage=json.loads((fixture/'command-coverage.json').read_text())
+            self.assertEqual(coverage['nativeCatalogIdentity']['cliVersion'],'0.2.1')
+            self.assertEqual(len(coverage['nativeCommands']),432)
 
     def test_research_source_inventory_cannot_be_promoted_to_native_catalog(self):
         with tempfile.TemporaryDirectory() as t:
@@ -85,11 +87,26 @@ class PackageContract(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'research_inventory_invalid'):
                 self._validate_fixture(fixture)
 
-    def test_research_inventory_reference_keeps_native_catalog_not_run(self):
+    def test_native_catalog_coverage_matches_fixed_catalog_exactly(self):
         coverage=json.loads((ROOT/'command-coverage.json').read_text())
+        catalog=json.loads((ROOT/coverage['nativeCatalogEvidence']).read_text())
         self.assertEqual(coverage['researchSourceInventory'],'research-command-inventory.json')
-        self.assertEqual(coverage['nativeCatalogStatus'],'NOT_RUN')
-        self.assertEqual(coverage['nativeCommands'],[])
+        self.assertEqual(coverage['nativeCatalogStatus'],'DISCOVERED')
+        self.assertEqual(len(coverage['nativeCommands']),len(catalog))
+        self.assertTrue(all(item['validationStatus']=='DISCOVERED' for item in coverage['nativeCommands']))
+
+    def test_native_catalog_coverage_rejects_duplicate_omitted_research_and_unverified_commands(self):
+        mutations=(
+            ('duplicate',lambda c:c['nativeCommands'].__setitem__(0,dict(c['nativeCommands'][1])),'command_coverage_invalid'),
+            ('omitted',lambda c:c['nativeCommands'].pop(),'native_catalog_coverage_mismatch'),
+            ('research_only',lambda c:c['nativeCommands'].__setitem__(0,{**c['nativeCommands'][0],'id':'research-only-command'}),'native_catalog_coverage_mismatch'),
+            ('unverified',lambda c:c['nativeCommands'][0].__setitem__('validationStatus','DOCUMENTED'),'native_catalog_unverified_command'),
+        )
+        for label,mutate,error in mutations:
+            with self.subTest(case=label),tempfile.TemporaryDirectory() as t:
+                fixture=Path(t)/'package';shutil.copytree(ROOT,fixture,ignore=shutil.ignore_patterns('openspec','__pycache__','.DS_Store'))
+                path=fixture/'command-coverage.json';coverage=json.loads(path.read_text());mutate(coverage);path.write_text(json.dumps(coverage))
+                with self.assertRaisesRegex(ValueError,error):self._validate_fixture(fixture)
 
     def test_routing_matrix_requires_every_skill_and_unrelated_examples(self):
         with tempfile.TemporaryDirectory() as t:

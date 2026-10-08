@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "runId": "50c29854-41bd-4430-b1b5-0bdbb17d673d",
+  "domain": "designcraft",
+  "status": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+  "startedAt": "2026-10-08T12:14:38.211828+00:00",
+  "argv": [
+    "/opt/anaconda3/bin/python3",
+    "-I",
+    "-B",
+    "/Users/wandl/workspaces/workspace-agent-skills/full-aigc-skills-repositories/designcraft-skills/skills/designcraft-cli/scripts/cli.py",
+    "--runtime-home",
+    "/tmp/designcraft-plan-validation-20261008/runtime",
+    "--result-file",
+    "/tmp/designcraft-plan-validation-20261008/current-business-run/native-result.json",
+    "--",
+    "script",
+    "/tmp/designcraft-plan-validation-20261008/current-business-run/native-plan.json",
+    "--in",
+    "/tmp/designcraft-plan-validation-20261008/current-business-run/working-copy/merged.designcraft"
+  ],
+  "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+  "planSha256": "5e9d2b0d6b5448771fc608065549e8ca6faffc922c0f95239925735d777c76ea",
+  "nativePlanSha256": "8c4a594335aac44bedc508dcf774668279217bf590d0477d8d70a11887340185",
+  "automaticReplay": false,
+  "completeAcceptance": false,
+  "inputSha256": {
+    "/tmp/designcraft-plan-validation-20261008/merge-placeholder-v2/merged.designcraft": "8e2260ac6bad0021cb26f5f4b00841b3d12390a0340dd049f6545e9488456fbb"
+  },
+  "runtimeLockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+  "runtimeIdentity": {
+    "verificationStatus": "LOCKED_EXPECTATION",
+    "name": "designcraft-cli",
+    "version": "0.2.1",
+    "platform": "darwin-arm64",
+    "runtimeHome": "/tmp/designcraft-plan-validation-20261008/runtime",
+    "expectedBinarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+    "archiveSha256": "e11386860ee88da34a59c79dfedeba2a00166c368d7e99650d97a8db89702aaf",
+    "lockSha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+  },
+  "skillResourceSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "41159cc8cf811078ee512c539a87858b7aa280efffbcdfd51d6cf9010f3ed43d",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  },
+  "directoryBaseline": {
+    "path": "/tmp/designcraft-plan-validation-20261008/current-business-run",
+    "state": "ABSENT",
+    "sha256": null
+  },
+  "outputDirectoryBefore": "ABSENT",
+  "stepResultGranularity": "single-native-session",
+  "stepReferences": [
+    {
+      "stepRef": "50c29854-41bd-4430-b1b5-0bdbb17d673d:step:0",
+      "index": 0,
+      "command": "preflight.run",
+      "paramsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  ],
+  "stepResults": [
+    {
+      "stepRef": "50c29854-41bd-4430-b1b5-0bdbb17d673d:step:0",
+      "index": 0,
+      "command": "preflight.run",
+      "status": "BATCH_EXIT_ZERO_REVIEW_REQUIRED",
+      "granularity": "single-native-session"
+    }
+  ],
+  "workingCopyPath": "/tmp/designcraft-plan-validation-20261008/current-business-run/working-copy/merged.designcraft",
+  "workingCopyBeforeSha256": {
+    "merged.designcraft": "8e2260ac6bad0021cb26f5f4b00841b3d12390a0340dd049f6545e9488456fbb"
+  },
+  "reason": "native_exit",
+  "exitCode": 0,
+  "started": true,
+  "terminationVerified": true,
+  "descendantsTerminationVerified": false,
+  "nativeResultSchemaVersion": 1,
+  "finishedAt": "2026-10-08T12:14:38.334615+00:00",
+  "stdout": "{\n  \"completed\": 1,\n  \"results\": [\n    {\n      \"errors\": 0,\n      \"issues\": [],\n      \"warnings\": 0\n    }\n  ]\n}\n",
+  "stderr": "",
+  "businessAssessment": {
+    "contractVersion": "designcraft-business-assessment/v1",
+    "status": "PASS",
+    "steps": [
+      {
+        "stepRef": "50c29854-41bd-4430-b1b5-0bdbb17d673d:step:0",
+        "index": 0,
+        "command": "preflight.run",
+        "status": "PASS",
+        "reason": "preflight_clean",
+        "issueCounts": {
+          "errors": 0,
+          "warnings": 0
+        },
+        "issues": []
+      }
+    ]
+  },
+  "inputAfterSha256": {
+    "/tmp/designcraft-plan-validation-20261008/merge-placeholder-v2/merged.designcraft": "8e2260ac6bad0021cb26f5f4b00841b3d12390a0340dd049f6545e9488456fbb"
+  },
+  "skillResourceAfterSha256": {
+    "cli.py": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044",
+    "bootstrap.py": "27e87459d328ef8fd4894e1e96d9b14ddd0c83ddc98a010d19155d560d47302a",
+    "runtime.lock.json": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8",
+    "command_gateway.py": "41159cc8cf811078ee512c539a87858b7aa280efffbcdfd51d6cf9010f3ed43d",
+    "commands.py": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
+  },
+  "workingCopyAfterSha256": {
+    "merged.designcraft": "8e2260ac6bad0021cb26f5f4b00841b3d12390a0340dd049f6545e9488456fbb"
+  }
+}
