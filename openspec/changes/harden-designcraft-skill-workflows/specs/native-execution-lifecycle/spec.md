@@ -52,6 +52,12 @@
 - **WHEN** 原生命令对多步脚本只返回整体退出状态，未提供逐步回执
 - **THEN** 网关保留有序 command/params 身份引用，并将每步观察标为 `BATCH_EXIT_ZERO_REVIEW_REQUIRED` 或 `UNKNOWN`；不得推断单步成功/失败，直至固定 CLI 提供可核对的逐步结果。
 
+#### Scenario: 固定 CLI 返回可核对的部分批次结果
+- **WHEN** 原生输出同时包含 `completed`、`failedIndex`、`failedCommand` 和等长已完成 `results`，且失败索引与计划命令一致
+- **THEN** 网关按顺序摘要绑定已完成前缀，失败步骤标记 `STEP_FAILED_OR_PARTIAL`，后缀标记 `NOT_STARTED`；失败步骤仍视为可能产生副作用，不得自动重试或据此宣称业务接受。
+- **WHEN** 上述字段缺失、索引/命令不匹配或 results 数量不符
+- **THEN** 所有步骤保守标记 `UNKNOWN`，保留原始 stdout/stderr。
+
 #### Scenario: 旧回执读取
 - **WHEN** 旧回执没有 runId 或检查点
 - **THEN** 可展示原始状态和缺口，不静默升级成可自动恢复的记录。

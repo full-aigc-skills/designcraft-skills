@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "runId": "c64c358f-303a-41d7-b355-1e0daae71651",
+  "inspectedAt": "2026-10-08T12:52:42.319781+00:00",
+  "receiptSha256": "60baaba8e2c2877d8db981081465da63e063f3260c60cdcf1cc14e8b8f16241b",
+  "currentStepStatuses": [
+    "STEP_COMPLETED_REVIEW_REQUIRED",
+    "STEP_FAILED_OR_PARTIAL",
+    "NOT_STARTED"
+  ],
+  "reinspection": "PASS",
+  "automaticReplay": false,
+  "completeAcceptance": false
+}

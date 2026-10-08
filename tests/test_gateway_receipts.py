@@ -102,6 +102,34 @@ class ReceiptContract(unittest.TestCase):
             self.assertFalse(receipt['automaticReplay'])
             self.assertFalse(receipt['completeAcceptance'])
 
+    def test_native_partial_batch_marks_completed_failed_and_unstarted_steps_without_replay(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t);output=root/'output';command='doc_info' if DOMAIN=='printcraft' else 'file.new'
+            steps=[{'command':command,'params':{'part':index}} for index in range(3)]
+            discovery=subprocess.CompletedProcess([],0,json.dumps(self.catalog()),'')
+            partial_stdout=json.dumps({'completed':1,'error':'native_step_failed','failedCommand':command,'failedIndex':1,'results':[{'created':True}]})
+            partial=subprocess.CompletedProcess([],1,partial_stdout,'native failure')
+            result,count=self.invoke(['run',str(self.plan(root,steps)),'--output',str(output)],[discovery,partial])
+            self.assertEqual((result,count),(1,2))
+            receipt=json.loads((output/'receipt.json').read_text())
+            self.assertEqual([step['status'] for step in receipt['stepResults']],['STEP_COMPLETED_REVIEW_REQUIRED','STEP_FAILED_OR_PARTIAL','NOT_STARTED'])
+            self.assertEqual(receipt['stepResults'][0]['resultSha256'],hashlib.sha256(b'{"created":true}').hexdigest())
+            self.assertFalse(receipt['automaticReplay'])
+            self.assertFalse(receipt['completeAcceptance'])
+            inspected=self.g.inspect_receipt(output/'receipt.json',DOMAIN)
+            self.assertEqual([step['status'] for step in inspected['stepResults']],['STEP_COMPLETED_REVIEW_REQUIRED','STEP_FAILED_OR_PARTIAL','NOT_STARTED'])
+            receipt['stepResults'][0]['status']='BATCH_EXIT_ZERO_REVIEW_REQUIRED'
+            receipt['stepResults'][0]['granularity']='single-native-session'
+            (output/'receipt.json').write_text(json.dumps(receipt))
+            with self.assertRaisesRegex(ValueError,'receipt_step_result_evidence_invalid'):
+                self.g.inspect_receipt(output/'receipt.json',DOMAIN)
+            receipt['stepResults'][0]['status']='STEP_COMPLETED_REVIEW_REQUIRED'
+            receipt['stepResults'][0]['granularity']='native-step-result'
+            receipt['stepResults'][0]['resultSha256']='0'*64
+            (output/'receipt.json').write_text(json.dumps(receipt))
+            with self.assertRaisesRegex(ValueError,'receipt_step_result_evidence_invalid'):
+                self.g.inspect_receipt(output/'receipt.json',DOMAIN)
+
     def test_designcraft_source_is_copied_and_native_edits_leave_original_intact(self):
         with tempfile.TemporaryDirectory() as t:
             root=Path(t);source=root/'source-project';source.mkdir();original=source/'page.json';original.write_text('{"title":"before"}')

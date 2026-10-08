@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "designcraft-native-step-observation/v1",
+  "runId": "c64c358f-303a-41d7-b355-1e0daae71651",
+  "status": "PASS",
+  "completeAcceptance": false,
+  "cliVersion": "0.2.1",
+  "binarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+  "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700",
+  "planSha256": "dda356b7337203a9a48df2dba85ceb387fda0f29fe74c04130b46931d042ed6a",
+  "nativePlanSha256": "e1f5ebb3c4bc064071242cc6848bda8ed84129474951c930deb615d6932f33c3",
+  "nativeProcessStatus": "FAILED_OR_PARTIAL",
+  "completed": 1,
+  "failedIndex": 1,
+  "failedCommand": "file.exportText",
+  "gatewayStepStatuses": [
+    "STEP_COMPLETED_REVIEW_REQUIRED",
+    "STEP_FAILED_OR_PARTIAL",
+    "NOT_STARTED"
+  ],
+  "completedResultSha256": "7f10e0d9e26f97474cb44b40992c301793035074cb051aa921ad2fde8bc09426",
+  "failureReason": "command `file.exportText` is not available right now: edit text or select a text frame",
+  "replay": false,
+  "laterInspectionExecuted": false,
+  "exportTextOutputCreated": false,
+  "receiptReinspection": "PASS",
+  "acceptanceNote": "Native step identity is preserved for the exact completed prefix and failed index. The failed step may have side effects and is not safe to replay; this observation does not implement checkpoint recovery."
+}

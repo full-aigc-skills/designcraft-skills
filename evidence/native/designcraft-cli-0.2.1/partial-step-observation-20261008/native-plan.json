@@ -1,0 +1,3 @@
+{"command": "document.inspect", "params": {}}
+{"command": "file.exportText", "params": {"path": "/tmp/designcraft-step-observation-20261008/never-created.txt"}}
+{"command": "document.inspect", "params": {}}

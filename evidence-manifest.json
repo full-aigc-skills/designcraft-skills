@@ -32,179 +32,11 @@
       "status": "NOT_RUN"
     },
     {
-      "id": "offline-tests",
-      "layer": "offline-tests",
-      "status": "PASS",
-      "runId": "2d1edef1-a641-4eb4-a836-3a6fbf5241e3",
-      "observedAt": "2026-10-08T12:44:19.948401+00:00",
-      "environment": {
-        "os": "Darwin",
-        "machine": "arm64",
-        "python": "3.13.5"
-      },
-      "bindings": {
-        "packageVersion": "0.1.0-dev.1",
-        "nativeVersion": "0.2.1",
-        "packageTreeSha256": "a7708c29f919eb66485323b3006b30d7af8efc4a6a828eb0cf3794dc6e33d38b",
-        "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
-        "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
-        "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
-        "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
-        "expectedNativeBinarySha256": [
-          "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
-        ]
-      },
-      "inputs": [
-        {
-          "path": "tests/test_artifact_manifest.py",
-          "sha256": "363dba171461ca13b750b9cc82bc824ea3b03895110973ea30efff9d710aed10"
-        },
-        {
-          "path": "tests/test_evidence_freshness.py",
-          "sha256": "fbcac3f65189b06b9584823cb4cc00b6367ba625bafc15ff054a04347c420a3f"
-        },
-        {
-          "path": "tests/test_format_probe.py",
-          "sha256": "84d69a718043854c2fcd558d026a7089757885002e6efc78984327f5f2660715"
-        },
-        {
-          "path": "tests/test_gateway_receipts.py",
-          "sha256": "6e7946bebdcde38bec947f5ef1e2c35169d025333e7f846583b57f6d5d8575a7"
-        },
-        {
-          "path": "tests/test_native_result.py",
-          "sha256": "4dba0bae3f287d127fd84ece0f96c8b880c75bc3372a58a783dfbe54f5fb957c"
-        },
-        {
-          "path": "tests/test_native_schema_contract.py",
-          "sha256": "06cac905a97ba526221f6d9ae07687eb9e7e663aec167b1bdaf32b037e175e49"
-        },
-        {
-          "path": "tests/test_package.py",
-          "sha256": "9dbd288546b92dcb176b5cdab0be4a674e5c2f93b4c6c6c2d582c829cf84f9fe"
-        },
-        {
-          "path": "tests/test_page_review.py",
-          "sha256": "b2cd2dd1caac55453a050c57a474bb7ceb6445bb63b5d43c83dfa3a28b5c9c37"
-        },
-        {
-          "path": "tests/test_research_inventory.py",
-          "sha256": "d0f2fc2bd9604594816fda92cc3e074c5a8b5c1e5105ba483e36a181857cbafb"
-        },
-        {
-          "path": "tests/test_revision_evidence.py",
-          "sha256": "20a90166c1dbfdc28dfbd21a3392deaf200af3f21bd2a228145e7ea8fb143163"
-        },
-        {
-          "path": "tests/test_runtime_release_identity.py",
-          "sha256": "0a874924a0b07a26ab7d805544dfeb89c936694db7d332d66fe90bd04f18a123"
-        },
-        {
-          "path": "tests/test_snapshot_sync.py",
-          "sha256": "1432b22212173b9c9302fdcb9bda2f12c1986e720b797b892c306fc20df00748"
-        }
-      ],
-      "artifacts": [
-        {
-          "path": "evidence/current-offline-validation.json",
-          "sha256": "43e0b9f63ddda7ea1d36a01e3509ea3e8194739bbe3c463b3ad9e1b1295d10b2"
-        }
-      ]
-    },
-    {
-      "id": "package-validation",
-      "layer": "package-validation",
-      "status": "PASS",
-      "runId": "2d1edef1-a641-4eb4-a836-3a6fbf5241e3",
-      "observedAt": "2026-10-08T12:44:19.948401+00:00",
-      "environment": {
-        "os": "Darwin",
-        "machine": "arm64",
-        "python": "3.13.5"
-      },
-      "bindings": {
-        "packageVersion": "0.1.0-dev.1",
-        "nativeVersion": "0.2.1",
-        "packageTreeSha256": "a7708c29f919eb66485323b3006b30d7af8efc4a6a828eb0cf3794dc6e33d38b",
-        "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
-        "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
-        "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
-        "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
-        "expectedNativeBinarySha256": [
-          "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
-        ]
-      },
-      "inputs": [
-        {
-          "path": "command-coverage.json",
-          "sha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3"
-        },
-        {
-          "path": "research-command-inventory.json",
-          "sha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa"
-        },
-        {
-          "path": "scripts/validate_package.py",
-          "sha256": "f0494b97121e4d2ed18a90e482cc9a0b3be69eff6597aca9b34cd7e3fcffa21a"
-        },
-        {
-          "path": "skill-suite.json",
-          "sha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe"
-        }
-      ],
-      "artifacts": [
-        {
-          "path": "evidence/current-offline-validation.json",
-          "sha256": "43e0b9f63ddda7ea1d36a01e3509ea3e8194739bbe3c463b3ad9e1b1295d10b2"
-        }
-      ]
-    },
-    {
-      "id": "research-source-inventory",
-      "layer": "research-source-inventory",
-      "status": "PASS",
-      "runId": "2d1edef1-a641-4eb4-a836-3a6fbf5241e3",
-      "observedAt": "2026-10-08T12:44:19.948401+00:00",
-      "environment": {
-        "os": "Darwin",
-        "machine": "arm64",
-        "python": "3.13.5"
-      },
-      "bindings": {
-        "packageVersion": "0.1.0-dev.1",
-        "nativeVersion": "0.2.1",
-        "packageTreeSha256": "a7708c29f919eb66485323b3006b30d7af8efc4a6a828eb0cf3794dc6e33d38b",
-        "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
-        "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
-        "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
-        "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
-        "expectedNativeBinarySha256": [
-          "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
-        ]
-      },
-      "inputs": [
-        {
-          "path": "research-command-inventory.json",
-          "sha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa"
-        },
-        {
-          "path": "scripts/check_research_inventory.py",
-          "sha256": "a97bc6b3bcfdd17f96715ec397938470451d886461c88fae239bce4333cef950"
-        }
-      ],
-      "artifacts": [
-        {
-          "path": "evidence/current-offline-validation.json",
-          "sha256": "43e0b9f63ddda7ea1d36a01e3509ea3e8194739bbe3c463b3ad9e1b1295d10b2"
-        }
-      ]
-    },
-    {
       "id": "native-runtime",
       "layer": "native",
       "status": "PASS",
-      "runId": "c8306a20-889e-45fe-adef-7f951a30027c",
-      "observedAt": "2026-10-08T12:44:34.284121+00:00",
+      "runId": "7327ddd4-d005-4159-9dbe-32bbbdd115e1",
+      "observedAt": "2026-10-08T12:53:14.954748+00:00",
       "environment": {
         "os": "Darwin",
         "machine": "arm64",
@@ -213,7 +45,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "a7708c29f919eb66485323b3006b30d7af8efc4a6a828eb0cf3794dc6e33d38b",
+        "packageTreeSha256": "3baea56a04bce1dff5087adb6010cd4906d384d0f2ba53b6c94d741b86ff6657",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -232,26 +64,14 @@
           "sha256": "09c39a397e2e409edf9a84edc8fa24023f736f794a5f0e21bb79390842141044"
         },
         {
-          "path": "skills/designcraft-cli/scripts/command_gateway.py",
-          "sha256": "41159cc8cf811078ee512c539a87858b7aa280efffbcdfd51d6cf9010f3ed43d"
-        },
-        {
-          "path": "skills/designcraft-cli/scripts/commands.py",
-          "sha256": "1c68012b9c9ca0b023a7cbfc05376d9a66059457311734036a8fe7ff13d432b7"
-        },
-        {
           "path": "skills/designcraft-cli/scripts/runtime.lock.json",
           "sha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
         }
       ],
       "artifacts": [
         {
-          "path": "evidence/native/designcraft-cli-0.2.1/business-assessment/current-gateway/receipt.json",
-          "sha256": "9d22297d5d560a86ffba908a4025d35e94522e9c98d7ea68d1c95afffad6b8a4"
-        },
-        {
-          "path": "evidence/native/designcraft-cli-0.2.1/command-catalog.json",
-          "sha256": "9cb08214609d4cef93b61041cd65eea17f878fbb0c6c56c34eedf95bc274eb2d"
+          "path": "evidence/native/designcraft-cli-0.2.1/current-runtime-check/version.txt",
+          "sha256": "545603bad294c34ccd83d08ed702ad73139066500e9e62a8cbe111f25b505b0a"
         },
         {
           "path": "evidence/native/designcraft-cli-0.2.1/installation.json",
@@ -612,6 +432,234 @@
         {
           "path": "evidence/native/designcraft-cli-0.2.1/format-export-20261008/reflow.epub",
           "sha256": "6f2ed93985f87e11051b30f160bcaccae3117da098d02e1e19a682b4b2872682"
+        }
+      ]
+    },
+    {
+      "id": "offline-tests",
+      "layer": "offline-tests",
+      "status": "PASS",
+      "runId": "7953cfd4-2d24-414c-983f-e9ba9f924494",
+      "observedAt": "2026-10-08T12:52:18.523876+00:00",
+      "environment": {
+        "os": "Darwin",
+        "machine": "arm64",
+        "python": "3.13.5"
+      },
+      "bindings": {
+        "packageVersion": "0.1.0-dev.1",
+        "nativeVersion": "0.2.1",
+        "packageTreeSha256": "3baea56a04bce1dff5087adb6010cd4906d384d0f2ba53b6c94d741b86ff6657",
+        "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
+        "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
+        "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
+        "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
+        "expectedNativeBinarySha256": [
+          "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
+        ]
+      },
+      "inputs": [
+        {
+          "path": "tests/test_artifact_manifest.py",
+          "sha256": "363dba171461ca13b750b9cc82bc824ea3b03895110973ea30efff9d710aed10"
+        },
+        {
+          "path": "tests/test_evidence_freshness.py",
+          "sha256": "fbcac3f65189b06b9584823cb4cc00b6367ba625bafc15ff054a04347c420a3f"
+        },
+        {
+          "path": "tests/test_format_probe.py",
+          "sha256": "84d69a718043854c2fcd558d026a7089757885002e6efc78984327f5f2660715"
+        },
+        {
+          "path": "tests/test_gateway_receipts.py",
+          "sha256": "336a5166e4354e8244492e1910bb16461965e7ef34112fb80f740665aeb26b52"
+        },
+        {
+          "path": "tests/test_native_result.py",
+          "sha256": "4dba0bae3f287d127fd84ece0f96c8b880c75bc3372a58a783dfbe54f5fb957c"
+        },
+        {
+          "path": "tests/test_native_schema_contract.py",
+          "sha256": "06cac905a97ba526221f6d9ae07687eb9e7e663aec167b1bdaf32b037e175e49"
+        },
+        {
+          "path": "tests/test_package.py",
+          "sha256": "9dbd288546b92dcb176b5cdab0be4a674e5c2f93b4c6c6c2d582c829cf84f9fe"
+        },
+        {
+          "path": "tests/test_page_review.py",
+          "sha256": "b2cd2dd1caac55453a050c57a474bb7ceb6445bb63b5d43c83dfa3a28b5c9c37"
+        },
+        {
+          "path": "tests/test_research_inventory.py",
+          "sha256": "d0f2fc2bd9604594816fda92cc3e074c5a8b5c1e5105ba483e36a181857cbafb"
+        },
+        {
+          "path": "tests/test_revision_evidence.py",
+          "sha256": "20a90166c1dbfdc28dfbd21a3392deaf200af3f21bd2a228145e7ea8fb143163"
+        },
+        {
+          "path": "tests/test_runtime_release_identity.py",
+          "sha256": "0a874924a0b07a26ab7d805544dfeb89c936694db7d332d66fe90bd04f18a123"
+        },
+        {
+          "path": "tests/test_snapshot_sync.py",
+          "sha256": "1432b22212173b9c9302fdcb9bda2f12c1986e720b797b892c306fc20df00748"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "evidence/current-offline-validation.json",
+          "sha256": "a92f42d9bcf59a0ac4a3146972b8d9be5ac5b154801975d6e65ddf0f7200cfaf"
+        }
+      ]
+    },
+    {
+      "id": "package-validation",
+      "layer": "package-validation",
+      "status": "PASS",
+      "runId": "7953cfd4-2d24-414c-983f-e9ba9f924494",
+      "observedAt": "2026-10-08T12:52:18.523876+00:00",
+      "environment": {
+        "os": "Darwin",
+        "machine": "arm64",
+        "python": "3.13.5"
+      },
+      "bindings": {
+        "packageVersion": "0.1.0-dev.1",
+        "nativeVersion": "0.2.1",
+        "packageTreeSha256": "3baea56a04bce1dff5087adb6010cd4906d384d0f2ba53b6c94d741b86ff6657",
+        "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
+        "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
+        "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
+        "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
+        "expectedNativeBinarySha256": [
+          "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
+        ]
+      },
+      "inputs": [
+        {
+          "path": "command-coverage.json",
+          "sha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3"
+        },
+        {
+          "path": "research-command-inventory.json",
+          "sha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa"
+        },
+        {
+          "path": "scripts/validate_package.py",
+          "sha256": "f0494b97121e4d2ed18a90e482cc9a0b3be69eff6597aca9b34cd7e3fcffa21a"
+        },
+        {
+          "path": "skill-suite.json",
+          "sha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "evidence/current-offline-validation.json",
+          "sha256": "a92f42d9bcf59a0ac4a3146972b8d9be5ac5b154801975d6e65ddf0f7200cfaf"
+        }
+      ]
+    },
+    {
+      "id": "research-source-inventory",
+      "layer": "research-source-inventory",
+      "status": "PASS",
+      "runId": "7953cfd4-2d24-414c-983f-e9ba9f924494",
+      "observedAt": "2026-10-08T12:52:18.523876+00:00",
+      "environment": {
+        "os": "Darwin",
+        "machine": "arm64",
+        "python": "3.13.5"
+      },
+      "bindings": {
+        "packageVersion": "0.1.0-dev.1",
+        "nativeVersion": "0.2.1",
+        "packageTreeSha256": "3baea56a04bce1dff5087adb6010cd4906d384d0f2ba53b6c94d741b86ff6657",
+        "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
+        "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
+        "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
+        "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
+        "expectedNativeBinarySha256": [
+          "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
+        ]
+      },
+      "inputs": [
+        {
+          "path": "research-command-inventory.json",
+          "sha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa"
+        },
+        {
+          "path": "scripts/check_research_inventory.py",
+          "sha256": "a97bc6b3bcfdd17f96715ec397938470451d886461c88fae239bce4333cef950"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "evidence/current-offline-validation.json",
+          "sha256": "a92f42d9bcf59a0ac4a3146972b8d9be5ac5b154801975d6e65ddf0f7200cfaf"
+        }
+      ]
+    },
+    {
+      "id": "native-partial-steps",
+      "layer": "native",
+      "status": "PASS",
+      "runId": "c64c358f-303a-41d7-b355-1e0daae71651",
+      "observedAt": "2026-10-08T12:52:42.319781+00:00",
+      "environment": {
+        "os": "Darwin",
+        "machine": "arm64",
+        "python": "3.13.5"
+      },
+      "bindings": {
+        "packageVersion": "0.1.0-dev.1",
+        "nativeVersion": "0.2.1",
+        "packageTreeSha256": "3baea56a04bce1dff5087adb6010cd4906d384d0f2ba53b6c94d741b86ff6657",
+        "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
+        "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
+        "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
+        "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
+        "expectedNativeBinarySha256": [
+          "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
+        ]
+      },
+      "inputs": [
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/partial-step-observation-20261008/native-plan.json",
+          "sha256": "e1f5ebb3c4bc064071242cc6848bda8ed84129474951c930deb615d6932f33c3"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/partial-step-observation-20261008/plan.json",
+          "sha256": "0725138c6c2d914e66747515457c52942a64646f766bfa03019879aa57d8ae99"
+        },
+        {
+          "path": "skills/designcraft-cli/scripts/command_gateway.py",
+          "sha256": "4c26256c54c844c426497c61ff1726ab127de0427581370f5da0cdc09b390425"
+        },
+        {
+          "path": "skills/designcraft-cli/scripts/runtime.lock.json",
+          "sha256": "3bec92e2eaf7227ee265ec2817413859c709261c41f4eb5363c8915dc1dbbad8"
+        },
+        {
+          "path": "skills/designcraft-use/scripts/command_gateway.py",
+          "sha256": "4c26256c54c844c426497c61ff1726ab127de0427581370f5da0cdc09b390425"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/partial-step-observation-20261008/current-reinspection.json",
+          "sha256": "f97c5197ee829a2581be4d11f8687217748a4e2dfeb3821111b32c379fe2497c"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/partial-step-observation-20261008/native-result.json",
+          "sha256": "98fc6394fd1bfeffa4af4355520899a2ebfdce182f464a9a400480a885351019"
+        },
+        {
+          "path": "evidence/native/designcraft-cli-0.2.1/partial-step-observation-20261008/receipt.json",
+          "sha256": "60baaba8e2c2877d8db981081465da63e063f3260c60cdcf1cc14e8b8f16241b"
         }
       ]
     }
