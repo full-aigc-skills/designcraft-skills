@@ -42,6 +42,14 @@ class PackageContract(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError,'skill_invocation_policy_invalid'):
                     self._validate_fixture(fixture)
 
+    def test_codex_skill_budget_counts_utf8_bytes(self):
+        with tempfile.TemporaryDirectory() as temp:
+            fixture=Path(temp)/'package';shutil.copytree(ROOT,fixture,ignore=shutil.ignore_patterns('openspec','__pycache__','.DS_Store'))
+            path=fixture/'skills/designcraft-cli-layout/SKILL.md'
+            path.write_text(path.read_text()+'\n'+'汉'*2600)
+            with self.assertRaisesRegex(ValueError,'skill_host_byte_budget_exceeded'):
+                self._validate_fixture(fixture)
+
     def test_structure_and_resources(self):
         p=ROOT/'scripts/validate_package.py'
         spec=importlib.util.spec_from_file_location('validator',p)

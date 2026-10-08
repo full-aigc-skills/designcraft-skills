@@ -28,6 +28,10 @@
 - **WHEN** Codex 构建未指定技能或显式指定原子技能的模型输入
 - **THEN** agents/openai.yaml 仅允许 use 隐式调用；原子技能和插件本地 Harness 的 allow_implicit_invocation 为 false，仍可显式加载。包校验拒绝缺失或错误策略；宿主输入验证不代替实际模型路由和原生验收。
 
+#### Scenario: 显式正文不能截断执行边界
+- **WHEN** Codex 将本包显式技能正文加入模型输入
+- **THEN** SKILL.md 保持不超过 7500 UTF-8 字节，给当前宿主约 8000 字节注入上限留余量；完整流程保留在本技能 references，入口要求相关执行前读取。真实输入须与安装文件全文比对，前缀匹配不能冒充完整加载。
+
 ### Requirement: SK-02 场景契约与渐进式资料
 
 每项技能 SHALL 描述适用/不适用范围、输入前置、副作用、输出交接、失败恢复和验收；按需提供域内 references 与 examples，至少覆盖成功、既有项目修改和适用的失败恢复。layout SHALL 覆盖样式、串联文本框、图像、溢出与模板数据合并；export SHALL 区分 PDF/IDML/EPUB/图片的检查与损失。

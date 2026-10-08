@@ -88,6 +88,7 @@ def validate():
         text=(p/'SKILL.md').read_text()
         if not text.startswith('---\n') or f'name: {name}\n' not in text or not re.search(r'^description:\s*\S',text,re.M):raise ValueError('skill_frontmatter_invalid')
         if len(text.splitlines())>=500:raise ValueError('skill_too_long')
+        if len(text.encode('utf-8'))>7500:raise ValueError('skill_host_byte_budget_exceeded:'+name)
         if '/mnt/skills/user' in text:raise ValueError('hardcoded_skill_path')
         if any(section not in text for section in ('## 路由范围','## 首次使用','## 当前场景','## 场景示例')) or '[场景示例](examples/workflow-cases.md)' not in text:
             raise ValueError('skill_workflow_quality_invalid:'+name+':entry_contract')
