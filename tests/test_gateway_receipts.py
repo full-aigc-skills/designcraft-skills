@@ -125,6 +125,21 @@ class ReceiptContract(unittest.TestCase):
             self.assertEqual((result,count),(1,1))
             self.assertFalse(output.exists())
 
+    def test_skill_resource_drift_after_native_preserves_receipt_without_rollback_claim(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t);output=root/'output';initial=self.g.capture_resources(self.scripts);changed=dict(initial);changed['runtime.lock.json']='f'*64
+            discovery=subprocess.CompletedProcess([],0,json.dumps(self.catalog()),'')
+            success=subprocess.CompletedProcess([],0,'native stdout','native stderr')
+            with patch.object(self.g,'capture_resources',side_effect=[initial,initial,changed]):
+                result,count=self.invoke(['run',str(self.plan(root)),'--output',str(output)],[discovery,success])
+            self.assertEqual((result,count),(1,2))
+            receipt=json.loads((output/'receipt.json').read_text())
+            self.assertEqual(receipt['status'],'SKILL_CHANGED_REVIEW_REQUIRED')
+            self.assertEqual((receipt['stdout'],receipt['stderr']),('native stdout','native stderr'))
+            self.assertFalse(receipt['automaticReplay'])
+            self.assertFalse(receipt['completeAcceptance'])
+            self.assertTrue((output/'native-plan.json').is_file())
+
     def test_input_missing_is_rejected_before_discovery(self):
         with tempfile.TemporaryDirectory() as t:
             root=Path(t)
