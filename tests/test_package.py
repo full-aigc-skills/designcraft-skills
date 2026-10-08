@@ -13,6 +13,16 @@ ROOT=Path(__file__).resolve().parents[1]
 DOMAIN=ROOT.name.removesuffix('-skills')
 
 class PackageContract(unittest.TestCase):
+    def test_default_trigger_covers_incomplete_outline_and_document_trigger_is_atomic(self):
+        use=(ROOT/'skills/designcraft-use/SKILL.md').read_text()
+        document=(ROOT/'skills/designcraft-cli-document/SKILL.md').read_text()
+        use_description=re.search(r'^description:\s*(.+)$',use,re.M).group(1)
+        document_description=re.search(r'^description:\s*(.+)$',document,re.M).group(1)
+        self.assertIn('未提供大纲',use_description)
+        self.assertIn('完整排版',use_description)
+        self.assertIn('只要求单独',document_description)
+        self.assertIn('已确定内容和版式',document_description)
+
     def _validate_fixture(self, fixture):
         spec=importlib.util.spec_from_file_location('validator_fixture',fixture/'scripts/validate_package.py')
         module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);module.ROOT=fixture

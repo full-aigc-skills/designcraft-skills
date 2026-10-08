@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
   "defaultSkill": "designcraft-use",
-  "priority": "an explicit single-purpose request selects its atomic skill; otherwise route output-oriented DesignCraft work to the default skill",
+  "priority": "only an explicit request for one already-scoped native operation selects an atomic skill; all output-oriented DesignCraft work, including incomplete outlines and editable-document goals that still need content or layout planning, routes to the default skill",
   "routes": [
     {
       "skill": "designcraft-use",
       "intent": "Create or coordinate a complete multi-page layout deliverable",
       "examples": [
         "Create a six-page product handout and save an editable project",
+        "Turn this incomplete outline into two editable designed pages; first ask what information is missing",
         "Revise this publication and prepare a reviewable PDF"
       ],
       "sideEffects": "May install the pinned runtime and write only within the user-authorized work and output paths"
@@ -32,10 +33,11 @@
     },
     {
       "skill": "designcraft-cli-document",
-      "intent": "Perform an explicit native project lifecycle operation",
+      "intent": "Perform one explicit native project lifecycle operation on an already-decided layout plan",
       "examples": [
         "Open this DesignCraft project and save a copy",
-        "Reopen the saved project and verify its page count"
+        "Reopen the saved project and verify its page count",
+        "Create a blank project using this already-approved page size and save path"
       ],
       "sideEffects": "Opening is read-oriented; saving or creating a project writes to the authorized destination"
     },
