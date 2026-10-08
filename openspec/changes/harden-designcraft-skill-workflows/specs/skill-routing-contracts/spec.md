@@ -24,6 +24,10 @@
 - **WHEN** 用户要新建文档（包括空白文档），或只要求打开/保存/另存/重开一个既有工程
 - **THEN** 新文档目标由 use 接收并澄清；document 仅处理既有工程的单项生命周期操作。
 
+#### Scenario: Codex 默认和显式技能输入
+- **WHEN** Codex 构建未指定技能或显式指定原子技能的模型输入
+- **THEN** agents/openai.yaml 仅允许 use 隐式调用；原子技能和插件本地 Harness 的 allow_implicit_invocation 为 false，仍可显式加载。包校验拒绝缺失或错误策略；宿主输入验证不代替实际模型路由和原生验收。
+
 ### Requirement: SK-02 场景契约与渐进式资料
 
 每项技能 SHALL 描述适用/不适用范围、输入前置、副作用、输出交接、失败恢复和验收；按需提供域内 references 与 examples，至少覆盖成功、既有项目修改和适用的失败恢复。layout SHALL 覆盖样式、串联文本框、图像、溢出与模板数据合并；export SHALL 区分 PDF/IDML/EPUB/图片的检查与损失。

@@ -7,6 +7,13 @@ from urllib.parse import unquote, urlsplit
 
 ROOT=Path(__file__).resolve().parents[1]
 
+def validate_invocation_policy(skill, implicit):
+    """校验本包维护的最小 Codex 策略格式，不将其当作通用 YAML 解析器。"""
+    path=skill/'agents/openai.yaml'
+    expected='policy:\n  allow_implicit_invocation: '+('true' if implicit else 'false')
+    if path.is_symlink() or not path.is_file() or path.read_text(encoding='utf-8').strip()!=expected:
+        raise ValueError('skill_invocation_policy_invalid:'+skill.name)
+
 def validate():
     suite=json.loads((ROOT/'skill-suite.json').read_text())
     domain=suite['domain']
@@ -77,6 +84,7 @@ def validate():
     for name in sorted(expected):
         p=ROOT/'skills'/name
         if p.is_symlink():raise ValueError('skill_symlink')
+        validate_invocation_policy(p,name==f'{domain}-use')
         text=(p/'SKILL.md').read_text()
         if not text.startswith('---\n') or f'name: {name}\n' not in text or not re.search(r'^description:\s*\S',text,re.M):raise ValueError('skill_frontmatter_invalid')
         if len(text.splitlines())>=500:raise ValueError('skill_too_long')

@@ -30,6 +30,18 @@ class PackageContract(unittest.TestCase):
         module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);module.ROOT=fixture
         return module.validate()
 
+    def test_codex_invocation_policy_rejects_missing_or_ambiguous_values(self):
+        for name, value in (('designcraft-use', 'false'), ('designcraft-cli-export', 'true'), ('designcraft-cli', '"false"'), ('designcraft-cli-layout', 'False'), ('designcraft-cli-document', 'false\n  allow_implicit_invocation: true'), ('designcraft-cli-setup', None)):
+            with self.subTest(skill=name, value=value), tempfile.TemporaryDirectory() as temp:
+                fixture=Path(temp)/'package';shutil.copytree(ROOT,fixture,ignore=shutil.ignore_patterns('openspec','__pycache__','.DS_Store'))
+                path=fixture/'skills'/name/'agents/openai.yaml';path.parent.mkdir(exist_ok=True)
+                if value is None:
+                    path.unlink(missing_ok=True)
+                else:
+                    path.write_text('policy:\n  allow_implicit_invocation: '+value+'\n')
+                with self.assertRaisesRegex(ValueError,'skill_invocation_policy_invalid'):
+                    self._validate_fixture(fixture)
+
     def test_structure_and_resources(self):
         p=ROOT/'scripts/validate_package.py'
         spec=importlib.util.spec_from_file_location('validator',p)
