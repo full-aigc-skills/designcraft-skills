@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "designcraft-revision/v1",
+  "authorization": {
+    "scope": {
+      "type": "story",
+      "storyId": "65"
+    },
+    "authorizationText": "仅将第三页 Story 65 标题从 A Better Grid 修订为 A Considered Grid，授权证据是本次任务中对 AV-04 的明确原生验收要求。"
+  },
+  "before": {
+    "artifactManifestPath": "before/artifact-manifest.json",
+    "artifactManifestSha256": "b375cc0682cf75081e79517d6f9d7d7408944144cf60064dc8bcd3f28cbe190f",
+    "pageReviewPath": "before/page-review.json",
+    "pageReviewSha256": "adceae4837692ccdb0f9c5572bf8646c6ce82e5e71474c8b67d15263e6df273c",
+    "snapshotPath": "before/revision-snapshot.json",
+    "snapshotSha256": "674758894c993076a82c1d0f22db4e65da28be8d9bc32092dabbb22edd4480c7"
+  },
+  "after": {
+    "artifactManifestPath": "after/artifact-manifest.json",
+    "artifactManifestSha256": "be8aff8307723477a401824ab36d3e34a7e36362c5f6aa5da40224429270991e",
+    "pageReviewPath": "after/page-review.json",
+    "pageReviewSha256": "274f47872555a7b8afa01436435039876b8d0b75a7ffe942d2156529137e9cba",
+    "snapshotPath": "after/revision-snapshot.json",
+    "snapshotSha256": "fb4ebb7f5328c6a3ad114e3bb8cea63befe8515910625a30319f8f132a3ba20a"
+  },
+  "affectedPages": [
+    3
+  ],
+  "revalidatedExports": [
+    {
+      "artifactId": "fresh-export",
+      "format": "pdf",
+      "sha256": "305aed6efacd727322ea1a5a0d7e4ea76db785888e7d480577b3ceeac2afb830",
+      "status": "PASS"
+    }
+  ]
+}

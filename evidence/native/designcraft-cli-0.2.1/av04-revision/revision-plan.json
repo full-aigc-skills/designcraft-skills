@@ -1,0 +1,37 @@
+{
+  "domain": "designcraft",
+  "steps": [
+    {
+      "command": "document.inspect",
+      "params": {}
+    },
+    {
+      "command": "story.setText",
+      "params": {
+        "story": 65,
+        "text": "A Considered Grid"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {}
+    },
+    {
+      "command": "preflight.run",
+      "params": {
+        "minPpi": 150
+      }
+    },
+    {
+      "command": "file.save",
+      "params": {}
+    },
+    {
+      "command": "file.exportPdf",
+      "params": {
+        "path": "/tmp/designcraft-plan-validation-20261008/av04-revision-20261008/revision-run/revision.pdf",
+        "standard": "none"
+      }
+    }
+  ]
+}

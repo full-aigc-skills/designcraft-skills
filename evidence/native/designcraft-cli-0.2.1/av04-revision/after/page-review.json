@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "designcraft-page-review/v1",
+  "runId": "c45fd111-8e11-4ab0-9bd3-2cf086f0b23f",
+  "projectSha256": "9af246d8abe08ac633aa57e1144016078873793586a0bd45c27547e259f43c3e",
+  "artifactManifestSha256": "be8aff8307723477a401824ab36d3e34a7e36362c5f6aa5da40224429270991e",
+  "rubricVersion": "designcraft-layout-rubric/v1",
+  "basis": {
+    "type": "task-spec",
+    "path": "task-spec.md",
+    "sha256": "2828209f759a18f1edfec032411dfb77078536be2fc4234672ac7ce69689afe9"
+  },
+  "reviewer": {
+    "kind": "automated",
+    "identity": "Codex visual inspection",
+    "model": "GPT-6 multimodal visual review"
+  },
+  "reviewedAt": "2026-10-08T12:31:44.590781+00:00",
+  "pages": [
+    {
+      "page": 1,
+      "previewPath": "previews/page-1.png",
+      "previewSha256": "2aa97c060c694ed63645de39d4a9099a539e2117962d913c1ff24e559174a1a1",
+      "checks": [
+        {
+          "criterion": "hierarchy",
+          "status": "PASS",
+          "note": "标题仍与正文形成清晰层级；新标题完整可见。"
+        },
+        {
+          "criterion": "whitespace",
+          "status": "PASS",
+          "note": "标题周围留白保持充分。"
+        },
+        {
+          "criterion": "alignment",
+          "status": "PASS",
+          "note": "标题位置与修订前版面网格一致。"
+        },
+        {
+          "criterion": "readability",
+          "status": "PASS",
+          "note": "新标题在页面 3 渲染中清晰可读。"
+        },
+        {
+          "criterion": "cropping",
+          "status": "PASS",
+          "note": "新标题未被裁切且未与相邻正文重叠。"
+        },
+        {
+          "criterion": "crossPageConsistency",
+          "status": "PASS",
+          "note": "第 1、2、4 页预览 SHA 与修订前相同；变化集中在第 3 页。"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "previewPath": "previews/page-2.png",
+      "previewSha256": "1ba8c0cda5dadd3a7cbb1d3fbddb4feddc7ba5caa4b10b31949de52da3d88092",
+      "checks": [
+        {
+          "criterion": "hierarchy",
+          "status": "PASS",
+          "note": "标题仍与正文形成清晰层级；新标题完整可见。"
+        },
+        {
+          "criterion": "whitespace",
+          "status": "PASS",
+          "note": "标题周围留白保持充分。"
+        },
+        {
+          "criterion": "alignment",
+          "status": "PASS",
+          "note": "标题位置与修订前版面网格一致。"
+        },
+        {
+          "criterion": "readability",
+          "status": "PASS",
+          "note": "新标题在页面 3 渲染中清晰可读。"
+        },
+        {
+          "criterion": "cropping",
+          "status": "PASS",
+          "note": "新标题未被裁切且未与相邻正文重叠。"
+        },
+        {
+          "criterion": "crossPageConsistency",
+          "status": "PASS",
+          "note": "第 1、2、4 页预览 SHA 与修订前相同；变化集中在第 3 页。"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "previewPath": "previews/page-3.png",
+      "previewSha256": "36753372bbdd33d11910c305b44e07ef485b089ac1172f7e567fe5b8bdd2aebd",
+      "checks": [
+        {
+          "criterion": "hierarchy",
+          "status": "PASS",
+          "note": "标题仍与正文形成清晰层级；新标题完整可见。"
+        },
+        {
+          "criterion": "whitespace",
+          "status": "PASS",
+          "note": "标题周围留白保持充分。"
+        },
+        {
+          "criterion": "alignment",
+          "status": "PASS",
+          "note": "标题位置与修订前版面网格一致。"
+        },
+        {
+          "criterion": "readability",
+          "status": "PASS",
+          "note": "新标题在页面 3 渲染中清晰可读。"
+        },
+        {
+          "criterion": "cropping",
+          "status": "PASS",
+          "note": "新标题未被裁切且未与相邻正文重叠。"
+        },
+        {
+          "criterion": "crossPageConsistency",
+          "status": "PASS",
+          "note": "第 1、2、4 页预览 SHA 与修订前相同；变化集中在第 3 页。"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "previewPath": "previews/page-4.png",
+      "previewSha256": "c50666299622b8ef9fc8c8e3eb6b3823036b214be3d55b9be4024a95618c8557",
+      "checks": [
+        {
+          "criterion": "hierarchy",
+          "status": "PASS",
+          "note": "标题仍与正文形成清晰层级；新标题完整可见。"
+        },
+        {
+          "criterion": "whitespace",
+          "status": "PASS",
+          "note": "标题周围留白保持充分。"
+        },
+        {
+          "criterion": "alignment",
+          "status": "PASS",
+          "note": "标题位置与修订前版面网格一致。"
+        },
+        {
+          "criterion": "readability",
+          "status": "PASS",
+          "note": "新标题在页面 3 渲染中清晰可读。"
+        },
+        {
+          "criterion": "cropping",
+          "status": "PASS",
+          "note": "新标题未被裁切且未与相邻正文重叠。"
+        },
+        {
+          "criterion": "crossPageConsistency",
+          "status": "PASS",
+          "note": "第 1、2、4 页预览 SHA 与修订前相同；变化集中在第 3 页。"
+        }
+      ]
+    }
+  ],
+  "conclusions": {
+    "structure": {
+      "status": "PASS",
+      "note": "固定 CLI 新会话重开并导出四页；Story 65 返回 frame 64 与新标题。重开文档的 spread 对象列表未列出 frame 64，故以 story.get 文本身份及修订前几何映射绑定。"
+    },
+    "visual": {
+      "status": "PASS",
+      "note": "实际 PDF 渲染页 3 可见新标题且未与正文重叠；页 1、2、4 像素摘要与修订前一致。自动视觉检查不构成人工设计签核。"
+    },
+    "output": {
+      "status": "PASS",
+      "note": "新会话原生导出 PDF 为 4 页、552605 字节、无导出警告；preflight 为 0 error/0 warning；未声称 PDF/X 外部认证。"
+    },
+    "editability": {
+      "status": "PASS",
+      "note": "保存后的原生工程在新 CLI 会话成功打开；Story 65 文本与工程 SHA 匹配。"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "layer": "native",
+  "task": "AV-04 fixed CLI title revision",
+  "cli": {
+    "name": "designcraft-cli",
+    "version": "0.2.1",
+    "platform": "darwin-arm64",
+    "binarySha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8",
+    "catalogSha256": "bf780a8b8a356f6af52e1bdda9319aad2d804b4915148cccf3b1f9c5d3c01700"
+  },
+  "runs": {
+    "beforeInspect": "30f0837b-526b-4096-aa98-ec814a0b5f09",
+    "revision": "c45fd111-8e11-4ab0-9bd3-2cf086f0b23f",
+    "freshReopen": "90e21a08-9aef-4e16-911e-ac04a5f17a4e"
+  },
+  "nativeStatuses": {
+    "revision": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+    "businessAssessment": "PASS",
+    "freshReopen": "NATIVE_EXIT_ZERO_REVIEW_REQUIRED",
+    "terminationVerified": true
+  },
+  "revisionEvidence": {
+    "path": "revision.json",
+    "status": "PASS",
+    "changedObjectCount": 1,
+    "changedObjectId": "frame:64",
+    "storyId": "65",
+    "affectedPages": [
+      3
+    ],
+    "afterProjectSha256": "9af246d8abe08ac633aa57e1144016078873793586a0bd45c27547e259f43c3e",
+    "afterExportSha256": "305aed6efacd727322ea1a5a0d7e4ea76db785888e7d480577b3ceeac2afb830",
+    "beforePreviewSha256": "b88fd603b70c5559adba7db4280dbf6b92d2b683294e182ce67b64a659e36b77",
+    "afterPreviewSha256": "36753372bbdd33d11910c305b44e07ef485b089ac1172f7e567fe5b8bdd2aebd"
+  },
+  "limitations": [
+    "The fresh-session document.inspect spread list omitted frame 64; story.get returned frame 64 and the revised complete text. The evidence binds the story identity to pre-edit page geometry and discloses this discrepancy.",
+    "Visual review is automated and does not establish objective design approval.",
+    "completeAcceptance is false; host/model/overall creative acceptance and publication remain separate gates."
+  ]
+}

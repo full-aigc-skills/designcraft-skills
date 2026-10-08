@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "runId": "c45fd111-8e11-4ab0-9bd3-2cf086f0b23f",
+  "projectArtifactId": "edited-project",
+  "artifacts": [
+    {
+      "id": "edited-project",
+      "kind": "project",
+      "path": "magazine.designcraft",
+      "format": "designcraft",
+      "byteCount": 831873,
+      "sha256": "9af246d8abe08ac633aa57e1144016078873793586a0bd45c27547e259f43c3e"
+    },
+    {
+      "id": "fresh-export",
+      "kind": "export",
+      "path": "final.pdf",
+      "format": "pdf",
+      "byteCount": 552605,
+      "sha256": "305aed6efacd727322ea1a5a0d7e4ea76db785888e7d480577b3ceeac2afb830"
+    }
+  ],
+  "expectations": {
+    "pageCount": 4,
+    "pageDimensionsMm": [
+      {
+        "page": 1,
+        "width": 215.9,
+        "height": 279.4
+      },
+      {
+        "page": 2,
+        "width": 215.9,
+        "height": 279.4
+      },
+      {
+        "page": 3,
+        "width": 215.9,
+        "height": 279.4
+      },
+      {
+        "page": 4,
+        "width": 215.9,
+        "height": 279.4
+      }
+    ],
+    "criticalText": [
+      "A Considered Grid"
+    ],
+    "linkedAssets": []
+  },
+  "reopenCheck": {
+    "status": "PASS",
+    "sessionId": "90e21a08-9aef-4e16-911e-ac04a5f17a4e",
+    "projectSha256": "9af246d8abe08ac633aa57e1144016078873793586a0bd45c27547e259f43c3e",
+    "pageCount": 4,
+    "pageDimensionsMm": [
+      {
+        "page": 1,
+        "width": 215.9,
+        "height": 279.4
+      },
+      {
+        "page": 2,
+        "width": 215.9,
+        "height": 279.4
+      },
+      {
+        "page": 3,
+        "width": 215.9,
+        "height": 279.4
+      },
+      {
+        "page": 4,
+        "width": 215.9,
+        "height": 279.4
+      }
+    ],
+    "criticalText": [
+      "A Considered Grid"
+    ],
+    "linkedAssets": [],
+    "verifiedBy": "DesignCraft CLI 0.2.1 fresh-session document.inspect + story.get + preflight.run + PDF export",
+    "verifiedAt": "2026-10-08T12:27:56.532207+00:00"
+  }
+}

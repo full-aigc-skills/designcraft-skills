@@ -1,0 +1,28 @@
+{
+  "domain": "designcraft",
+  "steps": [
+    {
+      "command": "document.inspect",
+      "params": {}
+    },
+    {
+      "command": "story.get",
+      "params": {
+        "story": 65
+      }
+    },
+    {
+      "command": "preflight.run",
+      "params": {
+        "minPpi": 150
+      }
+    },
+    {
+      "command": "file.exportPdf",
+      "params": {
+        "path": "/tmp/designcraft-plan-validation-20261008/av04-revision-20261008/fresh-reopen/reopened.pdf",
+        "standard": "none"
+      }
+    }
+  ]
+}
