@@ -1,0 +1,50 @@
+{
+  "source": "/Users/wandl/workspaces/workspace-agent-skills/research/designcraft/assets/fonts",
+  "destination": "/Users/wandl/Library/Fonts/DesigncraftValidation",
+  "files": [
+    {
+      "name": "OFL-SourceSans3.txt",
+      "sha256": "56af9b9c6715597e458284a474dc118a50a4150e9d547c70f7b4a33c3e6a9328"
+    },
+    {
+      "name": "OFL-SourceSerif4.txt",
+      "sha256": "c21d7293d87b6d7ab1d0229a2f55b77f33a7613a6a4e66f6693d68d7d8d09464"
+    },
+    {
+      "name": "SourceSans3-Bold.ttf",
+      "sha256": "9214b9d95e4231c609802815c2646c98174e2102d0d37f88978a7f8e71006e6a"
+    },
+    {
+      "name": "SourceSans3-It.ttf",
+      "sha256": "192afd78f0f54a3c69eaf02d43f4d9a821e9d6110e41d3d25d61a7385cd580e4"
+    },
+    {
+      "name": "SourceSans3-Regular.ttf",
+      "sha256": "4644c81b86ec9caaa76b634889968ed3c4f4f52f054855933acc7c2b21e53b0f"
+    },
+    {
+      "name": "SourceSans3-Semibold.ttf",
+      "sha256": "a3f4f8dcf343a8f24dc61951de93f3ba1558b15cd250ba24af8a40e957081b7d"
+    },
+    {
+      "name": "SourceSerif4-Bold.ttf",
+      "sha256": "7cf4f4e1ad74f45058d5bc61716b82560442fbdcd9d3654d2dea96bf6c683d86"
+    },
+    {
+      "name": "SourceSerif4-BoldIt.ttf",
+      "sha256": "7b215b37f8873f5579f3f8d2ded3ca7c588e2f435cd996605ebfc5befe2cd5eb"
+    },
+    {
+      "name": "SourceSerif4-It.ttf",
+      "sha256": "9d2950a8f1da66e21502c35d646a1d2148e79f9ea43fd2158cf02f5232e7f430"
+    },
+    {
+      "name": "SourceSerif4-Regular.ttf",
+      "sha256": "e5a4ee6a3d87bb9024796be390c6771e2a0eb1883dae25effaf57ca01668e24b"
+    },
+    {
+      "name": "SourceSerif4-Semibold.ttf",
+      "sha256": "36db62940cb5728b12b1802476dc7fcf4c6c519a7bdd476ba23a4e555fc4655f"
+    }
+  ]
+}

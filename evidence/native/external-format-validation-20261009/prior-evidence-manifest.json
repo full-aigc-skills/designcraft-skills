@@ -65,7 +65,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "8321e04f91dfac700f550415b6e0238670e759173a78e80f96e88cd94bc1a498",
+        "packageTreeSha256": "8ef7a83e452afd7d3060acefdab45d72f61d7b3b8c11231b5790d33afcc152a7",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -79,10 +79,6 @@
         {
           "path": "evidence/host/bundled-codex-discovery-20261009.json",
           "sha256": "e5ba61387ec089ca73e871203790e06b71047c02b77b356df7f2773edc2e34f0"
-        },
-        {
-          "path": "evidence/native/external-format-validation-20261009/metadata-attestation.json",
-          "sha256": "6e5792fb6bf4256cf0bb9a04c5dcb4a85d6fbd54e4c3de0d29e697d94859bca3"
         }
       ]
     },
@@ -100,7 +96,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "8321e04f91dfac700f550415b6e0238670e759173a78e80f96e88cd94bc1a498",
+        "packageTreeSha256": "8ef7a83e452afd7d3060acefdab45d72f61d7b3b8c11231b5790d33afcc152a7",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -114,10 +110,6 @@
         {
           "path": "evidence/host/bundled-codex-model-routing-20261009.json",
           "sha256": "362e226641467e4244501263610035b062318a1570daea69e5cd11caf8649653"
-        },
-        {
-          "path": "evidence/native/external-format-validation-20261009/metadata-attestation.json",
-          "sha256": "6e5792fb6bf4256cf0bb9a04c5dcb4a85d6fbd54e4c3de0d29e697d94859bca3"
         }
       ]
     },
@@ -135,7 +127,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "8321e04f91dfac700f550415b6e0238670e759173a78e80f96e88cd94bc1a498",
+        "packageTreeSha256": "8ef7a83e452afd7d3060acefdab45d72f61d7b3b8c11231b5790d33afcc152a7",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -202,10 +194,6 @@
         {
           "path": "evidence/current-offline-validation.json",
           "sha256": "02d633f286ca7816d30e127b63b2ab92a38bdf0caab6a99f959cd87169806b13"
-        },
-        {
-          "path": "evidence/native/external-format-validation-20261009/metadata-attestation.json",
-          "sha256": "6e5792fb6bf4256cf0bb9a04c5dcb4a85d6fbd54e4c3de0d29e697d94859bca3"
         }
       ]
     },
@@ -223,7 +211,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "8321e04f91dfac700f550415b6e0238670e759173a78e80f96e88cd94bc1a498",
+        "packageTreeSha256": "8ef7a83e452afd7d3060acefdab45d72f61d7b3b8c11231b5790d33afcc152a7",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -254,10 +242,6 @@
         {
           "path": "evidence/current-offline-validation.json",
           "sha256": "02d633f286ca7816d30e127b63b2ab92a38bdf0caab6a99f959cd87169806b13"
-        },
-        {
-          "path": "evidence/native/external-format-validation-20261009/metadata-attestation.json",
-          "sha256": "6e5792fb6bf4256cf0bb9a04c5dcb4a85d6fbd54e4c3de0d29e697d94859bca3"
         }
       ]
     },
@@ -275,7 +259,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "8321e04f91dfac700f550415b6e0238670e759173a78e80f96e88cd94bc1a498",
+        "packageTreeSha256": "8ef7a83e452afd7d3060acefdab45d72f61d7b3b8c11231b5790d33afcc152a7",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -298,10 +282,6 @@
         {
           "path": "evidence/current-offline-validation.json",
           "sha256": "02d633f286ca7816d30e127b63b2ab92a38bdf0caab6a99f959cd87169806b13"
-        },
-        {
-          "path": "evidence/native/external-format-validation-20261009/metadata-attestation.json",
-          "sha256": "6e5792fb6bf4256cf0bb9a04c5dcb4a85d6fbd54e4c3de0d29e697d94859bca3"
         }
       ]
     },
@@ -319,7 +299,7 @@
       "bindings": {
         "packageVersion": "0.1.0-dev.1",
         "nativeVersion": "0.2.1",
-        "packageTreeSha256": "8321e04f91dfac700f550415b6e0238670e759173a78e80f96e88cd94bc1a498",
+        "packageTreeSha256": "8ef7a83e452afd7d3060acefdab45d72f61d7b3b8c11231b5790d33afcc152a7",
         "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
         "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
         "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
@@ -330,10 +310,6 @@
       },
       "inputs": [],
       "artifacts": [
-        {
-          "path": "evidence/native/external-format-validation-20261009/metadata-attestation.json",
-          "sha256": "6e5792fb6bf4256cf0bb9a04c5dcb4a85d6fbd54e4c3de0d29e697d94859bca3"
-        },
         {
           "path": "evidence/plugin-handoff-20261008.json",
           "sha256": "05bb933e113ed11f3d78d6eded811fa71a97f8ca83eae3a79a1873b1d1ba7036"

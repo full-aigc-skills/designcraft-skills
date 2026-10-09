@@ -1,0 +1,32 @@
+{
+  "reason": "Only OpenSpec task evidence updated; existing executions not rerun",
+  "changedFiles": [
+    "openspec/changes/harden-designcraft-skill-workflows/tasks.md"
+  ],
+  "before": {
+    "packageVersion": "0.1.0-dev.1",
+    "nativeVersion": "0.2.1",
+    "packageTreeSha256": "8ef7a83e452afd7d3060acefdab45d72f61d7b3b8c11231b5790d33afcc152a7",
+    "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
+    "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
+    "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
+    "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
+    "expectedNativeBinarySha256": [
+      "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
+    ]
+  },
+  "after": {
+    "packageVersion": "0.1.0-dev.1",
+    "nativeVersion": "0.2.1",
+    "packageTreeSha256": "8321e04f91dfac700f550415b6e0238670e759173a78e80f96e88cd94bc1a498",
+    "skillSuiteSha256": "322fcf3293cf09ca778bb05a833e8b6987a875999e4d649c359ffed6c5a5fafe",
+    "commandCoverageSha256": "d8262425ea416afb8e4a305ce7aeb66213566c7b3e77ad93a6a9de360a2b07a3",
+    "researchInventorySha256": "91815ca5eb391eb4ab19ad0d0d90eb4c90a06f71d1a44c2c6aef64e7da74fcaa",
+    "runtimeLockSha256": "d6a81aac9587fe5fa46b1b2518083eafe8c2217422b11fbd3b6b44be718d512f",
+    "expectedNativeBinarySha256": [
+      "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
+    ]
+  },
+  "unchangedFileCount": 128,
+  "priorRunIdsRetained": true
+}

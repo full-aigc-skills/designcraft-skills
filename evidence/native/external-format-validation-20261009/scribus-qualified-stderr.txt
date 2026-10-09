@@ -1,0 +1,12 @@
+Path = /Users/wandl/Applications/Scribus.app
+"scpaths: bundle at /Users/wandl/Applications/Scribus.app"
+"scpaths: doc dir=/Users/wandl/Applications/Scribus.app/Contents/share/doc/scribus/"
+"scpaths: icon dir=/Users/wandl/Applications/Scribus.app/Contents/share/scribus/icons/"
+"scpaths: font dir=/Users/wandl/Applications/Scribus.app/Contents/share/scribus/fonts/"
+"scpaths: sample dir=/Users/wandl/Applications/Scribus.app/Contents/share/scribus/samples/"
+"scpaths: script dir=/Users/wandl/Applications/Scribus.app/Contents/share/scribus/scripts/"
+"scpaths: template dir=/Users/wandl/Applications/Scribus.app/Contents/share/scribus/templates/"
+"scpaths: lib dir=/Users/wandl/Applications/Scribus.app/Contents/lib/"
+"scpaths: plugin dir=/Users/wandl/Applications/Scribus.app/Contents/lib/"
+"scpaths: QML dir=/Users/wandl/Applications/Scribus.app/Contents/share/scribus/qml/"
+"scpaths: qtplugins=/Users/wandl/Applications/Scribus.app/Contents/PlugIns:/Users/wandl/Applications/Scribus.app/Contents/MacOS"

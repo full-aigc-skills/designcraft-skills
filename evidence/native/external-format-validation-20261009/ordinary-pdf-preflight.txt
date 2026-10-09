@@ -1,0 +1,276 @@
+engine=jPDFPreflight v2022R1.34 - Demo Version
+profile=PDF/X-4 Verification
+profileVersion=PDF/X-4
+pages=4
+compliant=false
+resultRecords=266
+XMP Metadata
+	PDF/X version is not PDF/X-4
+	xmp:MetadataDate is missing.
+	xmpMM:VersionID is missing.
+Trapped key not true or false
+	Missing Trapped key.
+Output Intent
+	OutputIntent missing
+PDF/X-4 Colors
+	Page 1: CMYK used in shape fill color not compatible with Output Intent.
+	Page 1: RGB used in shape fill color not compatible with Output Intent.
+	Page 1: RGB used in text color not compatible with Output Intent.
+	Page 1: RGB used in text color not compatible with Output Intent.
+	Page 1: RGB used in text color not compatible with Output Intent.
+	Page 1: RGB used in text color not compatible with Output Intent.
+	Page 1: Details not available in DEMO MODE
+	Page 2: CMYK used in shape fill color not compatible with Output Intent.
+	Page 2: Details not available in DEMO MODE
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: Details not available in DEMO MODE
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: Details not available in DEMO MODE
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: Details not available in DEMO MODE
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: Details not available in DEMO MODE
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: CMYK used in text color not compatible with Output Intent.
+	Page 2: RGB used in shape fill color not compatible with Output Intent.
+	Page 3: CMYK used in shape fill color not compatible with Output Intent.
+	Page 3: CMYK used in shape fill color not compatible with Output Intent.
+	Page 3: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 3: Details not available in DEMO MODE
+	Page 3: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: Details not available in DEMO MODE
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape fill color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: Details not available in DEMO MODE
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: Details not available in DEMO MODE
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: Details not available in DEMO MODE
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in shape stroke color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: Details not available in DEMO MODE
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: Details not available in DEMO MODE
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: Details not available in DEMO MODE
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: CMYK used in text color not compatible with Output Intent.
+	Page 4: Details not available in DEMO MODE
+	Page 4: RGB used in text color not compatible with Output Intent.
+	Page 4: RGB used in text color not compatible with Output Intent.
+	Page 4: RGB used in text color not compatible with Output Intent.
+	Page 4: RGB used in text color not compatible with Output Intent.

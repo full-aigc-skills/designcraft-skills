@@ -1,0 +1,43 @@
+{
+  "observedDate": "2026-10-09",
+  "idml": {
+    "candidate": "evidence/native/designcraft-cli-0.2.1/format-export-20261008/export.idml",
+    "sha256": "e05d799038ad7c7d9e1624b2e2106e1054bd2ee78036f843e95c4cf1fe119623",
+    "application": "Scribus 1.6.6",
+    "importEditSaveReopen": "PASS",
+    "reopenScope": "same application process, saved SLA document",
+    "pages": 4,
+    "formatFidelity": "NOT_PASSED",
+    "overflow": [
+      {
+        "page": 4,
+        "frame": "u3d"
+      }
+    ],
+    "fontObservation": "Source fonts available, some frames still report Arial Regular; cause not established"
+  },
+  "pdfx4": {
+    "candidate": "native-pdfx4.pdf",
+    "sha256": "4babb58fd2db26aa70372f0649dae2c63d1d05a99ffadd387eb410e6820e2e2b",
+    "inputProjectSha256": "9af246d8abe08ac633aa57e1144016078873793586a0bd45c27547e259f43c3e",
+    "tool": "Qoppa jPDFPreflight v2022R1.34 Demo, PDFX_4_Profile",
+    "status": "FAIL",
+    "resultRecords": 13,
+    "limitations": "Demo hides some details; not accredited certification; unmodified input verified"
+  },
+  "tools": [
+    {
+      "path": "/Users/wandl/Applications/Scribus.app/Contents/MacOS/Scribus",
+      "sha256": "1af18d4332eb6b16d68a574829030d9a381bd4b79fc9c144843f7b7a4b4b9dd3"
+    },
+    {
+      "path": "/Users/wandl/.local/share/designcraft-validation/qoppa/jPDFPreflight.v2022R1.34.jar",
+      "sha256": "bb7fe2b104647c5101b9b11fefa688b4aa01d9383693cf0631dbeb06332c27c7"
+    },
+    {
+      "path": "/Users/wandl/.local/share/craft-runtimes/designcraft/0.2.1/designcraft-cli",
+      "sha256": "e18578b28f43d6c6854ded930065feed5c9ee8af6a2e51338aa675ba4a5723a8"
+    }
+  ],
+  "completeAcceptance": false
+}

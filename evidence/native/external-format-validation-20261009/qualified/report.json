@@ -1,0 +1,740 @@
+{
+  "stage": "complete",
+  "fontEnvironment": "project SourceSans3 and SourceSerif4 installed with OFL licenses",
+  "availableSourceFonts": [
+    "Source Sans 3 Bold",
+    "Source Sans 3 Italic",
+    "Source Sans 3 Regular",
+    "Source Sans 3 Semibold",
+    "Source Serif 4 Bold",
+    "Source Serif 4 Bold Italic",
+    "Source Serif 4 Italic",
+    "Source Serif 4 Regular",
+    "Source Serif 4 Semibold"
+  ],
+  "openResult": true,
+  "imported": [
+    {
+      "page": 1,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u14",
+          "kind": 2,
+          "order": 9,
+          "image": "/private/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/scribus_temp_idml_ZtnMgp."
+        },
+        {
+          "name": "u15",
+          "kind": 4,
+          "order": 10,
+          "text": "THE SPRING ISSUE  ·  NO. 01\r",
+          "font": "Source Sans 3 Semibold",
+          "overflow": 0
+        },
+        {
+          "name": "u17",
+          "kind": 4,
+          "order": 11,
+          "text": "The Quiet\rArt of Layout\r",
+          "font": "Source Serif 4 Bold",
+          "overflow": 0
+        },
+        {
+          "name": "u19",
+          "kind": 4,
+          "order": 12,
+          "text": "Grids, type and color: how great pages are made — and the tools that make them.\r",
+          "font": "Arial Regular",
+          "overflow": 0
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u1b",
+          "kind": 4,
+          "order": 13,
+          "text": "Feature  ·  Design\r",
+          "font": "Source Sans 3 Semibold",
+          "overflow": 0
+        },
+        {
+          "name": "u1d",
+          "kind": 4,
+          "order": 14,
+          "text": "Notes on the Grid\r",
+          "font": "Source Serif 4 Bold",
+          "overflow": 0
+        },
+        {
+          "name": "u1f",
+          "kind": 4,
+          "order": 15,
+          "text": "A good layout is invisible. Here is what is going on underneath the page — from the baseline grid to the paragraph composer.\r",
+          "font": "Arial Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u22",
+          "kind": 2,
+          "order": 16,
+          "image": "/private/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/scribus_temp_idml_BFfqtP."
+        },
+        {
+          "name": "u23",
+          "kind": 4,
+          "order": 17,
+          "text": "Evening light over layered hills — generated entirely in code for this sample.\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u25",
+          "kind": 4,
+          "order": 18,
+          "text": "Every page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\r",
+          "font": "Source Serif 4 Regular",
+          "overflow": 0
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u27",
+          "kind": 4,
+          "order": 19,
+          "text": "Every page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\r",
+          "font": "Source Serif 4 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u29",
+          "kind": 4,
+          "order": 20,
+          "text": "“The best layouts disappear. What remains is the story.”\r",
+          "font": "Arial Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u2b",
+          "kind": 6,
+          "order": 21
+        },
+        {
+          "name": "u40",
+          "kind": 4,
+          "order": 22,
+          "text": "A Better Grid\r",
+          "font": "Arial Regular",
+          "overflow": 0
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u2c",
+          "kind": 6,
+          "order": 23
+        },
+        {
+          "name": "u2d",
+          "kind": 4,
+          "order": 24,
+          "text": "Coming next\r",
+          "font": "Source Sans 3 Semibold",
+          "overflow": 0
+        },
+        {
+          "name": "u2f",
+          "kind": 4,
+          "order": 25,
+          "text": "Color, Ink & Paper\r",
+          "font": "Source Serif 4 Bold",
+          "overflow": 0
+        },
+        {
+          "name": "u31",
+          "kind": 6,
+          "order": 26
+        },
+        {
+          "name": "u32",
+          "kind": 4,
+          "order": 27,
+          "text": "Ink Plum\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u34",
+          "kind": 6,
+          "order": 28
+        },
+        {
+          "name": "u35",
+          "kind": 4,
+          "order": 29,
+          "text": "Sunset\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u37",
+          "kind": 6,
+          "order": 30
+        },
+        {
+          "name": "u38",
+          "kind": 4,
+          "order": 31,
+          "text": "C=100 M=0 Y=0 K=0\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u3a",
+          "kind": 6,
+          "order": 32
+        },
+        {
+          "name": "u3b",
+          "kind": 4,
+          "order": 33,
+          "text": "Paper Warm\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u3d",
+          "kind": 4,
+          "order": 34,
+          "text": "Every page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\r\u0019\r",
+          "font": "Arial Regular",
+          "overflow": 1
+        }
+      ]
+    }
+  ],
+  "beforeImages": [
+    {
+      "page": 1,
+      "returned": true,
+      "exists": true,
+      "path": "/Users/wandl/.local/share/designcraft-validation/run-20261009/qualified/before-1.png"
+    },
+    {
+      "page": 2,
+      "returned": true,
+      "exists": true,
+      "path": "/Users/wandl/.local/share/designcraft-validation/run-20261009/qualified/before-2.png"
+    },
+    {
+      "page": 3,
+      "returned": true,
+      "exists": true,
+      "path": "/Users/wandl/.local/share/designcraft-validation/run-20261009/qualified/before-3.png"
+    },
+    {
+      "page": 4,
+      "returned": true,
+      "exists": true,
+      "path": "/Users/wandl/.local/share/designcraft-validation/run-20261009/qualified/before-4.png"
+    }
+  ],
+  "reopened": [
+    {
+      "page": 1,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u14",
+          "kind": 2,
+          "order": 21,
+          "image": "/private/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/scribus_temp_fZarHh."
+        },
+        {
+          "name": "u15",
+          "kind": 4,
+          "order": 22,
+          "text": "THE SPRING ISSUE  ·  NO. 01\r",
+          "font": "Source Sans 3 Semibold",
+          "overflow": 0
+        },
+        {
+          "name": "u17",
+          "kind": 4,
+          "order": 23,
+          "text": "The Quiet\rArt of Layout\r",
+          "font": "Source Serif 4 Bold",
+          "overflow": 0
+        },
+        {
+          "name": "u19",
+          "kind": 4,
+          "order": 24,
+          "text": "Grids, type and color: how great pages are made — and the tools that make them.\r",
+          "font": "Arial Regular",
+          "overflow": 0
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u1b",
+          "kind": 4,
+          "order": 25,
+          "text": "Feature  ·  Design\r",
+          "font": "Source Sans 3 Semibold",
+          "overflow": 0
+        },
+        {
+          "name": "u1d",
+          "kind": 4,
+          "order": 26,
+          "text": "Notes on the Grid\r",
+          "font": "Source Serif 4 Bold",
+          "overflow": 0
+        },
+        {
+          "name": "u1f",
+          "kind": 4,
+          "order": 27,
+          "text": "A good layout is invisible. Here is what is going on underneath the page — from the baseline grid to the paragraph composer.\r",
+          "font": "Arial Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u22",
+          "kind": 2,
+          "order": 28,
+          "image": "/private/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/scribus_temp_EAUIZF."
+        },
+        {
+          "name": "u23",
+          "kind": 4,
+          "order": 29,
+          "text": "Evening light over layered hills — generated entirely in code for this sample.\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u25",
+          "kind": 4,
+          "order": 30,
+          "text": "Every page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\r",
+          "font": "Source Serif 4 Regular",
+          "overflow": 0
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u27",
+          "kind": 4,
+          "order": 31,
+          "text": "Every page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\r",
+          "font": "Source Serif 4 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u29",
+          "kind": 4,
+          "order": 32,
+          "text": "“The best layouts disappear. What remains is the story.”\r",
+          "font": "Arial Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u2b",
+          "kind": 6,
+          "order": 33
+        },
+        {
+          "name": "u40",
+          "kind": 4,
+          "order": 34,
+          "text": "A Better Grid\r",
+          "font": "Arial Regular",
+          "overflow": 0
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u2c",
+          "kind": 6,
+          "order": 35
+        },
+        {
+          "name": "u2d",
+          "kind": 4,
+          "order": 36,
+          "text": "Coming next\r",
+          "font": "Source Sans 3 Semibold",
+          "overflow": 0
+        },
+        {
+          "name": "u2f",
+          "kind": 4,
+          "order": 37,
+          "text": "Color, Ink & Paper\r",
+          "font": "Source Serif 4 Bold",
+          "overflow": 0
+        },
+        {
+          "name": "u31",
+          "kind": 6,
+          "order": 38
+        },
+        {
+          "name": "u32",
+          "kind": 4,
+          "order": 39,
+          "text": "Ink Plum\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u34",
+          "kind": 6,
+          "order": 40
+        },
+        {
+          "name": "u35",
+          "kind": 4,
+          "order": 41,
+          "text": "Sunset\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u37",
+          "kind": 6,
+          "order": 42
+        },
+        {
+          "name": "u38",
+          "kind": 4,
+          "order": 43,
+          "text": "C=100 M=0 Y=0 K=0\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u3a",
+          "kind": 6,
+          "order": 44
+        },
+        {
+          "name": "u3b",
+          "kind": 4,
+          "order": 45,
+          "text": "Paper Warm\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u3d",
+          "kind": 4,
+          "order": 46,
+          "text": "Every page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\r\u0019\r",
+          "font": "Arial Regular",
+          "overflow": 1
+        }
+      ]
+    }
+  ],
+  "editedReopened": [
+    {
+      "page": 1,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u14",
+          "kind": 2,
+          "order": 21,
+          "image": "/private/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/scribus_temp_hRCjcw."
+        },
+        {
+          "name": "u15",
+          "kind": 4,
+          "order": 22,
+          "text": "THE SPRING ISSUE  ·  NO. 01\r",
+          "font": "Source Sans 3 Semibold",
+          "overflow": 0
+        },
+        {
+          "name": "u17",
+          "kind": 4,
+          "order": 23,
+          "text": "The Quiet\rArt of Layout\r",
+          "font": "Source Serif 4 Bold",
+          "overflow": 0
+        },
+        {
+          "name": "u19",
+          "kind": 4,
+          "order": 24,
+          "text": "Grids, type and color: how great pages are made — and the tools that make them.\r",
+          "font": "Arial Regular",
+          "overflow": 0
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u1b",
+          "kind": 4,
+          "order": 25,
+          "text": "Feature  ·  Design\r",
+          "font": "Source Sans 3 Semibold",
+          "overflow": 0
+        },
+        {
+          "name": "u1d",
+          "kind": 4,
+          "order": 26,
+          "text": "Notes on the Grid\r",
+          "font": "Source Serif 4 Bold",
+          "overflow": 0
+        },
+        {
+          "name": "u1f",
+          "kind": 4,
+          "order": 27,
+          "text": "A good layout is invisible. Here is what is going on underneath the page — from the baseline grid to the paragraph composer.\r",
+          "font": "Arial Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u22",
+          "kind": 2,
+          "order": 28,
+          "image": "/private/var/folders/_s/9_xnnkz141920t1yv5zhvd1r0000gn/T/scribus_temp_KUMEYu."
+        },
+        {
+          "name": "u23",
+          "kind": 4,
+          "order": 29,
+          "text": "Evening light over layered hills — generated entirely in code for this sample.\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u25",
+          "kind": 4,
+          "order": 30,
+          "text": "Every page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\r",
+          "font": "Source Serif 4 Regular",
+          "overflow": 0
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u27",
+          "kind": 4,
+          "order": 31,
+          "text": "Every page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\rEvery page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\rTypography does the heavy lifting. A paragraph composer weighs every possible line break at once, trading a slightly loose line here for a much better one three lines later. The result is an even texture of type, free of rivers and ragged gaps, where hyphens appear only when they truly help.\rImages give a spread its pulse. A strong photograph bleeds off the edge of the page, while smaller pictures sit inside the grid and let the text wrap around them. Captions, pull quotes and running heads add layers that a careful reader can explore at their own pace.\rColor holds it all together. A restrained palette of two or three swatches, applied consistently to headlines, rules and backgrounds, gives a publication its voice. Spot inks, tints and gradients are all just named swatches, so a single change ripples through every page.\rBehind the scenes, styles are the secret to working fast. Paragraph styles define the voice of each element, character styles pick out emphasis, and object styles keep frames consistent. Change a style once and the whole document follows, from the cover to the very last page.\rAnd when the layout is done, the document must travel: to a printer as a press-ready PDF with bleed and crop marks, to a colleague as an open interchange file, or to a screen as a crisp image. A layout tool earns its keep by making every one of those journeys effortless.\r",
+          "font": "Source Serif 4 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u29",
+          "kind": 4,
+          "order": 32,
+          "text": "“The best layouts disappear. What remains is the story.”\r",
+          "font": "Arial Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u2b",
+          "kind": 6,
+          "order": 33
+        },
+        {
+          "name": "u40",
+          "kind": 4,
+          "order": 34,
+          "text": "A Better Grid — IDML edit check",
+          "font": "Arial Regular",
+          "overflow": 0
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "size": [
+        612.0,
+        792.0
+      ],
+      "items": [
+        {
+          "name": "u2c",
+          "kind": 6,
+          "order": 35
+        },
+        {
+          "name": "u2d",
+          "kind": 4,
+          "order": 36,
+          "text": "Coming next\r",
+          "font": "Source Sans 3 Semibold",
+          "overflow": 0
+        },
+        {
+          "name": "u2f",
+          "kind": 4,
+          "order": 37,
+          "text": "Color, Ink & Paper\r",
+          "font": "Source Serif 4 Bold",
+          "overflow": 0
+        },
+        {
+          "name": "u31",
+          "kind": 6,
+          "order": 38
+        },
+        {
+          "name": "u32",
+          "kind": 4,
+          "order": 39,
+          "text": "Ink Plum\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u34",
+          "kind": 6,
+          "order": 40
+        },
+        {
+          "name": "u35",
+          "kind": 4,
+          "order": 41,
+          "text": "Sunset\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u37",
+          "kind": 6,
+          "order": 42
+        },
+        {
+          "name": "u38",
+          "kind": 4,
+          "order": 43,
+          "text": "C=100 M=0 Y=0 K=0\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u3a",
+          "kind": 6,
+          "order": 44
+        },
+        {
+          "name": "u3b",
+          "kind": 4,
+          "order": 45,
+          "text": "Paper Warm\r",
+          "font": "Source Sans 3 Regular",
+          "overflow": 0
+        },
+        {
+          "name": "u3d",
+          "kind": 4,
+          "order": 46,
+          "text": "Every page begins as an empty field of possibility. The grid arrives first: margins that frame the reading area, columns that set the rhythm, and a baseline grid that keeps every line in step from one column to the next. Good layout is quiet. It lets the reader move through a story without noticing the machinery that carries them.\r\u0019\r",
+          "font": "Arial Regular",
+          "overflow": 1
+        }
+      ]
+    }
+  ],
+  "afterImages": [
+    {
+      "page": 1,
+      "returned": true,
+      "exists": true,
+      "path": "/Users/wandl/.local/share/designcraft-validation/run-20261009/qualified/after-1.png"
+    },
+    {
+      "page": 2,
+      "returned": true,
+      "exists": true,
+      "path": "/Users/wandl/.local/share/designcraft-validation/run-20261009/qualified/after-2.png"
+    },
+    {
+      "page": 3,
+      "returned": true,
+      "exists": true,
+      "path": "/Users/wandl/.local/share/designcraft-validation/run-20261009/qualified/after-3.png"
+    },
+    {
+      "page": 4,
+      "returned": true,
+      "exists": true,
+      "path": "/Users/wandl/.local/share/designcraft-validation/run-20261009/qualified/after-4.png"
+    }
+  ]
+}

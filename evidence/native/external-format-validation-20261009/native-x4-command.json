@@ -1,0 +1,12 @@
+[
+  "/Users/wandl/.local/share/craft-runtimes/designcraft/0.2.1/designcraft-cli",
+  "run",
+  "--in",
+  "/Users/wandl/.local/share/designcraft-validation/run-20261009/input.designcraft",
+  "--cmd",
+  "document.inspect",
+  "--cmd",
+  "preflight.run",
+  "--cmd",
+  "file.exportPdf={\"path\": \"/Users/wandl/.local/share/designcraft-validation/run-20261009/native-pdfx4.pdf\", \"standard\": \"x4\"}"
+]
