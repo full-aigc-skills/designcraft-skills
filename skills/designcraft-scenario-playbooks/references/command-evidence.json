@@ -198,6 +198,15 @@
       "menu": [],
       "params": "{attrs: {fontFamily?, fontStyle?, size?, leading?: {kind:auto}|{kind:points,value}, tracking?, kerning?, hScale?, vScale?, baselineShift?, fill?, capitalization?, underline?, …}}",
       "shortcut": null
+    },
+    "object.stroke": {
+      "disabled_reason": "no document open",
+      "enabled": false,
+      "id": "object.stroke",
+      "label": "Stroke",
+      "menu": [],
+      "params": "{swatch?, tint?, weight?, align?: center|inside|outside, type?: {kind:…}, cap?: butt|round|projecting, join?: miter|round|bevel, miterLimit?, start?, end?: none|simple|simpleWide|triangle|triangleWide|barbed|curved|circle|circleSolid|square|squareSolid|bar, gapSwatch?, gapTint?, gapOverprint?: bool, ids?}",
+      "shortcut": null
     }
   },
   "referenceSyntax": {

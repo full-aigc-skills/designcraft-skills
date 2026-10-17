@@ -13,6 +13,16 @@ ROOT=Path(__file__).resolve().parents[1]
 DOMAIN=ROOT.name.removesuffix('-skills')
 
 class PackageContract(unittest.TestCase):
+    def test_registered_scene_candidate_detects_tampered_content(self):
+        with tempfile.TemporaryDirectory() as temp:
+            fixture=Path(temp)/'package'
+            shutil.copytree(ROOT,fixture,ignore=shutil.ignore_patterns('.git','openspec','__pycache__','.DS_Store'))
+            self._validate_fixture(fixture)
+            path=fixture/'skills/designcraft-scenario-playbooks/SKILL.md'
+            path.write_text(path.read_text()+'\nchanged candidate\n')
+            with self.assertRaisesRegex(ValueError,'candidate_digest_mismatch'):
+                self._validate_fixture(fixture)
+
     def test_default_trigger_covers_incomplete_outline_and_document_trigger_is_atomic(self):
         use=(ROOT/'skills/designcraft-use/SKILL.md').read_text()
         document=(ROOT/'skills/designcraft-cli-document/SKILL.md').read_text()
@@ -161,9 +171,9 @@ class PackageContract(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     self._validate_fixture(fixture)
 
-    def test_each_skill_gateway_runs_alone_in_python_isolated_mode(self):
+    def test_each_registered_cli_skill_gateway_runs_alone_in_python_isolated_mode(self):
         raw=[{'name':'doc_info','input_schema':{'type':'object','properties':{}}}] if DOMAIN=='printcraft' else [{'id':'file.new','label':'New','params':'','menu':['File']}]
-        for source in sorted(p for p in (ROOT/'skills').iterdir() if p.is_dir()):
+        for source in sorted(ROOT/'skills'/name for name in json.loads((ROOT/'skill-suite.json').read_text())['skills']):
             with self.subTest(skill=source.name),tempfile.TemporaryDirectory(prefix='独立 技能 ') as t:
                 root=Path(t);skill=root/source.name;shutil.copytree(source,skill)
                 catalog=root/'catalog.json';catalog.write_text(json.dumps(raw))

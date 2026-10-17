@@ -731,7 +731,7 @@
               430
             ],
             "content": "text",
-            "text": "Plan\tSeats\tMonthly\nStarter\t5\t19\nTeam\t20\t59"
+            "text": "Plan\tSeats\tUSD/month\nStarter\t5\t19\nTeam\t20\t59"
           },
           "parameterReference": "command-evidence.json#frame.create",
           "capture": "grid"
@@ -744,7 +744,7 @@
               "$ref": "grid.story"
             },
             "anchor": 0,
-            "focus": 42
+            "focus": 44
           },
           "parameterReference": "command-evidence.json#text.select"
         },
@@ -836,7 +836,7 @@
           "cells": [
             "Plan",
             "Seats",
-            "Monthly",
+            "USD/month",
             "Starter",
             "5",
             "19",
@@ -1210,6 +1210,20 @@
           "parameterReference": "command-evidence.json#object.color"
         },
         {
+          "purpose": "背景条不保留默认黑色轮廓",
+          "command": "object.stroke",
+          "params": {
+            "ids": [
+              {
+                "$ref": "bar.id"
+              }
+            ],
+            "swatch": "[None]",
+            "weight": 0
+          },
+          "parameterReference": "command-evidence.json#object.stroke"
+        },
+        {
           "purpose": "创建独立可编辑文本框并记录返回值",
           "command": "frame.create",
           "params": {
@@ -1295,7 +1309,11 @@
           "params": {
             "path": "bleed-review.pdf",
             "bleed": true,
-            "marks": true,
+            "marks": {
+              "crop": true,
+              "bleed": true,
+              "pageInfo": false
+            },
             "standard": "none"
           },
           "parameterReference": "command-evidence.json#file.exportPdf",
@@ -1340,7 +1358,8 @@
         "size": [
           595,
           842
-        ]
+        ],
+        "bleedNoStroke": true
       },
       "checks": [
         "背景越过裁切边缘",

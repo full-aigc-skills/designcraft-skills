@@ -1,0 +1,14 @@
+name: Scenario and package checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -I -B scripts/validate_package.py
+      - run: python -I -B -m unittest discover -s tests -v

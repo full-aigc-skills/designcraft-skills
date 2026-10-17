@@ -91,8 +91,8 @@
 | 2. 创建独立可编辑文本框并记录返回值 | `frame.create` | `{"spread":0,"rect":[42,48,553,110],"content":"text","text":"Plan comparison"}`；返回记为`title` |
 | 3. 用UTF-8字节范围选择本次故事 | `text.select` | `{"story":{"$ref":"title.story"},"anchor":0,"focus":15}` |
 | 4. 设置已核实的字体和字号 | `type.char` | `{"attrs":{"fontFamily":"Source Sans 3","size":28}}` |
-| 5. 创建独立可编辑文本框并记录返回值 | `frame.create` | `{"spread":0,"rect":[42,160,553,430],"content":"text","text":"Plan\tSeats\tMonthly\nStarter\t5\t19\nTeam\t20\t59"}`；返回记为`grid` |
-| 6. 用UTF-8字节范围选择本次故事 | `text.select` | `{"story":{"$ref":"grid.story"},"anchor":0,"focus":42}` |
+| 5. 创建独立可编辑文本框并记录返回值 | `frame.create` | `{"spread":0,"rect":[42,160,553,430],"content":"text","text":"Plan\tSeats\tUSD/month\nStarter\t5\t19\nTeam\t20\t59"}`；返回记为`grid` |
+| 6. 用UTF-8字节范围选择本次故事 | `text.select` | `{"story":{"$ref":"grid.story"},"anchor":0,"focus":44}` |
 | 7. 设置已核实的字体和字号 | `type.char` | `{"attrs":{"fontFamily":"Source Serif 4","size":14}}` |
 | 8. 按制表符把所选文字转为表格 | `table.convertFromText` | `{"columnSeparator":"tab"}`；返回记为`table` |
 | 9. 明确选择本次转换的整表 | `table.select` | `{"story":{"$ref":"grid.story"},"table":{"$ref":"table.table"},"what":"table"}` |
@@ -157,16 +157,17 @@
 | 1. 仅新图建立指定页面，不用于已有文档 | `file.new` | `{"width":595,"height":842,"pages":1,"facingPages":false,"margins":36,"bleed":9,"title":"带出血的审阅PDF"}` |
 | 2. 创建延伸到出血区的背景条 | `frame.create` | `{"rect":[-9,-9,604,150],"content":"unassigned"}`；返回记为`bar` |
 | 3. 为本次背景设置颜色 | `object.color` | `{"ids":[{"$ref":"bar.id"}],"color":"#1d4ed8","target":"fill"}` |
-| 4. 创建独立可编辑文本框并记录返回值 | `frame.create` | `{"spread":0,"rect":[42,220,553,390],"content":"text","text":"A print-ready conversation starts here"}`；返回记为`title` |
-| 5. 用UTF-8字节范围选择本次故事 | `text.select` | `{"story":{"$ref":"title.story"},"anchor":0,"focus":38}` |
-| 6. 设置已核实的字体和字号 | `type.char` | `{"attrs":{"fontFamily":"Source Sans 3","size":30}}` |
-| 7. 创建独立可编辑文本框并记录返回值 | `frame.create` | `{"spread":0,"rect":[42,450,553,570],"content":"text","text":"Confirm paper, colour profile, bleed and finishing with the printer."}`；返回记为`note` |
-| 8. 用UTF-8字节范围选择本次故事 | `text.select` | `{"story":{"$ref":"note.story"},"anchor":0,"focus":68}` |
-| 9. 设置已核实的字体和字号 | `type.char` | `{"attrs":{"fontFamily":"Source Serif 4","size":18}}` |
-| 10. 输出包含出血和裁切标记的审阅PDF | `file.exportPdf` | `{"path":"bleed-review.pdf","bleed":true,"marks":true,"standard":"none"}`；返回记为`bleed_pdf` |
-| 11. 检查当前文档结构与溢出 | `document.inspect` | `{}`；返回记为`final_inspect` |
-| 12. 检查实际使用字体 | `font.list` | `{}`；返回记为`fonts` |
-| 13. 执行输出前技术预检 | `preflight.run` | `{}`；返回记为`preflight` |
+| 4. 背景条不保留默认黑色轮廓 | `object.stroke` | `{"ids":[{"$ref":"bar.id"}],"swatch":"[None]","weight":0}` |
+| 5. 创建独立可编辑文本框并记录返回值 | `frame.create` | `{"spread":0,"rect":[42,220,553,390],"content":"text","text":"A print-ready conversation starts here"}`；返回记为`title` |
+| 6. 用UTF-8字节范围选择本次故事 | `text.select` | `{"story":{"$ref":"title.story"},"anchor":0,"focus":38}` |
+| 7. 设置已核实的字体和字号 | `type.char` | `{"attrs":{"fontFamily":"Source Sans 3","size":30}}` |
+| 8. 创建独立可编辑文本框并记录返回值 | `frame.create` | `{"spread":0,"rect":[42,450,553,570],"content":"text","text":"Confirm paper, colour profile, bleed and finishing with the printer."}`；返回记为`note` |
+| 9. 用UTF-8字节范围选择本次故事 | `text.select` | `{"story":{"$ref":"note.story"},"anchor":0,"focus":68}` |
+| 10. 设置已核实的字体和字号 | `type.char` | `{"attrs":{"fontFamily":"Source Serif 4","size":18}}` |
+| 11. 输出包含出血和裁切标记的审阅PDF | `file.exportPdf` | `{"path":"bleed-review.pdf","bleed":true,"marks":{"crop":true,"bleed":true,"pageInfo":false},"standard":"none"}`；返回记为`bleed_pdf` |
+| 12. 检查当前文档结构与溢出 | `document.inspect` | `{}`；返回记为`final_inspect` |
+| 13. 检查实际使用字体 | `font.list` | `{}`；返回记为`fonts` |
+| 14. 执行输出前技术预检 | `preflight.run` | `{}`；返回记为`preflight` |
 
 检查：背景越过裁切边缘；PDF包含出血审阅区域；没有把RGB审阅稿说成已通过印厂色彩验收。
 

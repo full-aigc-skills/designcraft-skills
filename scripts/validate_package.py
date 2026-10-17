@@ -78,7 +78,21 @@ def validate():
     for item in native_commands:
         if not isinstance(item.get('id'),str) or not item['id'] or item.get('ownerSkill') not in expected or item.get('validationStatus') not in ('DISCOVERED','DOCUMENTED','SIMULATED','NATIVE_TESTED','HOST_TESTED'):raise ValueError('command_owner_invalid')
     actual={p.name for p in (ROOT/'skills').iterdir() if p.is_dir()}
-    if actual!=expected:raise ValueError('skill_set_mismatch')
+    candidate_file=ROOT/'scenario-candidates.json'
+    candidates=set()
+    if candidate_file.exists():
+        candidate_data=json.loads(candidate_file.read_text(encoding='utf-8'))
+        if candidate_data.get('status')!='local-unreleased':raise ValueError('candidate_status_invalid')
+        for entry in candidate_data['skills']:
+            name=entry['name']
+            if not re.fullmatch(domain+r'-[a-z0-9]+(?:-[a-z0-9]+)*',name) or name in candidates or name in expected:raise ValueError('candidate_name_invalid')
+            folder=ROOT/'skills'/name;path=folder/'SKILL.md'
+            if folder.is_symlink() or path.is_symlink() or not path.is_file():raise ValueError('candidate_path_invalid')
+            raw=path.read_bytes();body=raw.decode('utf-8')
+            if hashlib.sha256(raw).hexdigest()!=entry['sha256']:raise ValueError('candidate_digest_mismatch:'+name)
+            if not body.startswith('---\nname: '+name+'\n') or len(body.splitlines())>=500:raise ValueError('candidate_frontmatter_invalid')
+            candidates.add(name)
+    if actual!=expected|candidates:raise ValueError('skill_set_mismatch')
     canonical=ROOT/'skills'/f'{domain}-use'/'scripts'
     resources=('bootstrap.py','cli.py','runtime.lock.json','commands.py','command_gateway.py')
     for name in sorted(expected):
