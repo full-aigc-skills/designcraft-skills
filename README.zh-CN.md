@@ -67,4 +67,4 @@ python3 -I -B scripts/evidence_freshness.py evidence-manifest.json
 
 ## 数据合并胸牌开发候选
 
-新增`designcraft-data-merge-badges`：真实字段模板、逐条预览、长姓名溢出处理、任务字体与缺字预检、完整字段重开检查。尚未发布新市场包，Windows和宿主同步状态另行记录。
+新增`designcraft-data-merge-badges`：真实字段模板、逐条预览、长姓名溢出处理、任务字体与缺字预检、完整字段重开检查。原生Windows与真实Codex/IAB合成任务已验证；原生Noto与Web LXGW字体不同。市场安装版本以目录仓清单为准，其他宿主和商业印刷仍未验收。
