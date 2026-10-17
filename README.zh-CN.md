@@ -52,3 +52,15 @@ python3 -I -B scripts/evidence_freshness.py evidence-manifest.json
 - 其他平台、完整GUI／真实RAW／签名加密等各自适用能力的验收。
 
 开发候选源码已推送至[公开 GitHub 仓库](https://github.com/full-aigc-skills/designcraft-skills)的 `main` 分支。版本标签、GitHub Release 和技能市场发行尚未创建；必要的原生、创作与发行验收未完成前不会登记为正式发行。[架构](docs/architecture.zh-CN.md)与`project-status.json`记录当前边界。
+
+## 场景技能开发候选
+
+已增加 6 个领域场景技能及 1 个内嵌编辑器入口。详见 [场景目录](docs/scene-skills.md)。本地未发布候选，不代表全部场景的创作质量已验收。
+
+## 排版场景操作手册
+
+新增8条带具体方法、参数与结果检查的排版流程，见 [designcraft-scenario-playbooks](skills/designcraft-scenario-playbooks/SKILL.md)。包含原生脚本返回引用、活表格、溢出与PDF交付；技术运行与真实宿主/创作验收分别记录。
+
+## main开发候选补充
+
+新增[main工作流与参数](skills/designcraft-scenario-playbooks/references/main-workflows.md)：SVG导入并交付可编辑PPTX、Flex模块布局、60个新增方法与119处参数变化的索引。来源为固定main实际目录；SVG/PPTX已通过Windows main专项39008681404；Flex仍待执行，不等于稳定版支持或宿主验收通过。
