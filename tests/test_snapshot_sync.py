@@ -9,7 +9,7 @@ import tempfile
 import unittest
 
 ROOT=Path(__file__).resolve().parents[1]
-DOMAIN=ROOT.name.removesuffix('-skills')
+DOMAIN=json.loads((ROOT/'skill-suite.json').read_text())['domain']
 
 class SnapshotSyncContract(unittest.TestCase):
     def module(self):
@@ -74,18 +74,19 @@ class SnapshotSyncContract(unittest.TestCase):
 
     def test_sync_runs_against_independent_source_and_plugin_fixture(self):
         with tempfile.TemporaryDirectory() as t:
-            root=Path(t);source=root/'fixture-skills';plugin=root/'fixture-plugin'
+            root=Path(t);source=root/'arbitrary-checkout';plugin=root/'fixture-plugin'
             source_skill=source/'skills/fixture-use/SKILL.md';source_skill.parent.mkdir(parents=True);source_skill.write_text('version two')
             (source/'skill-suite.json').write_text(json.dumps({'domain':'fixture','version':'2.0.0','skills':['fixture-use']}))
             plugin_skill=plugin/'skills/fixture-use/SKILL.md';plugin_skill.parent.mkdir(parents=True);plugin_skill.write_text('version one')
             local=plugin/'skills/fixture-harness/SKILL.md';local.parent.mkdir(parents=True);local.write_text('local skill stays')
             digest=hashlib.sha256(plugin_skill.read_bytes()).hexdigest()
-            lock={'sourceStatus':'local-unpublished-candidate','sourceProject':'fixture-skills','sourceVersion':'1.0.0','bundledSourceIdentity':{'sourceProject':'fixture-skills','sourceVersion':'1.0.0','skills':['fixture-use'],'releaseTag':None},'skillFileSha256':{'fixture-use/SKILL.md':digest},'releaseTag':None}
+            lock={'sourceStatus':'local-unpublished-candidate','sourceProject':source.name,'sourceVersion':'1.0.0','bundledSourceIdentity':{'sourceProject':source.name,'sourceVersion':'1.0.0','skills':['fixture-use'],'releaseTag':None},'skillFileSha256':{'fixture-use/SKILL.md':digest},'releaseTag':None}
             (plugin/'candidate-source.json').write_text(json.dumps(lock));(plugin/'plugin.json').write_text(json.dumps({'name':'fixture'}))
             module=self.module();module.ROOT=source
             result=module.sync(plugin)
             refreshed=json.loads((plugin/'candidate-source.json').read_text())
             self.assertEqual((result['snapshot'],plugin_skill.read_text(),local.read_text()),('PASS','version two','local skill stays'))
+            self.assertEqual(result['domain'],'fixture')
             self.assertEqual((refreshed['sourceVersion'],refreshed['bundledSourceIdentity']['skills']),('2.0.0',['fixture-use']))
 
     def test_interrupted_copy_leaves_candidate_unverifiable(self):
