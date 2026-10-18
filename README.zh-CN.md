@@ -64,3 +64,7 @@ python3 -I -B scripts/evidence_freshness.py evidence-manifest.json
 ## main开发候选补充
 
 新增[main工作流与参数](skills/designcraft-scenario-playbooks/references/main-workflows.md)：SVG导入并交付可编辑PPTX、Flex模块布局、60个新增方法与119处参数变化的索引。来源为固定main实际目录；SVG/PPTX已通过Windows main专项39008681404；Flex仍待执行，不等于稳定版支持或宿主验收通过。
+
+## 数据合并胸牌开发候选
+
+新增`designcraft-data-merge-badges`：真实字段模板、逐条预览、长姓名溢出处理、任务字体与缺字预检、完整字段重开检查。原生Windows与真实Codex/IAB合成任务已验证；原生Noto与Web LXGW字体不同。市场安装版本以目录仓清单为准，其他宿主和商业印刷仍未验收。

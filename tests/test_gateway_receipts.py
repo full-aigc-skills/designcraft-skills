@@ -13,7 +13,7 @@ import unittest
 from unittest.mock import patch
 
 ROOT=Path(__file__).resolve().parents[1]
-DOMAIN=ROOT.name.removesuffix('-skills')
+DOMAIN=json.loads((ROOT/'skill-suite.json').read_text())['domain']
 
 class ReceiptContract(unittest.TestCase):
     def setUp(self):
