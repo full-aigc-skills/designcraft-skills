@@ -26,7 +26,7 @@ def inventory(root,skill_names=None):
 
 def sync(plugin):
     """仅对当前领域的未发布且未漂移快照做正常增量复制。"""
-    domain=ROOT.name.removesuffix('-skills')
+    domain=json.loads((ROOT/'skill-suite.json').read_text())['domain']
     metadata=plugin/'candidate-source.json'
     lock=json.loads(metadata.read_text())
     manifest=json.loads((plugin/'plugin.json').read_text())
@@ -54,7 +54,7 @@ def sync(plugin):
 def upgrade_legacy_candidate(plugin):
     """将可核验的旧本地候选元数据升级到当前 schema，并保留原始副本。"""
     plugin=Path(plugin);metadata=plugin/'candidate-source.json';original=metadata.read_bytes();lock=json.loads(original)
-    domain=ROOT.name.removesuffix('-skills');source=json.loads((ROOT/'skill-suite.json').read_text());manifest=json.loads((plugin/'plugin.json').read_text())
+    domain=json.loads((ROOT/'skill-suite.json').read_text())['domain'];source=json.loads((ROOT/'skill-suite.json').read_text());manifest=json.loads((plugin/'plugin.json').read_text())
     if manifest.get('name')!=domain or lock.get('sourceProject')!=ROOT.name or lock.get('sourceStatus')!='local-unpublished-candidate' or lock.get('sourceVersion')!=source.get('version') or lock.get('releaseTag') is not None or any(key in lock for key in ('schemaVersion','candidateType','bundledSourceIdentity')):
         raise ValueError('legacy_candidate_not_migratable')
     actual=inventory(plugin/'skills',source['skills']);locked={path:digest for path,digest in lock.get('skillFileSha256',{}).items() if not transient_path(path)}
